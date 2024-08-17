@@ -1,27 +1,35 @@
+<html lang="en">
 <head>
-<meta name="description" content="Libo Huang">
-<link rel="stylesheet" href="utils/style.css" type="text/css">
-<link rel="shortcut icon" href="utils/libo-huang.jpg">
-<title>Libo Huang</title>
-
+<meta name="description" content="Libo Huang" charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/utils/style.css" type="text/css">
+<link rel="shortcut icon" href="/utils/libo-huang.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script>
-	// JavaScript: automatically generate the current date
 	function updateLastModified() {
 		var lastModified = document.lastModified;
 		document.getElementById("lastUpdate").innerText = "Last Update: " + lastModified;
 	}
+	// JavaScript 用于复制功能
+	function copyToClipboard() {  
+		var codeBlock = document.querySelector("pre code").innerText;
+		navigator.clipboard.writeText(codeBlock).then(function() {
+			alert("Citation copied!");
+		}, function() {
+			alert("Copy failed, please copy manually!");
+		});
+	}
 </script>
+
+<title>Libo Huang</title>
+
 </head>
 
 
 
 
 
-
-
 <body onload="updateLastModified()"> 
-
-
 
 <!-- Navigation bar -->
 <div class="navbar">
@@ -30,64 +38,80 @@
 	<a href="#publications">Publications</a>
 	<a href="#academic_services">Academic Services</a>
 </div>
-	
+
+<div style="text-align: right;">
+	[<a href="utils/">中文版本</a>]
+</div>
+
+
 
 <table>
-    <tbody>
-        <tr>
-            <td width="670">
-                <div id="toptitle">
-					<h1>Libo Huang<span style="color:#000000"></span></h1>
-                </div>
-                <p>
-					Assistant Researcher,<br>
-					Institute of Computing Technology (<a href="http://www.ict.ac.cn/" target="_blank">ICT</a>), <br>
-					Chinese Academic of Sciences (<a href="https://www.cas.cn/" target="_blank">CAS</a>), <br>
-					No. 6 Kexueyuan South Road,<br>
-					Haidian District,<br>
-					Beijing, China.<br>
-					Email: www.huanglibo(at)gmail.com,  huanglibo(at)ict.ac.cn
-                </p>
-            </td>
-            <td>
-                <img src="utils/libo-huang.png" border="0" width="190">
-            </td>
-        </tr>
-    </tbody>
+<tbody>
+<tr>
+	<td width="670">
+		<div id="toptitle">
+			<h1>Libo Huang</h1> <!-- <span style="color:#000000"></span> -->
+		</div>
+		<p>
+			Assistant Researcher,<br>
+			Institute of Computing Technology (<a href="http://english.ict.cas.cn/" target="_blank">ICT</a>), <br>
+			Chinese Academic of Sciences (<a href="https://english.cas.cn/" target="_blank">CAS</a>), <br>
+			No. 6 Kexueyuan South Road,<br>
+			Haidian District,<br>
+			Beijing, China.<br><br>
+			Email: www.huanglibo(at)gmail.com,  huanglibo(at)ict.ac.cn
+		</p>
+	</td>
+	<td>
+		<img src="/utils/libo-huang.png" border="0" width="190">
+	</td>
+</tr>
+</tbody>
 </table>
 
 
-<h2 id="about_me">About Me</h2>
-	<p>
-		Libo Huang is an assistant researcher at Chinese Academy of Sciences (<a href="https://www.cas.cn/ " target="_blank">CAS</a>) in China. Before that, he worked as a postdoctoral researcher (2021.10 - 2024.8) and intern researcher (2021.7-2021.10) at CAS, collaborated with <a href="https://people.ucas.edu.cn/~xyj" target="_blank">Prof. Yongjun Xu</a> and <a href="https://people.ucas.ac.cn/~anzhulin" target="_blank">Prof. Zhulin An</a>, working on deep learning.
-	</p>
-	<p>
-		He got his Ph.D. degree (2018-2021) of machine learning under the supervisions of  <a href="https://wkling.gdut.edu.cn/" target="_blank">Prof. Wing-Kuen Ling</a> at Guangdong University of Technology (<a href="https://www.gdut.edu.cn/" target="_blank">GDUT</a>), and <a href="https://www.brunel.ac.uk/people/lu-gan" target="_blank">Dr. Lu Gan</a> at Brunel University London (2019-2020). 
-	</p>
-	<p>
-		Before that, he persured his M.Eng. degree (2016-2018) in Computer Scicence from GDUT, supervised by <a href="https://english.stu.edu.cn/info/1024/1192.htm" target="_blank">Prof. Zhifeng Hao</a>, <a href="https://ruichucai.github.io/" target="_blank">Prof. Ruichu Cai</a>, and <a href="https://teacher.gdut.edu.cn/wenwen/zh_CN/index.htm" target="_blank">Prof. Wen Wen</a>. He received a B.S. degree (2012-2016) in Mathematics from Jiangxi Normal Unversity (<a href="https://www.jxnu.edu.cn/index.psp">JXNU</a>).
-	</p>
-		
+<h2 id="about_me">
+About Me
+<a href="https://www.linkedin.com/in/lbhuang/" target="_blank" style="text-decoration: none; margin-left: 10px;">
+	<button style="font-size:15px; display: inline-flex; align-items: center; padding: 3px; cursor: pointer;">
+		<i class="fa fa-linkedin-square" style="font-size:18px; color:#043baa; margin-right: 5px;"></i>
+		linkedin
+	</button>
+</a>
+</h2>
 
-
-
-
-
+<p>
+	Libo Huang is an assistant researcher at the Chinese Academy of Sciences (<a href="https://english.cas.cn/" target="_blank">CAS</a>) in China. Before that, he worked as a postdoctoral researcher (2021.10 - 2024.8) and intern researcher (2021.7-2021.10) at CAS, collaborated with <a href="https://scholar.google.com/citations?user=l34KxTYAAAAJ&hl=en" target="_blank">Prof. Yongjun Xu</a> and <a href="https://scholar.google.com/citations?user=daBvGcMAAAAJ&hl=en" target="_blank">Prof. Zhulin An</a>, working on deep learning.
+</p>
+<p>
+	He got his Ph.D. degree (2018-2021) in machine learning under the supervision of  <a href="https://wkling.gdut.edu.cn/" target="_blank">Prof. Wing-Kuen Ling</a> at Guangdong University of Technology (<a href="https://english.gdut.edu.cn/" target="_blank">GDUT</a>), and <a href="https://www.brunel.ac.uk/people/lu-gan" target="_blank">Prof. Lu Gan</a> at Brunel University London (2019-2020). 
+</p>
+<p>
+	Before that, he pursued his M.Eng. degree (2016-2018) in Computer Scicence from GDUT, supervised by <a href="https://english.stu.edu.cn/info/1024/1192.htm" target="_blank">Prof. Zhifeng Hao</a>, <a href="https://ruichucai.github.io/" target="_blank">Prof. Ruichu Cai</a>, and <a href="https://scholar.google.com/citations?user=PGEc7LQAAAAJ&hl=en" target="_blank">Prof. Wen Wen</a>. He received a B.S. degree (2012-2016) in Mathematics from Jiangxi Normal Unversity (<a target="_blank" href="https://www.jxnu.edu.cn/18/list.htm">JXNU</a>).
+</p>
 
 	
-<h2 id="research_interests">Research Interests</h2>
-My research interests are broad, including the machine learning theories and deep learning applications. Especially, I have done some works in the following topics:
+
+<h2 id="research_interests">
+Research Interests
+<a href="http://english.ict.cas.cn/rese/divi/net/202302/t20230209_326883.html" target="_blank" style="text-decoration: none; margin-left: 10px;">
+	<button style="font-size:15px; display: inline-flex; align-items: center; padding: 3px; cursor: pointer;">
+	<img src="/utils/ict-icon.png" alt="" style="width: 18px; height: auto; margin-right: 5px;">
+	team website
+	</button>
+</a>
+</h2>
+My research interests include machine learning theories and deep learning applications. I have done some work on the following topics:
 <ul>
 	<li>
         Machine learning, especially unsupervised clustering, feature extracture, and optimization.
 	</li>
 	<li>
-		Deep learning, especially deep models' memorzing, etc.
+		Deep learning, especially the deep models' memorizing, etc.
 	</li>
 </ul>
-
-<p style="font-size: 13.0pt">
-    <i>Recruiting</i>: I have <del>several</del> 1-2 openings for visiting (bachelor, master, or Ph.D.) students on machine learning, deep learning, and optimization topics. Both remote and onsite visitings are welcome. Drop me an email if you are interested!
+<p>
+    <span style="color: red;">Recruiting</span>: I have <del>several</del> 1-2 openings for visiting (bachelor, master, or Ph.D.) students on machine learning, deep learning, and optimization topics. Both remote and onsite visitings are welcome. Drop me an email if you are interested!
 </p>
 
 
@@ -95,55 +119,292 @@ My research interests are broad, including the machine learning theories and dee
 
 
 
-	
-<h2 id="publications">Publications</h2>
-<ul>
 
-	<li>
-		<a href="https://arxiv.org/abs/2302.05209">A survey on causal reinforcement learning</a> <br>
-		Yan Zeng, Ruichu Cai, Fuchun Sun, <strong>Libo Huang</strong>, Zhifeng Hao. <br>
-		<i><strong>TNNLS</strong></i>, 2024.
-	</li>
 
-	<li>
-		<a href="https://openreview.net/pdf?id=pVTcR8ig3R">KFC: Knowledge Reconstruction and Feedback Consolidation Enable Efficient and Effective Continual Generative Learning</a><br>
-		<strong>Libo Huang</strong>, Zhulin An, Yan Zeng, Yongjun Xu.<br>
-		<i><strong>ICLR</strong></i> (Tiny paper), Vienna, Austria, 2024.
-	</li>
 
-	<li>
-		<a href="https://ojs.aaai.org/index.php/AAAI/article/view/29153">e-Tag: Class-Incremental Learning with Hierarchical Embedding Distillation and Task-Oriented Generation</a><br>
-		<strong>Libo Huang</strong>, Yan Zeng, Chuanguang Yang, Zhulin An, Yongjun Xu. <br>
-		<i><strong>AAAI</strong></i>, Washington, DC, USA, 2023. 
-	</li>
 
-	<li>
-		<a href="https://ieeexplore.ieee.org/document/8755268">Automatic Spike Sorting with Low-Rank and Sparse Representation</a><br>
-		<strong>Libo Huang</strong>, Gan Lu, Yan Zeng, and Wing-Kuen Ling.<br>
-		<i><strong>IEEE Transactions on Biomedical Engineering</strong></i>, 2023.
-	</li>
 
-	<li>
-		<a href="https://ieeexplore.ieee.org/document/9528890">Nonlinear Causal Discovery with Multiple High-Dimensional Observations</a><br>
-		Yan Zeng, Zhifeng Hao, Ruichu Cai, Feng Xie, <strong>Libo Huang</strong>, Shohei Shimizu. <br>
-		<i><strong>TNNLS</strong></i>, 2021.
-	</li>
-	
-	<li>
-		<a href="https://ieeexplore.ieee.org/document/9102837">Spike Sorting Based On Low-Rank And Sparse Representation</a><br>
-		<strong>Libo Huang</strong>, Wing-Kuen Ling, Yan Zeng.<br>
-		<i><strong>ICME</strong></i>, 2020: 1-6.
-	</li>
-	
-	<li>
-		<a href="https://ieeexplore.ieee.org/document/8681441">WMsorting: wavelet packets’ decomposition and mutual information-based spike sorting method</a><br>
-		Libo Huang, Wing-Kuen Ling, Ruichu Cai, <strong>Yan Zeng</strong>.<br>
-		<i><strong>IEEE transactions on nanobioscience</strong></i>, 2019, 18(3): 283-295.
-	</li>
+
+
+<h2 id="publications">
+Publications 
+<a href="https://scholar.google.com/citations?user=ioraMaAAAAAJ&hl=en&oi=ao" target="_blank" style="text-decoration: none; margin-left: 10px;">
+	<button style="font-size:15px; display: inline-flex; align-items: center; padding:3px; cursor: pointer;">
+		<i class="fa fa-google" style="font-size:18px; color:#043baa; margin-right: 5px;"></i>
+		google scholar
+	</button>
+</a>
+</h2>
+<ul id="module1">
+
+
+<li style="position: relative;">
+<span style="line-height: 24px;">
+	A Survey on Causal Reinforcement Learning
+</span> &nbsp; 
+<a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
+	https://arxiv.org/pdf/2302.05209
+"></a>
+&#32;<a target="_blank" style="font-size:20px; color: #527bbd;" class="fa fa-github" href="
+	https://github.com/libo-huang/Awesome-Causal-Reinforcement-Learning
+"></a>
+<code><pre class="code-block">
+@article{zeng2023survey,
+	title={A survey on causal reinforcement learning},
+	author={Zeng, Yan and Cai, Ruichu and Sun, Fuchun and Huang, Libo and Hao, Zhifeng},
+	journal={IEEE Transactions on Neural Networks and Learning Systems},
+	year={2024}
+}
+<button class="copy-button" onclick="copyToClipboard()">copy</button></pre></code>
+</li>
+
+<li style="position: relative;">
+<span style="line-height: 24px;">
+	CLIP-KD: An Empirical Study of CLIP Model Distillation
+</span> &nbsp; 
+<a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
+	https://openaccess.thecvf.com/content/CVPR2024/papers/Yang_CLIP-KD_An_Empirical_Study_of_CLIP_Model_Distillation_CVPR_2024_paper.pdf
+"></a>
+&#32;<a target="_blank" style="font-size:20px; color: #527bbd;" class="fa fa-github" href="
+	https://github.com/winycg/CLIP-KD
+"></a>
+<code><pre class="code-block">
+@inproceedings{yang2024clip,
+	title={CLIP-KD: An Empirical Study of CLIP Model Distillation},
+	author={Yang, Chuanguang and An, Zhulin and Huang, Libo and Bi, Junyu and Yu, Xinqiang and Yang, Han and Diao, Boyu and Xu, Yongjun},
+	booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+	pages={15952--15962},
+	year={2024}
+}
+<button class="copy-button" onclick="copyToClipboard()">copy</button></pre></code>
+</li>
+
+
+<li style="position: relative;">
+<span style="line-height: 24px;">
+	Online Policy Distillation with Decision-Attention
+</span> &nbsp; 
+<a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
+	https://arxiv.org/pdf/2406.05488
+"></a> &#32;
+<code><pre class="code-block">
+@inproceedings{yu2024online,
+	title={Online Policy Distillation with Decision-Attention},
+	author={Yu, Xinqiang and Yang, Chuanguang and Yu, Chengqing and Huang, Libo and An, Zhulin and Xu, Yongjun},
+	booktitle={WCCI},
+	year={2024}
+}
+<button class="copy-button" onclick="copyToClipboard()">copy</button></pre></code>
+</li>
+
+
+<li style="position: relative;">
+<span style="line-height: 24px;">
+	Relational Diffusion Distillation For Efficient Image Generation
+</span> &nbsp; 
+<a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
+	https://openreview.net/pdf?id=dFWi3YlurU
+"></a>
+<code><pre class="code-block">
+@inproceedings{feng2024relational,
+	title={Relational Diffusion Distillation For Efficient Image Generation},
+	author={Feng, Weilun and Yang, Chuanguang and An, Zhulin and Huang, Libo and Diao, Boyu and Wang, Fei and Xu, Yongjun},
+	booktitle={ACM Multimedia 2024}
+}
+<button class="copy-button" onclick="copyToClipboard()">copy</button></pre></code>
+</li>
+
+
+<li style="position: relative;">
+<span style="line-height: 24px;">
+	KFC: Knowledge Reconstruction and Feedback Consolidation Enable Efficient and Effective Continual Generative Learning
+</span> &nbsp;
+<a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
+	https://openreview.net/pdf?id=pVTcR8ig3R
+"></a> &#32;
+<a target="_blank" style="font-size:20px; color: #527bbd;" class="fa fa-github" href="
+	https://github.com/libo-huang/KFC
+"></a>
+<code><pre class="code-block">
+@inproceedings{huang2024kfc,
+	title={KFC: Knowledge Reconstruction and Feedback Consolidation Enable Efficient and Effective Continual Generative Learning},
+	author={Huang, Libo and An, Zhulin and Zeng, Yan and Xu, Yongjun and others},
+	booktitle={The Second Tiny Papers Track at ICLR 2024},
+	year={2024}
+}
+<button class="copy-button" onclick="copyToClipboard()">copy</button></pre></code>
+</li>
+
+
+<li style="position: relative;">
+<span style="line-height: 24px;">
+	e-Tag: Class-Incremental Learning via Hierarchical Embedding Distillation and Task-Oriented Generation
+</span>
+&nbsp;<a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
+	https://ojs.aaai.org/index.php/AAAI/article/view/29153
+"></a>
+&#32;<a target="_blank" style="font-size:20px; color: #527bbd;" class="fa fa-file-powerpoint-o" href="
+	https://underline.io/lecture/91937-etag-class-incremental-learning-via-embedding-distillation-and-task-oriented-generation
+"></a>
+&#32;<a target="_blank" style="font-size:20px; color: #527bbd;" class="fa fa-github" href="
+	https://github.com/libo-huang/eTag
+"></a>
+<code><pre class="code-block">
+@inproceedings{huang2024etag,
+	title={eTag: Class-Incremental Learning via Embedding Distillation and Task-Oriented Generation},
+	author={Huang, Libo and Zeng, Yan and Yang, Chuanguang and An, Zhulin and Diao, Boyu and Xu, Yongjun},
+	booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+	volume={38},
+	number={11},
+	pages={12591--12599},
+	year={2024}
+}
+<button class="copy-button" onclick="copyToClipboard()">copy</button></pre></code>
+</li>
+
+
+<li style="position: relative;">
+<span style="line-height: 24px;">
+	Automatic Spike Sorting with Low-Rank and Sparse Representation
+</span> &nbsp;
+<a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
+	https://bura.brunel.ac.uk/bitstream/2438/27976/3/FullText.pdf
+"></a>
+<code><pre class="code-block">
+@article{huang2023automatical,
+	title={Automatical Spike Sorting with Low-Rank and Sparse Representation},
+	author={Huang, Libo and Gan, Lu and Zeng, Yan and Ling, Bingo Wing-Kuen},
+	journal={IEEE Transactions on Biomedical Engineering},
+	year={2023},
+	publisher={IEEE}
+}
+<button class="copy-button" onclick="copyToClipboard()">copy</button></pre></code>
+</li>
+
+
+<li style="position: relative;">
+<span style="line-height: 24px;">
+	A unified optimization model of feature extraction and clustering for spike sorting
+</span>
+&nbsp;<a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
+	/utils/huang2021unified.pdf
+"></a>
+&#32;<a target="_blank" style="font-size:20px; color: #527bbd;" class="fa fa-github" href="
+	https://github.com/libo-huang/Unified-SS
+"></a>
+<code><pre class="code-block">
+@article{huang2021unified,
+	title={A unified optimization model of feature extraction and clustering for spike sorting},
+	author={Huang, Libo and Gan, Lu and Ling, Bingo Wing-Kuen},
+	journal={IEEE Transactions on Neural Systems and Rehabilitation Engineering},
+	volume={29},
+	pages={750--759},
+	year={2021},
+	publisher={IEEE}
+}
+<button class="copy-button" onclick="copyToClipboard()">copy</button></pre></code>
+</li>
+
+
+<li style="position: relative;">
+<span style="line-height: 24px;">
+	Nonlinear Causal Discovery with Multiple High-Dimensional Observations
+</span> &nbsp;
+<a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
+	/utils/zeng2021nonlinear.pdf
+"></a> &#32;
+<a target="_blank" style="font-size:20px; color: #527bbd;" class="fa fa-github" href="
+	https://github.com/YanaZeng/HDDM
+"></a>
+<code><pre class="code-block">
+@article{zeng2021nonlinear,
+	title={Nonlinear causal discovery for high-dimensional deterministic data},
+	author={Zeng, Yan and Hao, Zhifeng and Cai, Ruichu and Xie, Feng and Huang, Libo and Shimizu, Shohei},
+	journal={IEEE Transactions on Neural Networks and Learning Systems},
+	volume={34},
+	number={5},
+	pages={2234--2245},
+	year={2021},
+	publisher={IEEE}
+}
+<button class="copy-button" onclick="copyToClipboard()">copy</button></pre></code>
+</li>
+
+
+<li style="position: relative;">
+<span style="line-height: 24px;">
+	Spike Sorting Based On Low-Rank And Sparse Representation
+</span>
+&nbsp;<a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
+	/utils/huang2020spike.pdf
+"></a>
+&#32;<a target="_blank" style="font-size:20px; color: #527bbd;" class="fa fa-file-powerpoint-o" href="
+	https://drive.google.com/file/d/1WpeTHbhCtw9ptyd2cZQ1rIysWMk4Btt-/view
+"></a>
+<code><pre class="code-block">
+@inproceedings{huang2020spike,
+	title={Spike sorting based on low-rank and sparse representation},
+	author={Huang, Libo and Ling, Bingo Wing-Kuen and Zeng, Yan and Gan, Lu},
+	booktitle={2020 IEEE International Conference on Multimedia and Expo (ICME)},
+	pages={1--6},
+	year={2020},
+	organization={IEEE}
+}
+<button class="copy-button" onclick="copyToClipboard()">copy</button></pre></code>
+</li>
+
+
+<li style="position: relative;">
+<span style="line-height: 24px;">
+	WMsorting: wavelet packets' decomposition and mutual information-based spike sorting method
+</span> &nbsp;
+<a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
+	/utils/huang2019wmsorting.pdf
+"></a>
+<code><pre class="code-block">
+@article{huang2019wmsorting,
+	title={WMsorting: wavelet packets' decomposition and mutual information-based spike sorting method},
+	author={Huang, Libo and Ling, Bingo Wing-Kuen and Cai, Ruichu and Zeng, Yan and He, Jiong and Chen, Yao},
+	journal={IEEE Transactions on NanoBioscience},
+	volume={18},
+	number={3},
+	pages={283--295},
+	year={2019},
+	publisher={IEEE}
+}
+<button class="copy-button" onclick="copyToClipboard()">copy</button></pre></code>
+</li>
+
+
+<li style="position: relative;">
+<span style="line-height: 24px;">
+	Hass: High accuracy spike sorting with wavelet package decomposition and mutual information
+</span> &nbsp;
+<a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
+	https://drive.google.com/file/d/1hJLbn0X_ujI_45MnEIlhoYnKikiqAd-V/view
+"></a>
+<code><pre class="code-block">
+@inproceedings{chen2018hass,
+  title={Hass: High accuracy spike sorting with wavelet package decomposition and mutual information},
+  author={Chen, Yao and Huang, Libo and He, Jiong and Zhao, Kunyao and Cai, Ruichu and Hao, Zhifeng},
+  booktitle={2018 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)},
+  pages={831--838},
+  year={2018},
+  organization={IEEE}
+}
+<button class="copy-button" onclick="copyToClipboard()">copy</button></pre></code>
+</li>
+
 
 </ul>
 
-<font size="3", color = "#808080"> * denotes equal contribution; # indicates corresponding author.</font> 
+
+
+
+
+
+
+
 
 
 
@@ -152,28 +413,48 @@ My research interests are broad, including the machine learning theories and dee
 	
 
 <h2 id="academic_services">Academic Services</h2>
-<ul>
-	<li>
-		<strong>PC:</strong> NeurIPS 2024, ECCV 2024, ICDE 2024, ICME 2024, ACMMM 2023-2024.
-	</li>
-	<li>
-		<strong>Reviewer:</strong> TCE (IEEE Transactions on Consumer Electronics), TCSVT (IEEE Transactions on Circuits and Systems for Video Technology), The Innovation, IEEE TIP (IEEE Transactions on Image Processing), IEEE SPL (IEEE Signal Processing letters).
-	</li>
+<ul id="module2">
+<li>
+	<strong>PC:</strong> <br>
+	NeurIPS (Conference on Neural Information Processing Systems) 2024,  <br>
+	ECCV (European Conference on Computer Vision) 2024,  <br>
+	ICDE (IEEE International Conference on Data Mining) 2024,  <br>
+	ICME (IEEE International Conference on Multimedia and Expo) 2024,  <br>
+	ACM MM (ACM International Conference on Multimedia) 2023-2024, <br>
+	INDIN (IEEE International Conference on Industrial Informatics Online Event) 2020-2024, <br>
+	CSNDSP (IEEE/IET International Symposium on Communication Systems, Networks and Digital Signal Processing) 2020-2024, <br>
+	ISCAS (IEEE International Symposium on Circuits and Systems) 2020-2024.
+</li>
+<li>
+	<strong>Reviewer:</strong> <br>
+	TCE (IEEE Transactions on Consumer Electronics), <br>
+	TCSVT (IEEE Transactions on Circuits and Systems for Video Technology),  <br>
+	The Innovation, <br>
+	IEEE TIP (IEEE Transactions on Image Processing), <br>
+	IEEE SPL (IEEE Signal Processing letters), <br>
+	CBB (Computational Biology and Bioinformatics).
+</li>
 </ul>
 
 
 
+
+
+
+
 <div id="footer">
-    <p id="lastUpdate"></p>
+	<div id="visitor-map">	
+		<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=AyN9AOF-wHXWzcFivyTqlXYJqGGlXEO0UdmGyQcaQk4'></script>
+	</div>
+	<p id="lastUpdate"></p>
+	<div id="footer-text">
+		&copy; 2024 Libo Huang. All rights reserved. 
+	</div>
+	<a target="_blank" href="https://libo-huang.github.io/" >&nbsp; Privacy Policy</a>
 </div>
-<div align=right style="pointer-events: none;">
-	libo-huang@2024 &nbsp;&nbsp;&nbsp;&nbsp; Total Visitors: <img src='https://www.counter12.com/img-z7473517a5w4b1z3-26.gif' border='0' alt='counter'>
-	<script type='text/javascript' src='https://www.counter12.com/ad.js?id=z7473517a5w4b1z3'></script>
-</div>
-<div id="visitor-map" class="map-container" style="pointer-events: none;">
-	<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=hs_jIg2ok9aWpCRE0iJ_fhzHp6D_9InmEpwQuj3AnVQ&cl=ffffff&w=a"></script>
-</div>
+
 
 
 
 </body>
+</html>

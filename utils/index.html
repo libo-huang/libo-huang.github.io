@@ -1,0 +1,202 @@
+<html lang="en">
+<head>
+<meta name="description" content="Libo Huang" charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/utils/style.css" type="text/css">
+<link rel="shortcut icon" href="/utils/libo-huang.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+    function updateLastModified() {
+        var lastModified = document.lastModified;
+        document.getElementById("lastUpdate").innerText = "最近更新：" + lastModified;
+    }
+    // JavaScript 用于复制功能
+    function copyToClipboard() {  
+        var codeBlock = document.querySelector("pre code").innerText;
+        navigator.clipboard.writeText(codeBlock).then(function() {
+            alert("引用已复制！");
+        }, function() {
+            alert("复制失败，请手动复制！");
+        });
+    }
+</script>
+
+<title>Libo Huang</title>
+
+</head>
+   
+
+
+
+
+<body onload="updateLastModified()"> 
+
+<!-- Navigation bar -->
+<div class="navbar">
+    <a href="#about_me" class="active">个人简介</a>
+    <a href="#research_interests">研究兴趣</a>
+    <a href="#publications">主要论文</a>
+    <a href="#academic_services">学术服务</a>
+</div>
+
+<div style="text-align: right;">
+    [<a href="/">English Version</a>]
+</div>
+
+<table>
+<tbody>
+<tr>
+    <td width="670">
+        <div id="toptitle">
+            <h1>黄礼泊</h1> <!-- <span style="color:#000000"></span> -->
+        </div>
+        <p>
+            助理研究员，<br>
+            中国科学院计算技术研究所（<a href="http://www.ict.ac.cn/" target="_blank">ICT</a>），<br>
+            中国科学院（<a href="https://www.cas.cn/" target="_blank">CAS</a>），<br>
+            北京市海淀区科学院南路6号。<br><br>
+            电子邮箱: www.huanglibo(at)gmail.com，huanglibo(at)ict.ac.cn
+        </p>
+    </td>
+    <td>
+        <img src="/utils/libo-huang.png" border="0" width="190">
+    </td>
+</tr>
+</tbody>
+</table>
+
+
+<h2 id="about_me">
+个人简介
+<a href="https://www.linkedin.com/in/lbhuang/?locale=zh_CN" target="_blank" style="text-decoration: none; margin-left: 10px;">
+    <button style="font-size:15px; display: inline-flex; align-items: center; padding: 3px; cursor: pointer;">
+        <i class="fa fa-linkedin-square" style="font-size:18px; color:#043baa; margin-right: 5px;"></i>
+        领英
+    </button>
+</a>
+</h2>
+
+<p>
+    黄礼泊是中国科学院计算技术研究所（<a href="http://www.ict.ac.cn/" target="_blank">ICT</a>）的助理研究员。在此之前，他作为博士后研究员（2021.10 - 2024.8）和实习研究员（2021.7 - 2021.10）在中国科学院工作，与<a href="https://people.ucas.edu.cn/~xyj" target="_blank">徐勇军教授</a>和<a href="https://people.ucas.ac.cn/~anzhulin" target="_blank">安竹林教授</a>合作，从事深度学习的研究工作。            
+</p>
+<p>
+    他于广东工业大学（<a href="https://www.gdut.edu.cn/" target="_blank">GDUT</a>）在<a href="https://www.gdut.edu.cn/info/1959/11575.htm" target="_blank">凌永权教授</a>和布鲁内尔大学（2019-2020）<a href="https://www.brunel.ac.uk/people/lu-gan" target="_blank">Lu Gan教授</a>的共同指导下获得了机器学习博士学位（2018-2021）。
+</p>
+<p>
+    在此之前，他在广东工业大学（2016-2018）攻读计算机科学硕士学位，导师为<a href="https://www.stu.edu.cn/xxgk/dzld1/hzf.htm" target="_blank">郝志峰教授</a>，<a href="https://ruichucai.github.io/zh-cn/" target="_blank">蔡瑞初教授</a>，和<a href="https://teacher.gdut.edu.cn/wenwen/zh_CN/index.htm" target="_blank">温雯教授</a>。他于2016年获得江西师范大学（<a target="_blank" href="https://www.jxnu.edu.cn/index.psp">JXNU</a>）数学学士学位（2012-2016）。
+</p>
+
+    
+
+<h2 id="research_interests">
+研究兴趣
+<a href="https://ict.cas.cn/jssgk/zzjg/kyxt/zxzx/js/" target="_blank" style="text-decoration: none; margin-left: 10px;">
+    <button style="font-size:15px; display: inline-flex; align-items: center; padding: 3px; cursor: pointer;">
+    <img src="/utils/ict-icon.png" alt="" style="width: 18px; height: auto; margin-right: 5px;">
+    团队主页
+    </button>
+</a>
+</h2>
+我的研究兴趣包括机器学习理论和深度学习应用。我在以下主题上做过一些研究工作：
+<ul>
+    <li>
+        机器学习，尤其是无监督聚类、特征提取和最优化。
+    </li>
+    <li>
+        深度学习，尤其是深度模型的记忆等。
+    </li>
+</ul>
+<p>
+    <b style="color: red;">招聘</b>: 我有 <del>若干</del> 1-2 个客座生名额，欢迎有兴趣从事机器学习、深度学习和优化相关研究的访问（本科生、硕士生或博士生）申请。欢迎远程或现场访问。如果你感兴趣，请给我发邮件！
+</p>
+
+
+    
+
+
+
+
+
+<h2 id="publications">
+主要论文 
+<a href="https://scholar.google.com/citations?user=ioraMaAAAAAJ&hl=cn" target="_blank" style="text-decoration: none; margin-left: 10px;">
+    <button style="font-size:15px; display: inline-flex; align-items: center; padding:3px; cursor: pointer;">
+        <i class="fa fa-google" style="font-size:18px; color:#043baa; margin-right: 5px;"></i>
+        谷歌学术
+    </button>
+</a>
+</h2>
+<div id="ul-container1"></div>
+<script>
+    // 加载 /index.html 的内容
+    fetch('/index.html')
+        .then(response => response.text())
+        .then(data => {
+            // 创建一个临时的 DOM 元素来解析 HTML 内容
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = data;
+
+            // 查找并复制指定的 <ul id="module1"> 模块
+            const ulModule = tempDiv.querySelector('#module1');
+            
+            // 将复制的模块插入到 /utils/index.html 中的 ul-container div 中
+            if (ulModule) {
+                document.getElementById('ul-container1').appendChild(ulModule.cloneNode(true));
+            }
+        })
+        .catch(error => {
+            console.error('Error loading content:', error);
+        });
+</script>
+
+
+
+
+
+
+    
+
+<h2 id="academic_services">学术服务</h2>
+<div id="ul-container2"></div>
+<script>
+// 加载 /index.html 的内容
+fetch('/index.html')
+    .then(response => response.text())
+    .then(data => {
+        // 创建一个临时的 DOM 元素来解析 HTML 内容
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = data;
+
+        // 查找并复制指定的 <ul id="module2"> 模块
+        const ulModule = tempDiv.querySelector('#module2');
+        
+        // 将复制的模块插入到 /utils/index.html 中的 ul-container2 div 中
+        if (ulModule) {
+            document.getElementById('ul-container2').appendChild(ulModule.cloneNode(true));
+        }
+    })
+    .catch(error => {
+        console.error('Error loading content:', error);
+    });
+</script>
+
+
+
+
+
+
+
+
+<div id="footer">
+	<div id="visitor-map">	
+		<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=AyN9AOF-wHXWzcFivyTqlXYJqGGlXEO0UdmGyQcaQk4'></script>
+	</div>
+	<p id="lastUpdate"></p>
+	<div id="footer-text">
+		&copy; 2024 黄礼泊。版权所有。
+	</div>
+	<a target="_blank" href="https://libo-huang.github.io/">隐私权政策</a>
+</div>
+
+</body>
+</html>
