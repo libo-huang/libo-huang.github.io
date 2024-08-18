@@ -470,3 +470,15 @@ table.imgtable, table.imgtable td {
     position: relative;
     white-space: pre-wrap;
 }
+
+.h2-button {
+    font-size:12px; 
+    display: inline-flex;
+    align-items: center; 
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    cursor: pointer;
+    /* border-radius: 2pt; */
+}
