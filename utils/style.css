@@ -19,8 +19,8 @@ body {
     margin-right: auto;
     padding-left:  50px;
     padding-right: 50px;
-    padding-top: 10px;
-    padding-bottom: 30px;
+    padding-top: 15px;
+    /* padding-bottom: 30px; */
     max-width: 960px;
 }
 
@@ -178,18 +178,34 @@ pre {
 div#footer {
     font-size: small;
     border-top: 2px solid #c0c0c0;
-    padding-top: 0.1em;
-    margin-top: 2.0em;
+    padding-top: 0.1em;   /* distance between contents in the footer and the footer block*/
+    margin-top: 2.0em;  /* distance between the footer balock and top balock*/
     color: #c0c0c0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/* Default css file for jemdoc. */
+div#visitor-map { 
+    margin: 10 auto;
+    width: 80%;
+    /* height: 50vh; */ 
 }
 
 div#footer a {
     color: #80a0b0;
+    /* padding-bottom: 8px; */
 }
 
-div#footer-text {
-    float: left;
-    padding-bottom: 8px;
+div#footer-text-block {
+    /* background-color: #dbd7d7; */
+    align-content: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 ul, ol, dl {
@@ -370,14 +386,6 @@ img {
 table.imgtable, table.imgtable td {
     border: none;
     text-align: left;
-}
-
-
-/* Default css file for jemdoc. */
-div#visitor-map{
-    width: 80%;
-    /* height: 50vh; */  
-    margin: 10 auto;
 }
 
 
