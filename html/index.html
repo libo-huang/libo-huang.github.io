@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="zh-CN">
 <head>
 <meta name="description" content="Libo Huang" charset="UTF-8">
 <meta name="keywords" content="libo huang, huanglibo, libohuang, huanglibo, 黄礼泊">
@@ -25,6 +25,8 @@
     }
 </script>
 <script src="https://kit.fontawesome.com/b59a433526.js" crossorigin="anonymous"></script>  <!--icon of "fa-brands fa-google-scholar" -->
+<script src="/utils/vanilla-back-to-top.min.js"></script>
+
 
 <title>黄礼泊@中科院计算所</title>
 
@@ -35,6 +37,14 @@
 
 
 <body onload="updateLastModified()"> 
+
+
+<script>addBackToTop({
+    backgroundColor: '#fff',
+    innerHTML: 'Back to Top',
+    textColor: '#333'
+    })
+</script>
 
 <!-- Navigation bar -->
 <div class="navbar">
@@ -159,7 +169,7 @@
 <div id="ul-container1"></div>
 <script>
     // 加载 /index.html 的内容
-    fetch('/index.html')
+    fetch('/html/publications.html')
         .then(response => response.text())
         .then(data => {
             // 创建一个临时的 DOM 元素来解析 HTML 内容
@@ -190,7 +200,7 @@
 <div id="ul-container2"></div>
 <script>
 // 加载 /index.html 的内容
-fetch('/index.html')
+fetch('/html/academic_services.html')
     .then(response => response.text())
     .then(data => {
         // 创建一个临时的 DOM 元素来解析 HTML 内容
@@ -216,14 +226,19 @@ fetch('/index.html')
 
 
 <div id="footer">
-	<div id="visitor-map">
-		<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=ffffff&w=a&t=tt&d=AyN9AOF-wHXWzcFivyTqlXYJqGGlXEO0UdmGyQcaQk4'></script>
-	</div>
     <div id="footer-text-block">
         <p id="lastUpdate"></p>
         <a target="_blank" href="https://github.com/libo-huang/libo-huang.github.io?tab=MIT-1-ov-file" >隐私权政策</a>
-        &copy; 2024 黄礼泊。版权所有。
+        <p>&copy; 2024 黄礼泊。版权所有。</p>
     </div>
+	<div id="visitor-map">
+		<script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=c0c0c0&w=131&t=n&d=AyN9AOF-wHXWzcFivyTqlXYJqGGlXEO0UdmGyQcaQk4&co=f5f5f5&cmo=527bbd&cmn=002d72'></script>
+	</div>
+    <script>
+        document.getElementById('visitor-map').addEventListener('click', function(event) {
+            event.preventDefault();
+        });
+    </script>
 </div>
 
 </body>

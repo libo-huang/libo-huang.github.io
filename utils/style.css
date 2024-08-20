@@ -177,22 +177,21 @@ pre {
 
 div#footer {
     font-size: small;
-    border-top: 2px solid #c0c0c0;
+    /* border-top: 2px solid #c0c0c0;   /* 顶部线条*/
     padding-top: 0.1em;   /* distance between contents in the footer and the footer block*/
     margin-top: 2.0em;  /* distance between the footer balock and top balock*/
     color: #c0c0c0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-/* Default css file for jemdoc. */
-div#visitor-map { 
-    margin: 10 auto;
-    width: 80%;
-    /* height: 50vh; */ 
+    align-items: flex-start;  /* 顶部对齐 */
+    flex-wrap: nowrap;  /* 不允许子元素换行 */
+    background-color: #f5f5f5;
+    padding-left: 20px;  /* 控制内部文字到边界的距离 */
+    padding-right: 20px;
+    width: calc(100% + 100px); /* 宽度加上body的左右内边距 */
+    margin-left: -50px; /* 向左移动，抵消body的左内边距 */
+    margin-right: -50px; /* 向右移动，抵消body的右内边距 */
+    max-width: 1020px;  /* 960+100-40=1020 */
 }
 
 div#footer a {
@@ -201,11 +200,17 @@ div#footer a {
 }
 
 div#footer-text-block {
-    /* background-color: #dbd7d7; */
-    align-content: center;
     display: flex;
-    justify-content: space-between;
-    width: 100%;
+    flex-direction: column; /* 垂直排列 */
+    justify-content: flex-start; /* 对齐到顶部 */
+    width: 50%; /* 留出部分空间给 map */
+}
+div#visitor-map {
+    height: 69px;
+    overflow: hidden;
+    display: flex-start;
+    /* background-color: yellow; */
+    justify-content: flex-start; /* 对齐到顶部 */
 }
 
 ul, ol, dl {
@@ -520,3 +525,12 @@ table.imgtable, table.imgtable td {
     transform: scale(1.2); 
 }
 
+#back-to-top {
+    border: 1px solid #ccc;
+    border-radius: 0;
+    font-size: 15px;
+    width: 100px;
+    text-align: center;
+    line-height: 30px;
+    height: 30px;
+}
