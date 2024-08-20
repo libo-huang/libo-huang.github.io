@@ -16,7 +16,7 @@
     }
     // JavaScript 用于复制功能
     function copyToClipboard() {  
-        var codeBlock = document.querySelector("pre code").innerText;
+        var codeBlock = document.querySelector("pre").innerText;
         navigator.clipboard.writeText(codeBlock).then(function() {
             alert("引用已复制！");
         }, function() {
@@ -166,6 +166,7 @@
     </button>
 </a>
 </h2>
+
 <div id="ul-container1"></div>
 <script>
     // 加载 /index.html 的内容

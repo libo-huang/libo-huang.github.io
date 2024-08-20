@@ -1,266 +1,291 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+	function copyToClipboard() {  // copy function, same as in the index.html
+		var codeBlock = document.querySelector("pre").innerText;
+		navigator.clipboard.writeText(codeBlock).then(function() {
+			alert("Citation copied!");
+		}, function() {
+			alert("Copy failed, please copy manually!");
+		});
+	}
+</script>
+</head>
+
+
+
+
+<body>
+
+
 
 
 <ul id="module1">
 
 
-    <li style="position: relative;">
-    <span style="line-height: 24px;">
-        A Survey on Causal Reinforcement Learning
-    </span> &nbsp; 
-    <a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
-        https://arxiv.org/pdf/2302.05209
-    "></a>
-    &#32;<a target="_blank" style="font-size:20px; color: #527bbd;" class="fa fa-github" href="
-        https://github.com/libo-huang/Awesome-Causal-Reinforcement-Learning
-    "></a>
-    <code><pre class="code-block">
-    @article{zeng2023survey,
-        title={A survey on causal reinforcement learning},
-        author={Zeng, Yan and Cai, Ruichu and Sun, Fuchun and Huang, Libo and Hao, Zhifeng},
-        journal={IEEE Transactions on Neural Networks and Learning Systems},
-        year={2024}
-    }
-    <button class="copy-button" onclick="copyToClipboard()">copy</button></pre></code>
-    </li>
-    
-    <li style="position: relative;">
-    <span style="line-height: 24px;">
-        CLIP-KD: An Empirical Study of CLIP Model Distillation
-    </span> &nbsp; 
-    <a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
-        https://openaccess.thecvf.com/content/CVPR2024/papers/Yang_CLIP-KD_An_Empirical_Study_of_CLIP_Model_Distillation_CVPR_2024_paper.pdf
-    "></a>
-    &#32;<a target="_blank" style="font-size:20px; color: #527bbd;" class="fa fa-github" href="
-        https://github.com/winycg/CLIP-KD
-    "></a>
-    <code><pre class="code-block">
-    @inproceedings{yang2024clip,
-        title={CLIP-KD: An Empirical Study of CLIP Model Distillation},
-        author={Yang, Chuanguang and An, Zhulin and Huang, Libo and Bi, Junyu and Yu, Xinqiang and Yang, Han and Diao, Boyu and Xu, Yongjun},
-        booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-        pages={15952--15962},
-        year={2024}
-    }
-    <button class="copy-button" onclick="copyToClipboard()">copy</button></pre></code>
-    </li>
-    
-    
-    <li style="position: relative;">
-    <span style="line-height: 24px;">
-        Online Policy Distillation with Decision-Attention
-    </span> &nbsp; 
-    <a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
-        https://arxiv.org/pdf/2406.05488
-    "></a> &#32;
-    <code><pre class="code-block">
-    @inproceedings{yu2024online,
-        title={Online Policy Distillation with Decision-Attention},
-        author={Yu, Xinqiang and Yang, Chuanguang and Yu, Chengqing and Huang, Libo and An, Zhulin and Xu, Yongjun},
-        booktitle={WCCI},
-        year={2024}
-    }
-    <button class="copy-button" onclick="copyToClipboard()">copy</button></pre></code>
-    </li>
-    
-    
-    <li style="position: relative;">
-    <span style="line-height: 24px;">
-        Relational Diffusion Distillation For Efficient Image Generation
-    </span> &nbsp; 
-    <a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
-        https://openreview.net/pdf?id=dFWi3YlurU
-    "></a>
-    <code><pre class="code-block">
-    @inproceedings{feng2024relational,
-        title={Relational Diffusion Distillation For Efficient Image Generation},
-        author={Feng, Weilun and Yang, Chuanguang and An, Zhulin and Huang, Libo and Diao, Boyu and Wang, Fei and Xu, Yongjun},
-        booktitle={ACM Multimedia 2024}
-    }
-    <button class="copy-button" onclick="copyToClipboard()">copy</button></pre></code>
-    </li>
-    
-    
-    <li style="position: relative;">
-    <span style="line-height: 24px;">
-        KFC: Knowledge Reconstruction and Feedback Consolidation Enable Efficient and Effective Continual Generative Learning
-    </span> &nbsp;
-    <a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
-        https://openreview.net/pdf?id=pVTcR8ig3R
-    "></a> &#32;
-    <a target="_blank" style="font-size:20px; color: #527bbd;" class="fa fa-github" href="
-        https://github.com/libo-huang/KFC
-    "></a>
-    <code><pre class="code-block">
-    @inproceedings{huang2024kfc,
-        title={KFC: Knowledge Reconstruction and Feedback Consolidation Enable Efficient and Effective Continual Generative Learning},
-        author={Huang, Libo and An, Zhulin and Zeng, Yan and Xu, Yongjun and others},
-        booktitle={The Second Tiny Papers Track at ICLR 2024},
-        year={2024}
-    }
-    <button class="copy-button" onclick="copyToClipboard()">copy</button></pre></code>
-    </li>
-    
-    
-    <li style="position: relative;">
-    <span style="line-height: 24px;">
-        e-Tag: Class-Incremental Learning via Hierarchical Embedding Distillation and Task-Oriented Generation
-    </span>
-    &nbsp;<a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
-        https://ojs.aaai.org/index.php/AAAI/article/view/29153
-    "></a>
-    &#32;<a target="_blank" style="font-size:20px; color: #527bbd;" class="fa fa-file-powerpoint-o" href="
-        https://underline.io/lecture/91937-etag-class-incremental-learning-via-embedding-distillation-and-task-oriented-generation
-    "></a>
-    &#32;<a target="_blank" style="font-size:20px; color: #527bbd;" class="fa fa-github" href="
-        https://github.com/libo-huang/eTag
-    "></a>
-    <code><pre class="code-block">
-    @inproceedings{huang2024etag,
-        title={eTag: Class-Incremental Learning via Embedding Distillation and Task-Oriented Generation},
-        author={Huang, Libo and Zeng, Yan and Yang, Chuanguang and An, Zhulin and Diao, Boyu and Xu, Yongjun},
-        booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
-        volume={38},
-        number={11},
-        pages={12591--12599},
-        year={2024}
-    }
-    <button class="copy-button" onclick="copyToClipboard()">copy</button></pre></code>
-    </li>
-    
-    
-    <li style="position: relative;">
-    <span style="line-height: 24px;">
-        Automatic Spike Sorting with Low-Rank and Sparse Representation
-    </span> &nbsp;
-    <a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
-        https://bura.brunel.ac.uk/bitstream/2438/27976/3/FullText.pdf
-    "></a>
-    <code><pre class="code-block">
-    @article{huang2023automatical,
-        title={Automatical Spike Sorting with Low-Rank and Sparse Representation},
-        author={Huang, Libo and Gan, Lu and Zeng, Yan and Ling, Bingo Wing-Kuen},
-        journal={IEEE Transactions on Biomedical Engineering},
-        year={2023},
-        publisher={IEEE}
-    }
-    <button class="copy-button" onclick="copyToClipboard()">copy</button></pre></code>
-    </li>
-    
-    
-    <li style="position: relative;">
-    <span style="line-height: 24px;">
-        A unified optimization model of feature extraction and clustering for spike sorting
-    </span>
-    &nbsp;<a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
-        /utils/huang2021unified.pdf
-    "></a>
-    &#32;<a target="_blank" style="font-size:20px; color: #527bbd;" class="fa fa-github" href="
-        https://github.com/libo-huang/Unified-SS
-    "></a>
-    <code><pre class="code-block">
-    @article{huang2021unified,
-        title={A unified optimization model of feature extraction and clustering for spike sorting},
-        author={Huang, Libo and Gan, Lu and Ling, Bingo Wing-Kuen},
-        journal={IEEE Transactions on Neural Systems and Rehabilitation Engineering},
-        volume={29},
-        pages={750--759},
-        year={2021},
-        publisher={IEEE}
-    }
-    <button class="copy-button" onclick="copyToClipboard()">copy</button></pre></code>
-    </li>
-    
-    
-    <li style="position: relative;">
-    <span style="line-height: 24px;">
-        Nonlinear Causal Discovery with Multiple High-Dimensional Observations
-    </span> &nbsp;
-    <a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
-        /utils/zeng2021nonlinear.pdf
-    "></a> &#32;
-    <a target="_blank" style="font-size:20px; color: #527bbd;" class="fa fa-github" href="
-        https://github.com/YanaZeng/HDDM
-    "></a>
-    <code><pre class="code-block">
-    @article{zeng2021nonlinear,
-        title={Nonlinear causal discovery for high-dimensional deterministic data},
-        author={Zeng, Yan and Hao, Zhifeng and Cai, Ruichu and Xie, Feng and Huang, Libo and Shimizu, Shohei},
-        journal={IEEE Transactions on Neural Networks and Learning Systems},
-        volume={34},
-        number={5},
-        pages={2234--2245},
-        year={2021},
-        publisher={IEEE}
-    }
-    <button class="copy-button" onclick="copyToClipboard()">copy</button></pre></code>
-    </li>
-    
-    
-    <li style="position: relative;">
-    <span style="line-height: 24px;">
-        Spike Sorting Based On Low-Rank And Sparse Representation
-    </span>
-    &nbsp;<a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
-        /utils/huang2020spike.pdf
-    "></a>
-    &#32;<a target="_blank" style="font-size:20px; color: #527bbd;" class="fa fa-file-powerpoint-o" href="
-        https://drive.google.com/file/d/1WpeTHbhCtw9ptyd2cZQ1rIysWMk4Btt-/view
-    "></a>
-    <code><pre class="code-block">
-    @inproceedings{huang2020spike,
-        title={Spike sorting based on low-rank and sparse representation},
-        author={Huang, Libo and Ling, Bingo Wing-Kuen and Zeng, Yan and Gan, Lu},
-        booktitle={2020 IEEE International Conference on Multimedia and Expo (ICME)},
-        pages={1--6},
-        year={2020},
-        organization={IEEE}
-    }
-    <button class="copy-button" onclick="copyToClipboard()">copy</button></pre></code>
-    </li>
-    
-    
-    <li style="position: relative;">
-    <span style="line-height: 24px;">
-        WMsorting: wavelet packets' decomposition and mutual information-based spike sorting method
-    </span> &nbsp;
-    <a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
-        /utils/huang2019wmsorting.pdf
-    "></a>
-    <code><pre class="code-block">
-    @article{huang2019wmsorting,
-        title={WMsorting: wavelet packets' decomposition and mutual information-based spike sorting method},
-        author={Huang, Libo and Ling, Bingo Wing-Kuen and Cai, Ruichu and Zeng, Yan and He, Jiong and Chen, Yao},
-        journal={IEEE Transactions on NanoBioscience},
-        volume={18},
-        number={3},
-        pages={283--295},
-        year={2019},
-        publisher={IEEE}
-    }
-    <button class="copy-button" onclick="copyToClipboard()">copy</button></pre></code>
-    </li>
-    
-    
-    <li style="position: relative;">
-    <span style="line-height: 24px;">
-        Hass: High accuracy spike sorting with wavelet package decomposition and mutual information
-    </span> &nbsp;
-    <a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
-        https://drive.google.com/file/d/1hJLbn0X_ujI_45MnEIlhoYnKikiqAd-V/view
-    "></a>
-    <code><pre class="code-block">
-    @inproceedings{chen2018hass,
-      title={Hass: High accuracy spike sorting with wavelet package decomposition and mutual information},
-      author={Chen, Yao and Huang, Libo and He, Jiong and Zhao, Kunyao and Cai, Ruichu and Hao, Zhifeng},
-      booktitle={2018 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)},
-      pages={831--838},
-      year={2018},
-      organization={IEEE}
-    }
-    <button class="copy-button" onclick="copyToClipboard()">copy</button></pre></code>
-    </li>
-    
-    
-    </ul>
-    
 
+
+<li style="position: relative;">
+<span style="line-height: 24px;">
+    A Survey on Causal Reinforcement Learning
+</span> &nbsp; 
+<a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
+    https://arxiv.org/pdf/2302.05209
+"></a>
+&#32;<a target="_blank" style="font-size:20px; color: #527bbd;" class="fa fa-github" href="
+    https://github.com/libo-huang/Awesome-Causal-Reinforcement-Learning
+"></a>
+<pre class="code-block">
+@article{zeng2023survey,
+    title={A survey on causal reinforcement learning},
+    author={Zeng, Yan and Cai, Ruichu and Sun, Fuchun and Huang, Libo and Hao, Zhifeng},
+    journal={IEEE Transactions on Neural Networks and Learning Systems},
+    year={2024}
+}
+<button class="copy-button" onclick="copyToClipboard()">copy</button></pre>
+</li>
+
+<li style="position: relative;">
+<span style="line-height: 24px;">
+    CLIP-KD: An Empirical Study of CLIP Model Distillation
+</span> &nbsp; 
+<a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
+    https://openaccess.thecvf.com/content/CVPR2024/papers/Yang_CLIP-KD_An_Empirical_Study_of_CLIP_Model_Distillation_CVPR_2024_paper.pdf
+"></a>
+&#32;<a target="_blank" style="font-size:20px; color: #527bbd;" class="fa fa-github" href="
+    https://github.com/winycg/CLIP-KD
+"></a>
+<pre class="code-block">
+@inproceedings{yang2024clip,
+    title={CLIP-KD: An Empirical Study of CLIP Model Distillation},
+    author={Yang, Chuanguang and An, Zhulin and Huang, Libo and Bi, Junyu and Yu, Xinqiang and Yang, Han and Diao, Boyu and Xu, Yongjun},
+    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+    pages={15952--15962},
+    year={2024}
+}
+<button class="copy-button" onclick="copyToClipboard()">copy</button></pre>
+</li>
+
+
+<li style="position: relative;">
+<span style="line-height: 24px;">
+    Online Policy Distillation with Decision-Attention
+</span> &nbsp; 
+<a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
+    https://arxiv.org/pdf/2406.05488
+"></a> &#32;
+<pre class="code-block">
+@inproceedings{yu2024online,
+    title={Online Policy Distillation with Decision-Attention},
+    author={Yu, Xinqiang and Yang, Chuanguang and Yu, Chengqing and Huang, Libo and An, Zhulin and Xu, Yongjun},
+    booktitle={WCCI},
+    year={2024}
+}
+<button class="copy-button" onclick="copyToClipboard()">copy</button></pre>
+</li>
+
+
+<li style="position: relative;">
+<span style="line-height: 24px;">
+    Relational Diffusion Distillation For Efficient Image Generation
+</span> &nbsp; 
+<a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
+    https://openreview.net/pdf?id=dFWi3YlurU
+"></a>
+<pre class="code-block">
+@inproceedings{feng2024relational,
+    title={Relational Diffusion Distillation For Efficient Image Generation},
+    author={Feng, Weilun and Yang, Chuanguang and An, Zhulin and Huang, Libo and Diao, Boyu and Wang, Fei and Xu, Yongjun},
+    booktitle={ACM Multimedia 2024}
+}
+<button class="copy-button" onclick="copyToClipboard()">copy</button></pre>
+</li>
+
+
+<li style="position: relative;">
+<span style="line-height: 24px;">
+    KFC: Knowledge Reconstruction and Feedback Consolidation Enable Efficient and Effective Continual Generative Learning
+</span> &nbsp;
+<a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
+    https://openreview.net/pdf?id=pVTcR8ig3R
+"></a> &#32;
+<a target="_blank" style="font-size:20px; color: #527bbd;" class="fa fa-github" href="
+    https://github.com/libo-huang/KFC
+"></a>
+<pre class="code-block">
+@inproceedings{huang2024kfc,
+    title={KFC: Knowledge Reconstruction and Feedback Consolidation Enable Efficient and Effective Continual Generative Learning},
+    author={Huang, Libo and An, Zhulin and Zeng, Yan and Xu, Yongjun and others},
+    booktitle={The Second Tiny Papers Track at ICLR 2024},
+    year={2024}
+}
+<button class="copy-button" onclick="copyToClipboard()">copy</button></pre>
+</li>
+
+
+<li style="position: relative;">
+<span style="line-height: 24px;">
+    e-Tag: Class-Incremental Learning via Hierarchical Embedding Distillation and Task-Oriented Generation
+</span>
+&nbsp;<a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
+    https://ojs.aaai.org/index.php/AAAI/article/view/29153
+"></a>
+&#32;<a target="_blank" style="font-size:20px; color: #527bbd;" class="fa fa-file-powerpoint-o" href="
+    https://underline.io/lecture/91937-etag-class-incremental-learning-via-embedding-distillation-and-task-oriented-generation
+"></a>
+&#32;<a target="_blank" style="font-size:20px; color: #527bbd;" class="fa fa-github" href="
+    https://github.com/libo-huang/eTag
+"></a>
+<pre class="code-block">
+@inproceedings{huang2024etag,
+    title={eTag: Class-Incremental Learning via Embedding Distillation and Task-Oriented Generation},
+    author={Huang, Libo and Zeng, Yan and Yang, Chuanguang and An, Zhulin and Diao, Boyu and Xu, Yongjun},
+    booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+    volume={38},
+    number={11},
+    pages={12591--12599},
+    year={2024}
+}
+<button class="copy-button" onclick="copyToClipboard()">copy</button></pre>
+</li>
+
+
+<li style="position: relative;">
+<span style="line-height: 24px;">
+    Automatic Spike Sorting with Low-Rank and Sparse Representation
+</span> &nbsp;
+<a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
+    https://bura.brunel.ac.uk/bitstream/2438/27976/3/FullText.pdf
+"></a>
+<pre class="code-block">
+@article{huang2023automatical,
+    title={Automatical Spike Sorting with Low-Rank and Sparse Representation},
+    author={Huang, Libo and Gan, Lu and Zeng, Yan and Ling, Bingo Wing-Kuen},
+    journal={IEEE Transactions on Biomedical Engineering},
+    year={2023},
+    publisher={IEEE}
+}
+<button class="copy-button" onclick="copyToClipboard()">copy</button></pre>
+</li>
+
+
+<li style="position: relative;">
+<span style="line-height: 24px;">
+    A unified optimization model of feature extraction and clustering for spike sorting
+</span>
+&nbsp;<a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
+    /utils/huang2021unified.pdf
+"></a>
+&#32;<a target="_blank" style="font-size:20px; color: #527bbd;" class="fa fa-github" href="
+    https://github.com/libo-huang/Unified-SS
+"></a>
+<pre class="code-block">
+@article{huang2021unified,
+    title={A unified optimization model of feature extraction and clustering for spike sorting},
+    author={Huang, Libo and Gan, Lu and Ling, Bingo Wing-Kuen},
+    journal={IEEE Transactions on Neural Systems and Rehabilitation Engineering},
+    volume={29},
+    pages={750--759},
+    year={2021},
+    publisher={IEEE}
+}
+<button class="copy-button" onclick="copyToClipboard()">copy</button></pre>
+</li>
+
+
+<li style="position: relative;">
+<span style="line-height: 24px;">
+    Nonlinear Causal Discovery with Multiple High-Dimensional Observations
+</span> &nbsp;
+<a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
+    /utils/zeng2021nonlinear.pdf
+"></a> &#32;
+<a target="_blank" style="font-size:20px; color: #527bbd;" class="fa fa-github" href="
+    https://github.com/YanaZeng/HDDM
+"></a>
+<pre class="code-block">
+@article{zeng2021nonlinear,
+    title={Nonlinear causal discovery for high-dimensional deterministic data},
+    author={Zeng, Yan and Hao, Zhifeng and Cai, Ruichu and Xie, Feng and Huang, Libo and Shimizu, Shohei},
+    journal={IEEE Transactions on Neural Networks and Learning Systems},
+    volume={34},
+    number={5},
+    pages={2234--2245},
+    year={2021},
+    publisher={IEEE}
+}
+<button class="copy-button" onclick="copyToClipboard()">copy</button></pre>
+</li>
+
+
+<li style="position: relative;">
+<span style="line-height: 24px;">
+    Spike Sorting Based On Low-Rank And Sparse Representation
+</span>
+&nbsp;<a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
+    /utils/huang2020spike.pdf
+"></a>
+&#32;<a target="_blank" style="font-size:20px; color: #527bbd;" class="fa fa-file-powerpoint-o" href="
+    https://drive.google.com/file/d/1WpeTHbhCtw9ptyd2cZQ1rIysWMk4Btt-/view
+"></a>
+<pre class="code-block">
+@inproceedings{huang2020spike,
+    title={Spike sorting based on low-rank and sparse representation},
+    author={Huang, Libo and Ling, Bingo Wing-Kuen and Zeng, Yan and Gan, Lu},
+    booktitle={2020 IEEE International Conference on Multimedia and Expo (ICME)},
+    pages={1--6},
+    year={2020},
+    organization={IEEE}
+}
+<button class="copy-button" onclick="copyToClipboard()">copy</button></pre>
+</li>
+
+
+<li style="position: relative;">
+<span style="line-height: 24px;">
+    WMsorting: wavelet packets' decomposition and mutual information-based spike sorting method
+</span> &nbsp;
+<a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
+    /utils/huang2019wmsorting.pdf
+"></a>
+<pre class="code-block">
+@article{huang2019wmsorting,
+    title={WMsorting: wavelet packets' decomposition and mutual information-based spike sorting method},
+    author={Huang, Libo and Ling, Bingo Wing-Kuen and Cai, Ruichu and Zeng, Yan and He, Jiong and Chen, Yao},
+    journal={IEEE Transactions on NanoBioscience},
+    volume={18},
+    number={3},
+    pages={283--295},
+    year={2019},
+    publisher={IEEE}
+}
+<button class="copy-button" onclick="copyToClipboard()">copy</button></pre>
+</li>
+
+
+<li style="position: relative;">
+<span style="line-height: 24px;">
+    Hass: High accuracy spike sorting with wavelet package decomposition and mutual information
+</span> &nbsp;
+<a target="_blank" style="font-size:20px; color:#527bbd;" class="fa fa-file-pdf-o" href="
+    https://drive.google.com/file/d/1hJLbn0X_ujI_45MnEIlhoYnKikiqAd-V/view
+"></a>
+<pre class="code-block">
+@inproceedings{chen2018hass,
+    title={Hass: High accuracy spike sorting with wavelet package decomposition and mutual information},
+    author={Chen, Yao and Huang, Libo and He, Jiong and Zhao, Kunyao and Cai, Ruichu and Hao, Zhifeng},
+    booktitle={2018 IEEE International Conference on Bioinformatics and Biomedicine (BIBM)},
+    pages={831--838},
+    year={2018},
+    organization={IEEE}
+}
+<button class="copy-button" onclick="copyToClipboard()">copy</button></pre>
+</li>
+
+
+</ul>
+</body>
+</html>
