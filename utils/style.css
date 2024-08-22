@@ -178,7 +178,7 @@ p {
 div#footer {
     font-size: small;
     /* border-top: 2px solid #c0c0c0;   /* 顶部线条*/
-    padding-top: 0.1em;   /* distance between contents in the footer and the footer block*/
+    padding-top: 0.2em;   /* distance between contents in the footer and the footer block*/
     margin-top: 2.0em;  /* distance between the footer balock and top balock*/
     color: #c0c0c0;
     display: flex;
@@ -186,8 +186,8 @@ div#footer {
     align-items: flex-start;  /* 顶部对齐 */
     flex-wrap: nowrap;  /* 不允许子元素换行 */
     background-color: #f5f5f5;
-    padding-left: 20px;  /* 控制内部文字到边界的距离 */
-    padding-right: 20px;
+    padding-left: 25px;  /* 控制内部文字到边界的距离 */
+    padding-right: 15px;
     width: calc(100% + 100px); /* 宽度加上body的左右内边距 */
     margin-left: -50px; /* 向左移动，抵消body的左内边距 */
     margin-right: -50px; /* 向右移动，抵消body的右内边距 */
@@ -200,17 +200,21 @@ div#footer a {
 }
 
 div#footer-text-block {
+    /* padding-top: 2px; */
     display: flex;
     flex-direction: column; /* 垂直排列 */
     justify-content: flex-start; /* 对齐到顶部 */
     width: 50%; /* 留出部分空间给 map */
+    /* background-color: yellowgreen; */
+    /* height: 75px; */
 }
 div#visitor-map {
-    height: 69px;
+    height: 70px;
     overflow: hidden;
     display: flex-start;
-    /* background-color: yellow; */
+    background-color: yellow;
     justify-content: flex-start; /* 对齐到顶部 */
+    /* ocean color: f5f5f5; land color: c0c0c0; past visitor: 224b8d; recent visitors: 002d72 */
 }
 
 ul, ol, dl {
@@ -418,12 +422,38 @@ table.imgtable, table.imgtable td {
     height: 45px;
     text-decoration: none; /* 去掉下划线 */
     font-size: 18px;
+    position: relative;
 }
 
 /* 鼠标悬停时的效果 */
 .navbar a:hover {
     background-color: #043baa;
     color: white;
+}
+
+
+a.record-button {
+    /* top: 0; */
+    color: white;
+    opacity: 0;
+    height: 15px;
+    background-color: #527bbd;
+    position: absolute; /* 绝对定位到导航栏的最右侧 */
+    right: 0px; /* 离右侧的距离 */
+    padding: 1px 5px;
+    text-align: center;
+    border-radius: 0px;
+    border-bottom-left-radius: 5px;
+    cursor: pointer; /* 鼠标悬停时显示手型 */
+    font-size: 12px;
+    text-decoration: none; /* 去掉下划线 */
+    /* transition: opacity 0.3s ease; */
+}
+/* 当鼠标悬停在导航栏上时，显示record按钮 */
+a.record-button:hover {
+    opacity: 1;
+    background-color: #527bbd;
+    text-decoration: none; /* 去掉下划线 */
 }
 
 /* 当前页面的链接样式 */
