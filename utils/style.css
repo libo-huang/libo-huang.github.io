@@ -538,7 +538,7 @@ a.record-button:hover {
     color: #002D72 !important; 
     border-radius: 100%; 
     text-align: center; 
-    font-size: 1.5rem;  /* 控制logo大小 */
+    font-size: 2rem;  /* 控制logo大小, 默认1.5 */  
     border: none;  /* 移除hover时的伪线 */
 }
 
