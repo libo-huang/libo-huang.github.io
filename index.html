@@ -15,6 +15,7 @@
 		var lastModified = document.lastModified;
 		document.getElementById("lastUpdate").innerText = "Last Update: " + lastModified;
 	}
+    // JavaScript for Copy Functionality
 	// JavaScript 用于复制功能
 	function copyToClipboard() {  
 		var codeBlock = document.querySelector("pre").innerText;
@@ -105,7 +106,7 @@
 
 <h2 id="about_me">
 About Me
-<a href="https://www.linkedin.com/in/lbhuang/" target="_blank" style="text-decoration: none; margin-left: 10px;">
+<a href="https://www.linkedin.com/in/lbhuang/" target="_blank" style="text-decoration: none; margin-left: 10px; border: none;">
 	<button class="h2-button">
 		<i class="fa fa-linkedin-square" style="font-size:15px; color:#002D72; margin-right: 5px;"></i>
 		linkedin
@@ -117,7 +118,7 @@ About Me
 	Libo Huang is an assistant researcher at the Chinese Academy of Sciences (<a href="https://english.cas.cn/" target="_blank">CAS</a>) in China. Before that, he worked as a postdoctoral researcher (2021.10 - 2024.8) and intern researcher (2021.7-2021.10) at CAS, collaborated with <a href="https://scholar.google.com/citations?user=l34KxTYAAAAJ&hl=en" target="_blank">Prof. Yongjun Xu</a> and <a href="https://scholar.google.com/citations?user=daBvGcMAAAAJ&hl=en" target="_blank">Prof. Zhulin An</a>, working on deep learning.
 </p>
 <p>
-	He got his Ph.D. degree (2018-2021) in machine learning under the supervision of  <a href="https://wkling.gdut.edu.cn/" target="_blank">Prof. Wing-Kuen Ling</a> at Guangdong University of Technology (<a href="https://english.gdut.edu.cn/" target="_blank">GDUT</a>), and <a href="https://www.brunel.ac.uk/people/lu-gan" target="_blank">Prof. Lu Gan</a> at Brunel University London (2019-2020). 
+	He got his Ph.D. degree in machine learning under the supervision of  <a href="https://wkling.gdut.edu.cn/" target="_blank">Prof. Wing-Kuen Ling</a> at Guangdong University of Technology (<a href="https://english.gdut.edu.cn/" target="_blank">GDUT</a>, 2018-2021), and <a href="https://www.brunel.ac.uk/people/lu-gan" target="_blank">Prof. Lu Gan</a> at <a href="https://www.brunel.ac.uk/" target="_blank">Brunel University London</a> (2019-2020). 
 </p>
 <p>
 	Before that, he pursued his M.Eng. degree (2016-2018) in Computer Science from GDUT, supervised by <a href="https://english.stu.edu.cn/info/1024/1192.htm" target="_blank">Prof. Zhifeng Hao</a>, <a href="https://ruichucai.github.io/" target="_blank">Prof. Ruichu Cai</a>, and <a href="https://scholar.google.com/citations?user=PGEc7LQAAAAJ&hl=en" target="_blank">Prof. Wen Wen</a>. He received a B.S. degree (2012-2016) in Mathematics from Jiangxi Normal Unversity (<a target="_blank" href="https://www.jxnu.edu.cn/18/list.htm">JXNU</a>).
@@ -126,7 +127,7 @@ About Me
 
 <h2 id="research_interests">
 Research Interests
-<a href="http://english.ict.cas.cn/rese/divi/net/202302/t20230209_326883.html" target="_blank" style="text-decoration: none; margin-left: 10px;">
+<a href="http://english.ict.cas.cn/rese/divi/net/202302/t20230209_326883.html" target="_blank" style="text-decoration: none; margin-left: 10px; border: none;">
 	<button class="h2-button">
 	<img src="/utils/ict-icon.jpeg" alt="" style="width: auto; height: 15px; margin-right: 5px;">
 	team website
@@ -143,7 +144,7 @@ My research interests include machine learning theories and deep learning applic
 	</li>
 </ul>
 <p>
-    <span style="color: red;">Recruiting: we have 1-2 master's or Ph.D. admission spots every year, along with 1-2 internship openings for master's or Ph.D. students</span> in machine learning, deep learning, and optimization. Both remote and onsite internship opportunities are available. If you're interested, please drop me an email attached with your curriculum vitae!
+    <span style="color: red;">Recruiting</span>: we have <span style="color: red;">1-2 master's or Ph.D. admission spots</span> every year, along with <span style="color: red;">1-2 internship openings for master's or Ph.D. students</span> in machine learning, deep learning, and optimization. Both remote and onsite internship opportunities are available. If you're interested, please drop me an email attached with your curriculum vitae!
 </p>
 
 
@@ -159,7 +160,7 @@ Publications
 <!-- 
 <a href="https://scholar.google.com/citations?user=ioraMaAAAAAJ&hl=en&oi=ao" target="_blank" style="text-decoration: none; margin-left: 10px;">
 	<button class="h2-button">
-		<i class="ai ai-google-scholar" style="font-size:15px; color:#002D72; margin-right: 5px;"></i>
+		<i class="ai ai-google-scholar" style="font-size:15px; color:#002D72; margin-right: 5px; border: none;"></i>
 		google scholar
 	</button>
 </a>
@@ -168,17 +169,21 @@ Publications
 
 <div id="ul-container1"></div>
 <script>
+    // Load the content of /index.html
     // 加载 /index.html 的内容
     fetch('/html/publications.html')
         .then(response => response.text())
         .then(data => {
+            // Create a temporary DOM element to parse HTML content
             // 创建一个临时的 DOM 元素来解析 HTML 内容
             const tempDiv = document.createElement('div');
             tempDiv.innerHTML = data;
 
+            // Find and copy the specified <ul id="module1"> module
             // 查找并复制指定的 <ul id="module1"> 模块
             const ulModule = tempDiv.querySelector('#module1');
             
+            // Insert the copied module into the ul-container div in /utils/index.html
             // 将复制的模块插入到 /utils/index.html 中的 ul-container div 中
             if (ulModule) {
                 document.getElementById('ul-container1').appendChild(ulModule.cloneNode(true));
@@ -203,17 +208,21 @@ Publications
 <h2 id="academic_services">Academic Services</h2>
 <div id="ul-container2"></div>
 <script>
+// Load the content of /index.html
 // 加载 /index.html 的内容
 fetch('/html/academic_services.html')
     .then(response => response.text())
     .then(data => {
+        // Create a temporary DOM element to parse HTML content
         // 创建一个临时的 DOM 元素来解析 HTML 内容
         const tempDiv = document.createElement('div');
         tempDiv.innerHTML = data;
 
+        // Find and copy the specified <ul id="module2"> module
         // 查找并复制指定的 <ul id="module2"> 模块
         const ulModule = tempDiv.querySelector('#module2');
         
+        // Insert the copied module into the ul-container2 div in /utils/index.html
         // 将复制的模块插入到 /utils/index.html 中的 ul-container2 div 中
         if (ulModule) {
             document.getElementById('ul-container2').appendChild(ulModule.cloneNode(true));
@@ -236,7 +245,7 @@ fetch('/html/academic_services.html')
 <div id="footer">
     <div id="footer-text-block">
         <p id="lastUpdate"></p>
-        <a target="_blank" href="https://github.com/libo-huang/libo-huang.github.io?tab=MIT-1-ov-file" >Privacy Policy</a>
+        <a target="_blank" href="https://github.com/libo-huang/libo-huang.github.io?tab=MIT-1-ov-file">Privacy Policy</a>
         <p>&copy; 2024 Libo Huang. All rights reserved.</p>
     </div>
 	<div id="visitor-map">
