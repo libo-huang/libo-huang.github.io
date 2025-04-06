@@ -36,21 +36,61 @@
 
 <body onload="updateLastModified()"> 
 
-<script>addBackToTop({
-	backgroundColor: '#fff',
-	innerHTML: 'Back to Top',
-	textColor: '#333'
+<script>
+	addBackToTop({
+		backgroundColor: '#fff',
+		innerHTML: 'Back to Top',
+		textColor: '#333'
 	})
+
+	// Ensure execution after DOM is fully loaded
+	// 确保DOM完全加载后再执行
+	document.addEventListener('DOMContentLoaded', function() {
+		const moreBtn = document.getElementById('more-news-btn');
+		
+		if (moreBtn) {
+			moreBtn.addEventListener('click', function() {
+			const hiddenItems = document.querySelectorAll('.more-news');
+			let allVisible = true;
+			
+			// Check if all hidden items are already displayed
+			// 检查是否所有隐藏项目都已显示
+			hiddenItems.forEach(item => {
+				if (item.style.display === 'none') {
+				allVisible = false;
+				}
+			});
+			
+			// Toggle display state
+			// 切换显示状态
+			hiddenItems.forEach(item => {
+				item.style.display = allVisible ? 'none' : 'list-item';
+			});
+			
+			// Update button text and icon
+			// 更新按钮文本和图标
+			if (allVisible) {
+				this.innerHTML = 'More News <i class="fas fa-chevron-down"></i>';
+				this.classList.remove('active');
+			} else {
+				this.innerHTML = 'Less News <i class="fas fa-chevron-up"></i>';
+				this.classList.add('active');
+			}
+			});
+		}
+	});
 </script>
-	
+
+
 
 	
 <!-- Navigation bar -->
 <div class="navbar">
 	<a href="#about_me" class="active">About Me</a>
 	<a href="#research_interests">Research Interests</a>
+	<a href="#news">News</a>
 	<a href="#publications">Publications</a>
-	<a href="#academic_services">Academic Services</a>
+	<a href="#academic_services">Others</a>
 </div>
 
 
@@ -104,6 +144,7 @@
 
 
 
+
 <h2 id="about_me">
 About Me
 <a href="https://www.linkedin.com/in/lbhuang/" target="_blank" style="text-decoration: none; margin-left: 10px; border: none;">
@@ -134,7 +175,7 @@ Research Interests
 	</button>
 </a>
 </h2>
-My research interests include machine learning theories and deep learning applications. I have done some work on the following topics:
+His research interests include machine learning theories and deep learning applications. He have done some work on the following topics:
 <ul>
 	<li>
         Machine learning, especially unsupervised clustering, feature extraction, and optimization.
@@ -144,13 +185,40 @@ My research interests include machine learning theories and deep learning applic
 	</li>
 </ul>
 <p>
-    <span style="color: red;">Recruiting</span>: we have <span style="color: red;">1-2 master's or Ph.D. admission spots</span> every year, along with <span style="color: red;">1-2 internship openings for master's or Ph.D. students</span> in machine learning, deep learning, and optimization. Both remote and onsite internship opportunities are available. If you're interested, please drop me an email attached with your curriculum vitae!
+    <span style="color: red;">Recruiting</span>: we have <span style="color: red;">1-2 Master or Ph.D. admission spots</span>, along with <span style="color: red;">1-2 Master or Ph.D. student internship openings</span> (exceptional undergraduates are also welcome) in machine learning, deep learning, and optimization every year. Both remote and onsite internship opportunities are available. If you're interested, please drop me an <a href="mailto:huanglibo@ict.ac.cn">Email</a> attached with your curriculum vitae!
 </p>
 
 
 
 
 
+<h2 id="news">News</h2>
+<div id="ul-container0"></div>
+<script>
+// Load the content of /news.html
+// 加载 /news.html 的内容
+fetch('/html/news.html')
+    .then(response => response.text())
+    .then(data => {
+        // Create a temporary DOM element to parse HTML content
+        // 创建一个临时的 DOM 元素来解析 HTML 内容
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = data;
+
+        // Find and copy the specified <ul id="module0"> module
+        // 查找并复制指定的 <ul id="module0"> 模块
+        const ulModule = tempDiv.querySelector('#module0');
+        
+        // Insert the copied module into the ul-container0 div in /utils/news.html
+        // 将复制的模块插入到 /utils/news.html 中的 ul-container0 div 中
+        if (ulModule) {
+            document.getElementById('ul-container0').appendChild(ulModule.cloneNode(true));
+        }
+    })
+    .catch(error => {
+        console.error('Error loading content:', error);
+    });
+</script>
 
 
 
@@ -169,8 +237,8 @@ Publications
 
 <div id="ul-container1"></div>
 <script>
-    // Load the content of /index.html
-    // 加载 /index.html 的内容
+    // Load the content of /publications.html
+    // 加载 /publications.html 的内容
     fetch('/html/publications.html')
         .then(response => response.text())
         .then(data => {
@@ -183,8 +251,8 @@ Publications
             // 查找并复制指定的 <ul id="module1"> 模块
             const ulModule = tempDiv.querySelector('#module1');
             
-            // Insert the copied module into the ul-container div in /utils/index.html
-            // 将复制的模块插入到 /utils/index.html 中的 ul-container div 中
+            // Insert the copied module into the ul-container div in /utils/publications.html
+            // 将复制的模块插入到 /utils/publications.html 中的 ul-container div 中
             if (ulModule) {
                 document.getElementById('ul-container1').appendChild(ulModule.cloneNode(true));
             }
@@ -205,12 +273,12 @@ Publications
 
 
 
-<h2 id="academic_services">Academic Services</h2>
+<h2 id="others">Others</h2>
 <div id="ul-container2"></div>
 <script>
-// Load the content of /index.html
-// 加载 /index.html 的内容
-fetch('/html/academic_services.html')
+// Load the content of /others.html
+// 加载 /others.html 的内容
+fetch('/html/others.html')
     .then(response => response.text())
     .then(data => {
         // Create a temporary DOM element to parse HTML content
@@ -222,8 +290,8 @@ fetch('/html/academic_services.html')
         // 查找并复制指定的 <ul id="module2"> 模块
         const ulModule = tempDiv.querySelector('#module2');
         
-        // Insert the copied module into the ul-container2 div in /utils/index.html
-        // 将复制的模块插入到 /utils/index.html 中的 ul-container2 div 中
+        // Insert the copied module into the ul-container2 div in /utils/others.html
+        // 将复制的模块插入到 /utils/others.html 中的 ul-container2 div 中
         if (ulModule) {
             document.getElementById('ul-container2').appendChild(ulModule.cloneNode(true));
         }

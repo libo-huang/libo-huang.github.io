@@ -172,7 +172,7 @@ div#footer {
     /* border-top: 2px solid #c0c0c0;   /* Top line. 顶部线条*/
     padding-top: 0.2em;   /* distance between contents in the footer and the footer block. 页脚内容与页脚块之间的距离*/
     margin-top: 2.0em;  /* distance between the footer balock and top balock. 页脚块与顶部块之间的距离*/
-    color: #c0c0c0;
+    color: #979797;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;  /* top alignment. 顶部对齐 */
@@ -567,3 +567,58 @@ a.record-button:hover {
     line-height: 30px;
     height: 30px;
 }
+
+
+.news-list {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+
+.news-list li {
+    position: relative;
+    /* 为日期预留固定空间 */
+    padding-left: 4em;
+    /* 将文本拉回对齐 */
+    text-indent: -4.5em;
+  }
+  
+  /* 确保隐藏的列表项也保持相同样式 */
+  .news-list li.more-news {
+    display: none;
+    padding-left: 4em;
+    text-indent: -4.5em;
+  }
+  
+  /* 响应式调整 */
+  @media (max-width: 768px) {
+    .news-list li {
+      padding-left: 5.5em;
+      text-indent: -3em;
+    }
+}
+
+.more-button {
+    background: none;
+    border: 1px solid #527bbd;
+    color: #527bbd;
+    padding: 5px 10px 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 0px 0px 0px 0px;
+}
+
+.more-button:hover {
+    background: #527bbd;
+    color: white;
+}
+
+.more-button i {
+    margin-left: 5px;
+    transition: transform 0.3s;
+}
+
+/* .more-button.active i {
+    transform: rotate(180deg);
+} */

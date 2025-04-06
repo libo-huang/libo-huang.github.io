@@ -40,19 +40,58 @@
 <body onload="updateLastModified()"> 
 
 
-<script>addBackToTop({
-    backgroundColor: '#fff',
-    innerHTML: 'Back to Top',
-    textColor: '#333'
+<script>
+    addBackToTop({
+        backgroundColor: '#fff',
+        innerHTML: 'Back to Top',
+        textColor: '#333'
     })
+
+	// Ensure execution after DOM is fully loaded
+	// 确保DOM完全加载后再执行
+	document.addEventListener('DOMContentLoaded', function() {
+		const moreBtn = document.getElementById('more-news-btn');
+		
+		if (moreBtn) {
+			moreBtn.addEventListener('click', function() {
+			const hiddenItems = document.querySelectorAll('.more-news');
+			let allVisible = true;
+			
+			// Check if all hidden items are already displayed
+			// 检查是否所有隐藏项目都已显示
+			hiddenItems.forEach(item => {
+				if (item.style.display === 'none') {
+				allVisible = false;
+				}
+			});
+			
+			// Toggle display state
+			// 切换显示状态
+			hiddenItems.forEach(item => {
+				item.style.display = allVisible ? 'none' : 'list-item';
+			});
+			
+			// Update button text and icon
+			// 更新按钮文本和图标
+			if (allVisible) {
+				this.innerHTML = 'More News <i class="fas fa-chevron-down"></i>';
+				this.classList.remove('active');
+			} else {
+				this.innerHTML = 'Less News <i class="fas fa-chevron-up"></i>';
+				this.classList.add('active');
+			}
+			});
+		}
+	});
 </script>
 
 <!-- Navigation bar -->
 <div class="navbar">
     <a href="#about_me" class="active">个人简介</a>
     <a href="#research_interests">研究兴趣</a>
+    <a href="#news">最新动态</a>
     <a href="#publications">主要论文</a>
-    <a href="#academic_services">学术服务</a>
+    <a href="#academic_services">其他</a>
 	<!-- <a href="/html/record.html" class="record-button" id="recordButton">Record</a> -->
 </div>
 
@@ -139,7 +178,7 @@
     </button>
 </a>
 </h2>
-我的研究兴趣包括机器学习理论和深度学习应用。我主要在以下主题上做过一些研究工作：
+他的研究兴趣包括机器学习理论和深度学习应用。他主要在以下主题上做过一些研究工作：
 <ul>
     <li>
         机器学习，尤其是无监督聚类、特征提取和最优化。
@@ -149,10 +188,38 @@
     </li>
 </ul>
 <p>
-    <span style="color: red;">招聘</span>: 我们每年有 <span style="color: red;">1-2 个硕士或博士招生名额</span>，以及 <span style="color: red;">1-2 个硕士或博士实习（或称联培、交换、客座、访问）生岗位</span>，研究方向包括机器学习、深度学习和优化。实习支持远程或者坐班形式。如果您感兴趣，请将您的简历发送到我的邮箱。
+    <span style="color: red;">招聘</span>: 我们每年有 <span style="color: red;">1-2 个硕士或博士招生名额</span>，以及 <span style="color: red;">1-2 个硕士或博士实习（或称联培、交换、客座、访问）生岗位</span>（也欢迎优秀的本科生申请），研究方向包括机器学习、深度学习和优化。实习支持远程或者坐班形式。如果您感兴趣，请将您的简历发送到我的邮箱。
 </p>
   
 
+
+<h2 id="news">最新动态</h2>
+<div id="ul-container0"></div>
+<script>
+// Load the content of /news.html
+// 加载 /news.html 的内容
+fetch('/html/news.html')
+    .then(response => response.text())
+    .then(data => {
+        // Create a temporary DOM element to parse HTML content
+        // 创建一个临时的 DOM 元素来解析 HTML 内容
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = data;
+
+        // Find and copy the specified <ul id="module0"> module
+        // 查找并复制指定的 <ul id="module0"> 模块
+        const ulModule = tempDiv.querySelector('#module0');
+        
+        // Insert the copied module into the ul-container0 div in /utils/news.html
+        // 将复制的模块插入到 /utils/news.html 中的 ul-container0 div 中
+        if (ulModule) {
+            document.getElementById('ul-container0').appendChild(ulModule.cloneNode(true));
+        }
+    })
+    .catch(error => {
+        console.error('Error loading content:', error);
+    });
+</script>
 
 
 
@@ -171,8 +238,8 @@
 
 <div id="ul-container1"></div>
 <script>
-    // Load the content of /index.html
-    // 加载 /index.html 的内容
+    // Load the content of /publications.html
+    // 加载 /publications.html 的内容
     fetch('/html/publications.html')
         .then(response => response.text())
         .then(data => {
@@ -185,8 +252,8 @@
             // 查找并复制指定的 <ul id="module1"> 模块
             const ulModule = tempDiv.querySelector('#module1');
             
-            // Insert the copied module into the ul-container div in /utils/index.html
-            // 将复制的模块插入到 /utils/index.html 中的 ul-container div 中
+            // Insert the copied module into the ul-container div in /utils/publications.html
+            // 将复制的模块插入到 /utils/publications.html 中的 ul-container div 中
             if (ulModule) {
                 document.getElementById('ul-container1').appendChild(ulModule.cloneNode(true));
             }
@@ -203,12 +270,12 @@
 
     
 
-<h2 id="academic_services">学术服务</h2>
+<h2 id="others">其他</h2>
 <div id="ul-container2"></div>
 <script>
-// Load the content of /index.html
-// 加载 /index.html 的内容
-fetch('/html/academic_services.html')
+// Load the content of /others.html
+// 加载 /others.html 的内容
+fetch('/html/others.html')
     .then(response => response.text())
     .then(data => {
         // Create a temporary DOM element to parse HTML content
@@ -220,8 +287,8 @@ fetch('/html/academic_services.html')
         // 查找并复制指定的 <ul id="module2"> 模块
         const ulModule = tempDiv.querySelector('#module2');
         
-        // Insert the copied module into the ul-container2 div in /utils/index.html
-        // 将复制的模块插入到 /utils/index.html 中的 ul-container2 div 中
+        // Insert the copied module into the ul-container2 div in /utils/others.html
+        // 将复制的模块插入到 /utils/others.html 中的 ul-container2 div 中
         if (ulModule) {
             document.getElementById('ul-container2').appendChild(ulModule.cloneNode(true));
         }
