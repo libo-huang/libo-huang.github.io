@@ -591,12 +591,12 @@ a.record-button:hover {
   }
   
   /* 响应式调整 */
-  @media (max-width: 768px) {
+  /* @media (max-width: 768px) {
     .news-list li {
       padding-left: 5.5em;
       text-indent: -3em;
     }
-}
+} */
 
 .more-button {
     background: none;
