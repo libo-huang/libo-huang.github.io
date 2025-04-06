@@ -577,10 +577,8 @@ a.record-button:hover {
 
 .news-list li {
     position: relative;
-    /* 为日期预留固定空间 */
-    padding-left: 4em;
-    /* 将文本拉回对齐 */
-    text-indent: -4.5em;
+    padding-left: 4em;  /* 为日期预留固定空间 */
+    text-indent: -4.5em;   /* 将文本拉回对齐 */
   }
   
   /* 确保隐藏的列表项也保持相同样式 */
