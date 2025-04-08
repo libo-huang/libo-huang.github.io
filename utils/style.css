@@ -539,15 +539,15 @@ a.record-button:hover {
     color: #002D72 !important; 
     border-radius: 100%; 
     text-align: center; 
-    font-size: 2rem;  /* Control the logo size, default size is 1.5. 控制logo大小, 默认1.5 */  
+    font-size: 1.5rem;  /* Control the logo size, default size is 1.5. 控制logo大小, 默认1.5 */  
     border: none;  /* Remove pseudo-underline on hover. 移除hover时的伪线 */
 }
 
 .social-icons a:last-child { 
-    margin-right: calc(20%);
+    margin-right: calc(25%);
 }
 .social-icons a:first-child { 
-    margin-left: calc(20%);
+    margin-left: calc(26%);
 }
 
 .social-icons a:active, 
