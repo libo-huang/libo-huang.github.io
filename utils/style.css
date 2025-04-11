@@ -489,7 +489,7 @@ a.record-button:hover {
     right: 4px;
     padding: 4px 8px;
     font-size: 12px;
-    background-color: gray;
+    background-color: #527bbd;
     color: white;
     border: none;
     border-radius: 4px;
@@ -587,14 +587,6 @@ a.record-button:hover {
     padding-left: 4em;
     text-indent: -4.5em;
   }
-  
-  /* 响应式调整 */
-  /* @media (max-width: 768px) {
-    .news-list li {
-      padding-left: 5.5em;
-      text-indent: -3em;
-    }
-} */
 
 .more-button {
     background: none;
@@ -616,7 +608,3 @@ a.record-button:hover {
     margin-left: 5px;
     transition: transform 0.3s;
 }
-
-/* .more-button.active i {
-    transform: rotate(180deg);
-} */
