@@ -529,7 +529,7 @@ a.record-button:hover {
 
 .social-icons a {
     background-color: transparent;
-    margin: 8px 0px 0px 0px;
+    margin: 3px 0px 0px 0px;
     display: inline-block; 
     height: 2rem; /*Use height and width to control the hyperlink area of the icon. height和width控制icon的超链接范围*/
     width: 2rem;  
@@ -607,4 +607,46 @@ a.record-button:hover {
 .more-button i {
     margin-left: 5px;
     transition: transform 0.3s;
+}
+
+
+.wechat-hover {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0px 0px 0px 0px;
+}
+
+.wechat-hover .qrcode {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 15px;
+    width: 150px;
+    height: 150px;
+    background: white;
+    /* border: 1px solid #527bbd; */
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 8px;
+    z-index: 100;
+    transition: all 0.3s ease;
+}
+
+.wechat-hover:hover .qrcode {
+    visibility: visible;
+    opacity: 1;
+}
+
+.qrcode img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.wechat-text {
+    margin-left: 8px;
 }
