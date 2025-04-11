@@ -628,7 +628,6 @@ a.record-button:hover {
     width: 150px;
     height: 150px;
     background: white;
-    /* border: 1px solid #527bbd; */
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     padding: 8px;
