@@ -17,16 +17,50 @@
         var lastModified = document.lastModified;
         document.getElementById("lastUpdate").innerText = "最近更新：" + lastModified;
     }
+    
     // JavaScript for Copy Functionality
     // JavaScript 用于复制功能
-    function copyToClipboard() {  
-        var codeBlock = document.querySelector("pre").innerText;
-        navigator.clipboard.writeText(codeBlock).then(function() {
-            alert("引用已复制！");
-        }, function() {
-            alert("复制失败，请手动复制！");
-        });
-    }
+	function copyToClipboard(button) {  //  insert button argument. 传入button参数.
+        // Get a deep copy of the pre element (with all children)
+        // 获取pre元素的深拷贝（包含所有子节点）
+        const preElement = document.querySelector("pre").cloneNode(true);
+        // Remove button from copy
+        // 从拷贝中移除按钮
+        const buttonInClone = preElement.querySelector(".copy-button");
+        if (buttonInClone) {
+            buttonInClone.remove();
+        }
+        // Get plain text content
+        // 获取纯净的文本内容
+        const codeBlock = preElement.innerText;
+        
+		navigator.clipboard.writeText(codeBlock).then(function() {
+			// change button text and style on success
+			// 成功时改变按钮文字和样式
+			button.textContent = "已复制";
+			button.style.backgroundColor = "#4CAF50"; // optional: turns green on success. 可选：成功时变绿色.
+			
+			// 3 seconds to recovery
+			// 3秒后恢复原状
+			setTimeout(function() {
+				button.textContent = "copy";
+				button.style.backgroundColor = "#527bbd";
+			}, 2000);
+			
+		}, function() {
+			//  change button text and style on failure
+			// 失败时改变按钮文字和样式
+			button.textContent = "错误";
+			button.style.backgroundColor = "#f44336"; // optional: turns red on failure. 可选：失败时变红色
+			
+			// 3 seconds to recovery
+			// 3秒后恢复原状
+			setTimeout(function() {
+				button.textContent = "copy";
+				button.style.backgroundColor = "#527bbd";
+			}, 2000);
+		});
+	}
 </script>
 <script src="https://kit.fontawesome.com/b59a433526.js" crossorigin="anonymous"></script>  <!--icon of "fa-brands fa-google-scholar" -->
 <script src="/utils/vanilla-back-to-top.min.js"></script>

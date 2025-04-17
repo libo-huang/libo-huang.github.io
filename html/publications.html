@@ -1,12 +1,47 @@
 <html>
 <head>
 <script>
-	function copyToClipboard() {  // copy function, same as in the index.html
-		var codeBlock = document.querySelector("pre").innerText;
+    // JavaScript for Copy Functionality
+    // JavaScript 用于复制功能
+	function copyToClipboard(button) {  //  insert button argument. 传入button参数.
+        // Get a deep copy of the pre element (with all children)
+        // 获取pre元素的深拷贝（包含所有子节点）
+        const preElement = document.querySelector("pre").cloneNode(true);
+        // Remove button from copy
+        // 从拷贝中移除按钮
+        const buttonInClone = preElement.querySelector(".copy-button");
+        if (buttonInClone) {
+            buttonInClone.remove();
+        }
+        // Get plain text content
+        // 获取纯净的文本内容
+        const codeBlock = preElement.innerText;
+        
 		navigator.clipboard.writeText(codeBlock).then(function() {
-			alert("Citation copied!");
+			// change button text and style on success
+			// 成功时改变按钮文字和样式
+			button.textContent = "已复制";
+			button.style.backgroundColor = "#4CAF50"; // optional: turns green on success. 可选：成功时变绿色.
+			
+			// 3 seconds to recovery
+			// 3秒后恢复原状
+			setTimeout(function() {
+				button.textContent = "copy";
+				button.style.backgroundColor = "#527bbd";
+			}, 2000);
+			
 		}, function() {
-			alert("Copy failed, please copy manually!");
+			//  change button text and style on failure
+			// 失败时改变按钮文字和样式
+			button.textContent = "错误";
+			button.style.backgroundColor = "#f44336"; // optional: turns red on failure. 可选：失败时变红色
+			
+			// 3 seconds to recovery
+			// 3秒后恢复原状
+			setTimeout(function() {
+				button.textContent = "copy";
+				button.style.backgroundColor = "#527bbd";
+			}, 2000);
 		});
 	}
 </script>
@@ -39,7 +74,7 @@ A Survey on Causal Reinforcement Learning
     year={2024},
     publisher={IEEE}
 }
-<button class="copy-button" onclick="copyToClipboard()">copy</button></pre>
+<button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
 
 
 Continual Learning in the Frequency Domain
@@ -58,7 +93,7 @@ Continual Learning in the Frequency Domain
     booktitle={Annual Conference on Neural Information Processing Systems (NeurIPS)},
     year={2024}
 }
-<button class="copy-button" onclick="copyToClipboard()">copy</button></pre>
+<button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
 
 
 
@@ -79,7 +114,7 @@ CLIP-KD: An Empirical Study of CLIP Model Distillation
     pages={15952--15962},
     year={2024}
 }
-<button class="copy-button" onclick="copyToClipboard()">copy</button></pre>
+<button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
 
 
 
@@ -97,7 +132,7 @@ Online Policy Distillation with Decision-Attention
     booktitle={International Joint Conference on Neural Networks (IJCNN)},
     year={2024}
 }
-<button class="copy-button" onclick="copyToClipboard()">copy</button></pre>
+<button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
 
 
 
@@ -116,7 +151,7 @@ Relational Diffusion Distillation For Efficient Image Generation
     booktitle={ACM Multimedia (ACM MM)},
     year={2024}
 }
-<button class="copy-button" onclick="copyToClipboard()">copy</button></pre>
+<button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
 
 
 
@@ -138,7 +173,7 @@ KFC: Knowledge Reconstruction and Feedback Consolidation Enable Efficient and Ef
     booktitle={International Conference on Learning Representations (ICLR) Tiny Papers Track},
     year={2024}
 }
-<button class="copy-button" onclick="copyToClipboard()">copy</button></pre>
+<button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
 
 
 
@@ -167,7 +202,7 @@ e-Tag: Class-Incremental Learning via Hierarchical Embedding Distillation and Ta
     pages={12591--12599},
     year={2024}
 }
-<button class="copy-button" onclick="copyToClipboard()">copy</button></pre>
+<button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
 
 
 
@@ -187,7 +222,7 @@ Automatic Spike Sorting with Low-Rank and Sparse Representation
     year={2023},
     publisher={IEEE}
 }
-<button class="copy-button" onclick="copyToClipboard()">copy</button></pre>
+<button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
 
 
 
@@ -213,7 +248,7 @@ A Unified Optimization Model of Feature Extraction and Clustering for Spike Sort
     year={2021},
     publisher={IEEE}
 }
-<button class="copy-button" onclick="copyToClipboard()">copy</button></pre>
+<button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
 
 
 
@@ -239,7 +274,7 @@ Nonlinear Causal Discovery with Multiple High-Dimensional Observations
     year={2021},
     publisher={IEEE}
 }
-<button class="copy-button" onclick="copyToClipboard()">copy</button></pre>
+<button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
 
 
 
@@ -265,7 +300,7 @@ Spike Sorting Based On Low-Rank And Sparse Representation
     year={2020},
     organization={IEEE}
 }
-<button class="copy-button" onclick="copyToClipboard()">copy</button></pre>
+<button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
 
 
 
@@ -290,7 +325,7 @@ WMsorting: Wavelet Packets' Decomposition and Mutual Information-based Spike Sor
     year={2019},
     publisher={IEEE}
 }
-<button class="copy-button" onclick="copyToClipboard()">copy</button></pre>
+<button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
 
 
 
@@ -313,6 +348,6 @@ HASS: High Accuracy Spike Sorting with Wavelet Package Decomposition and Mutual 
     year={2018},
     organization={IEEE}
 }
-<button class="copy-button" onclick="copyToClipboard()">copy</button></pre>
+<button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
 
 </div>
