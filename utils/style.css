@@ -583,11 +583,11 @@ a.record-button:hover {
   }
   
   /* 确保隐藏的列表项也保持相同样式 */
-  .news-list li.more-news {
+.news-list li.more-news {
     display: none;
     padding-left: 4em;
     text-indent: -4.5em;
-  }
+}
 
 .more-button {
     background: none;
