@@ -75,7 +75,7 @@ a:hover {
     border-bottom: 1px gray solid;
 }
 #layout-menu a:link, #layout-menu a:visited, #layout-menu a:hover {
-    color: #527bbd;
+    color: #0156a3;
     text-decoration: none;
 }
 #layout-menu a:hover {
@@ -127,7 +127,7 @@ h4{
 }
 
 h1, h2, h3 {
-    color: #527bbd;
+    color: #0156a3;
     margin-top: 0.7em;
     margin-bottom: 0.5em;
     padding-bottom: 0.2em;
@@ -396,7 +396,7 @@ table.imgtable, table.imgtable td {
     margin-left: -50px;
     padding-right: 100px;
     max-width: 960px;
-    background-color: #527bbd;
+    background-color: #0156a3;
     overflow: hidden; /* clear floats. 清除浮动 */
     position: fixed; /* fix to the top of the page. 固定在页面顶部 */
     top: 0;
@@ -422,7 +422,7 @@ table.imgtable, table.imgtable td {
 /* effect on mouse hover */
 /* 鼠标悬停时的效果 */
 .navbar a:hover {
-    background-color: #043baa;
+    background-color: #002D72;
     color: white;
 }
 
@@ -432,7 +432,7 @@ a.record-button {
     color: white;
     opacity: 0;
     height: 15px;
-    background-color: #527bbd;
+    background-color: #0156a3;
     position: absolute; /* absolutely position to the far right of the navigation bar. 绝对定位到导航栏的最右侧 */
     right: 0px; /* distance from the right side. 离右侧的距离 */
     padding: 1px 5px;
@@ -449,14 +449,14 @@ a.record-button {
 /* 当鼠标悬停在导航栏上时，显示record按钮 */
 a.record-button:hover {
     opacity: 1;
-    background-color: #527bbd;
+    background-color: #0156a3;
     text-decoration: none; /* remove the underline. 去掉下划线 */
 }
 
 /* the link style for the current page */
 /* 当前页面的链接样式 */
 /* .navbar a.active {
-    background-color: #527bbd;
+    background-color: #0156a3;
     color: white;
 } */
 
@@ -489,7 +489,7 @@ a.record-button:hover {
     right: 4px;
     padding: 4px 8px;
     font-size: 12px;
-    background-color: #527bbd;
+    background-color: #0156a3;
     color: white;
     border: none;
     border-radius: 4px;
@@ -537,7 +537,7 @@ a.record-button:hover {
     display: flex;  /*Use display, justify-content, and align-items to center the icon within the link area. display,justify-content,align-items控制链接范围内icon居中*/
     justify-content: center;
     align-items: center;
-    color: #002D72 !important; 
+    color: #0156a3 !important; 
     border-radius: 100%; 
     text-align: center; 
     font-size: 1.5rem;  /* Control the logo size, default size is 1.5. 控制logo大小, 默认1.5 */  
@@ -591,8 +591,8 @@ a.record-button:hover {
 
 .more-button {
     background: none;
-    border: 1px solid #527bbd;
-    color: #527bbd;
+    border: 1px solid #0156a3;
+    color: #0156a3;
     padding: 5px 10px 5px 10px;
     border-radius: 4px;
     cursor: pointer;
@@ -601,7 +601,7 @@ a.record-button:hover {
 }
 
 .more-button:hover {
-    background: #527bbd;
+    background: #0156a3;
     color: white;
 }
 
