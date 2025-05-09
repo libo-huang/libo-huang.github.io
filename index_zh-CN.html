@@ -16,7 +16,7 @@
     function updateLastModified() {
         var lastModified = document.lastModified;
         document.getElementById("lastUpdate").innerText = "最近更新：" + lastModified;
-    }
+    };
     
     // JavaScript for Copy Functionality
     // JavaScript 用于复制功能
@@ -60,7 +60,61 @@
 				button.style.backgroundColor = "#0156a3";
 			}, 2000);
 		});
-	}
+	};
+	
+	// Smooth Scroll Function
+    // 平滑滚动函数
+    document.addEventListener('DOMContentLoaded', function() {
+		// Add click event for navigation links
+        // 为导航栏链接添加点击事件
+        document.querySelectorAll('.navbar a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+					// Calculate navbar height (45px) with additional offset (20px)
+                    // 计算导航栏高度(45px)并添加额外偏移(20px)
+                    const navbarHeight = 45;
+                    const extraOffset = 20;
+                    const targetPosition = targetElement.offsetTop - navbarHeight - extraOffset;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                    // Update navbar active state
+                    // 更新导航栏活动状态
+                    document.querySelectorAll('.navbar a').forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                }
+            });
+        });
+        // Update active nav item during scrolling
+        // 滚动时更新活动导航项
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('h2[id]');
+            let currentSection = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (window.scrollY >= sectionTop) {
+                    currentSection = '#' + section.getAttribute('id');
+                }
+            });
+            
+            document.querySelectorAll('.navbar a').forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === currentSection) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    });
 </script>
 <script src="https://kit.fontawesome.com/b59a433526.js" crossorigin="anonymous"></script>  <!--icon of "fa-brands fa-google-scholar" -->
 <script src="/utils/vanilla-back-to-top.min.js"></script>
