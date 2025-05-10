@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta name="description" content="Libo Huang" charset="UTF-8">
-<meta name="keywords" content="libo huang, huanglibo, libohuang, huanglibo, 黄礼泊">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/utils/style.css" type="text/css">
-<link rel="shortcut icon" href="/utils/ict-icon.jpeg">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin=anonymous>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="/utils/style.css?v={{ site.time | date: '%s' }}">
-<script src="https://kit.fontawesome.com/b59a433526.js" crossorigin="anonymous"></script>  <!--icon of "fa-brands fa-google-scholar" -->
-<script src="/utils/vanilla-back-to-top.min.js"></script>
+    <meta name="description" content="Libo Huang" charset="UTF-8">
+    <meta name="keywords" content="libo huang, huanglibo, libohuang, huanglibo, 黄礼泊">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/utils/style.css" type="text/css">
+    <link rel="shortcut icon" href="/utils/ict-icon.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin=anonymous>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/utils/style.css?v={{ site.time | date: '%s' }}">
+    <script src="https://kit.fontawesome.com/b59a433526.js" crossorigin="anonymous"></script>  <!--icon of "fa-brands fa-google-scholar" -->
+    <script src="/utils/vanilla-back-to-top.min.js"></script>
+    <script src="https://kit.fontawesome.com/b59a433526.js" crossorigin="anonymous"></script>  <!--icon of "fa-brands fa-google-scholar" -->
+    <script src="/utils/vanilla-back-to-top.min.js"></script>
+    <title>黄礼泊@中科院计算所</title>
+</head>
+   
 <script>
     function updateLastModified() {
         var lastModified = document.lastModified;
@@ -116,65 +121,10 @@
         });
     });
 </script>
-<script src="https://kit.fontawesome.com/b59a433526.js" crossorigin="anonymous"></script>  <!--icon of "fa-brands fa-google-scholar" -->
-<script src="/utils/vanilla-back-to-top.min.js"></script>
-
-
-<title>黄礼泊@中科院计算所</title>
-
-</head>
-   
-
 
 
 
 <body onload="updateLastModified()"> 
-
-
-<script>
-    addBackToTop({
-        backgroundColor: '#fff',
-        innerHTML: 'Back to Top',
-        textColor: '#333'
-    })
-
-	// Ensure execution after DOM is fully loaded
-	// 确保DOM完全加载后再执行
-	document.addEventListener('DOMContentLoaded', function() {
-		const moreBtn = document.getElementById('more-news-btn');
-		
-		if (moreBtn) {
-			moreBtn.addEventListener('click', function() {
-			const hiddenItems = document.querySelectorAll('.more-news');
-			let allVisible = true;
-			
-			// Check if all hidden items are already displayed
-			// 检查是否所有隐藏项目都已显示
-			hiddenItems.forEach(item => {
-				if (item.style.display === 'none') {
-				allVisible = false;
-				}
-			});
-			
-			// Toggle display state
-			// 切换显示状态
-			hiddenItems.forEach(item => {
-				item.style.display = allVisible ? 'none' : 'list-item';
-			});
-			
-			// Update button text and icon
-			// 更新按钮文本和图标
-			if (allVisible) {
-				this.innerHTML = 'More News <i class="fas fa-chevron-down"></i>';
-				this.classList.remove('active');
-			} else {
-				this.innerHTML = 'Less News <i class="fas fa-chevron-up"></i>';
-				this.classList.add('active');
-			}
-			});
-		}
-	});
-</script>
 
 <!-- Navigation bar -->
 <div class="navbar">
@@ -415,6 +365,52 @@ fetch('/html/others.html')
         });
     </script>
 </div>
+
+
+<script>
+    addBackToTop({
+        backgroundColor: '#fff',
+        innerHTML: 'Back to Top',
+        textColor: '#333'
+    })
+
+	// Ensure execution after DOM is fully loaded
+	// 确保DOM完全加载后再执行
+	document.addEventListener('DOMContentLoaded', function() {
+		const moreBtn = document.getElementById('more-news-btn');
+		
+		if (moreBtn) {
+			moreBtn.addEventListener('click', function() {
+			const hiddenItems = document.querySelectorAll('.more-news');
+			let allVisible = true;
+			
+			// Check if all hidden items are already displayed
+			// 检查是否所有隐藏项目都已显示
+			hiddenItems.forEach(item => {
+				if (item.style.display === 'none') {
+				allVisible = false;
+				}
+			});
+			
+			// Toggle display state
+			// 切换显示状态
+			hiddenItems.forEach(item => {
+				item.style.display = allVisible ? 'none' : 'list-item';
+			});
+			
+			// Update button text and icon
+			// 更新按钮文本和图标
+			if (allVisible) {
+				this.innerHTML = 'More News <i class="fas fa-chevron-down"></i>';
+				this.classList.remove('active');
+			} else {
+				this.innerHTML = 'Less News <i class="fas fa-chevron-up"></i>';
+				this.classList.add('active');
+			}
+			});
+		}
+	});
+</script>
 
 </body>
 </html>
