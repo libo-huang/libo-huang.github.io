@@ -23,7 +23,7 @@ body {
     max-width: 960px;
 }
 
-#layout-menu {
+/* #layout-menu {
     background: #f6f6f6;
     border: 1px solid #dddddd;
     padding-top: 0.5em;
@@ -34,31 +34,11 @@ body {
     white-space: nowrap;
     text-align: left;
     vertical-align: top;
-}
+} */
 
-#layout-menu td {
-    background: #f4f4f4;
-    vertical-align: top;
-}
 
-#layout-content {
-    padding-top: 0.0em;
-    padding-left: 1.0em;
-    padding-right: 1.0em;
-    border: none;
-    background: white;
-    text-align: left;
-    vertical-align: top;
-}
 
-#layout-menu a {
-    line-height: 1.5em;
-    margin-left: 0.5em;
-}
 
-tt {
-    background: #ffffdd;
-}
 
 a, a > tt {
     color: #224b8d;
@@ -67,6 +47,7 @@ a, a > tt {
 
 a:hover {
     border-bottom: 1px gray dotted;
+    
 }
 
 #layout-menu a.current:link, #layout-menu a.current:visited {
@@ -96,6 +77,15 @@ div.menu-item {
 
 div#toptitle {
     margin-bottom: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.language-switch {
+    margin-left: auto; /* 将语言切换推到最右边 */
+}
+div#toptitle h1 {
+    margin: 0; /* 移除h1的默认外边距 */
 }
 
 /* Reduce space if we begin the page with a title. */
@@ -335,7 +325,7 @@ span.comment, span.comment > *, span.string, span.string > * {
 
 #fwtitle #toptitle {
     padding-left: 0.5em;
-    margin-bottom: 0.5em;
+    /* margin-bottom: 0.5em; */
 }
 
 #layout-content h1:first-child, #layout-content h2:first-child, #layout-content h3:first-child {
@@ -346,7 +336,7 @@ div#toptitle h1, #layout-content div#toptitle h1 {
     margin-bottom: 0.0em;
     padding-bottom: 0.1em;
     padding-top: 0;
-    margin-top: 0.5em;
+    /* margin-top: 0.5em; */
     border-bottom: none;
 }
 
@@ -526,7 +516,7 @@ a.record-button:hover {
     background-color: transparent;
     margin: 3px 0px 0px 0px;
     display: inline-block; 
-    height: 2rem; /*Use height and width to control the hyperlink area of the icon. height和width控制icon的超链接范围*/
+    height: 2rem; /* Use height and width to control the hyperlink area of the icon. height和width控制icon的超链接范围 */
     width: 2rem;  
     display: flex;  /*Use display, justify-content, and align-items to center the icon within the link area. display,justify-content,align-items控制链接范围内icon居中*/
     justify-content: center;
@@ -542,13 +532,13 @@ a.record-button:hover {
     margin-right: calc(25%);
 }
 .social-icons a:first-child { 
-    margin-left: calc(26%);
+    margin-left: calc(25%);
 }
 
 .social-icons a:active, 
 .social-icons a:focus,
 .social-icons a:hover { 
-    background-color: white; 
+    background-color: #eeeeee; 
     color: black; 
     transform: scale(1.2); 
 }
@@ -643,4 +633,49 @@ a.record-button:hover {
 
 .wechat-text {
     margin-left: 8px;
+}
+
+
+/* 新增样式 */
+.main-container {
+    display: flex;
+    /* margin-top: 45px;  */
+}
+
+.sidebar {
+    width: 340px;
+    margin-left: -435px;
+    margin-top: 00px;
+    padding: 20px;
+    position: fixed;
+    height: calc(100vh - 45px);
+    overflow-y: auto;
+    background-color: #eeeeee /*eeeeee*/
+}
+
+/* .content {
+    margin-left: 300px;
+    flex: 1;
+    padding: 20px;
+} */
+
+.contact-line {
+    margin-bottom: 0.5em;  /* 行间距 */
+    overflow: hidden;      /* 清除浮动 */
+}
+
+.icon-fixed {
+    float: left;           /* 图标左浮动 */
+    vertical-align: top;   /* 顶部对齐 */
+    margin-right: 0.5em;   /* 图标与文字间距 */
+    color: #0156a3;
+    width: 1.25em;         /* 固定图标宽度 */
+    text-align: center;    /* 图标居中 */
+}
+
+.contact-text {
+    display: block;
+    margin-left: 1.75em;   /* 等于图标宽度+间距 */
+    text-indent: 0;        /* 取消首行缩进 */
+    overflow: hidden;      /* 处理长文本 */
 }
