@@ -111,7 +111,7 @@
                 &copy; 2024 Libo Huang
         </div>
         <div id="visitor-map">
-            <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=979797&w=150&t=n&d=AyN9AOF-wHXWzcFivyTqlXYJqGGlXEO0UdmGyQcaQk4&co=eeeeee&cmo=224b8d&cmn=0156a3'></script>
+            <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=b3b3b3&w=150&t=n&d=AyN9AOF-wHXWzcFivyTqlXYJqGGlXEO0UdmGyQcaQk4&co=eeeeee&cmo=224b8d&cmn=0156a3'></script>
         </div>
         <script>
             document.getElementById('visitor-map').addEventListener('click', function(event) {
@@ -325,9 +325,14 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function updateLastModified() {
-    var lastModified = document.lastModified;
-    document.getElementById("lastUpdate").innerText = "Last Update: " + lastModified;
-};
+    var lastModified = new Date(document.lastModified);
+    var month = (lastModified.getMonth() + 1).toString().padStart(2, '0'); // 月份补
+    var day = lastModified.getDate().toString().padStart(2, '0');
+    var year = lastModified.getFullYear();
+    var formattedDate = month + '/' + day + '/' + year;
+    
+    document.getElementById("lastUpdate").innerText = "Last Update: " + formattedDate;
+}
 
 // JavaScript for Copy Functionality
 // JavaScript 用于复制功能

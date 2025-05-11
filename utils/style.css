@@ -316,7 +316,7 @@ img {
     margin-top: auto;  /* distance between the footer balock and top balock. 页脚块与顶部块之间的距离*/
     width: 100%;
     max-width: none; /* 移除最大宽度限制 */
-    margin-bottom: 30px; 
+    margin-bottom: 25px; 
     height: 70px;
     margin-left: -5px;
 }
@@ -330,14 +330,16 @@ img {
     display: flex;
     flex-direction: column; /* vertical alignment. 垂直排列 */
     justify-content: flex-start; /* align to the top. 对齐到顶部 */
-    width: 70%; /* leave space for the map. 留出部分空间给 map *//
+    width: 60%;
+    padding-left: -35px;
 }
 #visitor-map {
-    width: 60%; 
+    width: 70%; 
     height: 80px;
-    margin-right: -25px;
+    margin-right: -35px;
     overflow: hidden;
     display: flex-start;
+    /* background-color: green; */
 }
 
 a.record-button {
