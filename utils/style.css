@@ -270,6 +270,7 @@ img {
     background-color: #eeeeee;
     display: flex;
     flex-direction: column; /* 垂直排列子元素 */
+    overflow-y: hidden; /* 禁用垂直滚动 */
 }
 
 .content {
@@ -315,7 +316,7 @@ img {
     margin-top: auto;  /* distance between the footer balock and top balock. 页脚块与顶部块之间的距离*/
     width: 100%;
     max-width: none; /* 移除最大宽度限制 */
-    margin-bottom: 20px; 
+    margin-bottom: 25px; 
     height: 70px;
     margin-left: -5px;
 }
