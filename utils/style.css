@@ -9,7 +9,7 @@ body {
     text-align:left;
     margin-left: auto;
     margin-right: auto;
-    width: 85%;
+    width: 80%;
 }
 
 
@@ -32,10 +32,7 @@ div#toptitle {
 }
 .language-switch {
     margin-left: auto; /* 将语言切换推到最右边 */
-}
-
-div#toptitle h1 {
-    margin: 0; /* 移除h1的默认外边距 */
+    /* margin-bottom: -5px; */
 }
 
 em {
@@ -60,12 +57,8 @@ h1, h2, h3 {
     border-bottom: 1px solid #aaaaaa;
 }
 
-/* h1 p {
-    color: #000000;
-} */
-
 h1 {
-    font-size: 165%;
+    font-size: 155%;
 }
 
 h2 {
@@ -175,11 +168,11 @@ span.pycommand {
     color: #000070;
 }
 
-div#toptitle h1, div#toptitle h1 {
+div#toptitle h1 {
     margin-bottom: 0.0em;
     padding-bottom: 0.1em;
     padding-top: 0;
-    /* margin-top: 0.5em; */
+    margin-top: 0.5em;
     border-bottom: none;
 }
 
@@ -217,7 +210,7 @@ img {
     display: flex;
     align-items: center;
     height: 100%;
-    margin-right: 8%; /*图片和链接之间的间距*/
+    margin-right: 6%; /*图片和链接之间的间距*/
 }
 
 .navbar-logo img {
@@ -257,24 +250,24 @@ img {
 
 .main-container {
     display: flex;
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 
 .sidebar {
-    width: 20%;
+    width: 15%;
     margin-top: 35px;
-    padding: 20px;
+    padding: 15px 10px 0px 0px;
     position: fixed;
-    height: calc(100vh - 45px);
     overflow-y: auto;
     background-color: #eeeeee;
     display: flex;
     flex-direction: column; /* 垂直排列子元素 */
     overflow-y: hidden; /* 禁用垂直滚动 */
+    min-height: 100vh;
 }
 
 .content {
-    margin-left: 28%;
+    margin-left: 21%;
     flex: 1;
     padding: 20px;
     margin-top: 10px;
@@ -282,9 +275,9 @@ img {
 }
 
 .contact-line {
-    margin-bottom: 0.5em;  /* 行间距 */
+    margin-bottom: 0.5em;
     overflow: hidden;      /* 清除浮动 */
-}
+} 
 
 .icon-fixed {
     float: left;           /* 图标左浮动 */
@@ -302,44 +295,72 @@ img {
     overflow: hidden;      /* 处理长文本 */
 }
 
+.wechat-hover {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin: -0px 0px 0px 0px;
+}
 
+.wechat-hover .qrcode {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 15px;
+    width: 150px;
+    height: 150px;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 8px;
+    z-index: 100;
+    transition: all 0.3s ease;
+}
+
+.wechat-hover:hover .qrcode {
+    visibility: visible;
+    opacity: 1;
+}
+
+.qrcode img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.wechat-text {
+    margin-left: 8px;
+}
 
 #footer {
-    font-size: 12px;    /* border-top: 2px solid #c0c0c0;   /* Top line. 顶部线条*/
+    font-size: 12px;
     color: #979797;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;  /* top alignment. 顶部对齐 */
-    flex-wrap: nowrap;  /* child elements are not to wrap. 不允许子元素换行 */
+    align-items: flex-start;
+    flex-wrap: nowrap;
     background-color: #eeeeee;
-    padding-left: 0px;
-    margin-top: auto;  /* distance between the footer balock and top balock. 页脚块与顶部块之间的距离*/
     width: 100%;
-    max-width: none; /* 移除最大宽度限制 */
-    margin-bottom: 25px; 
-    height: 70px;
-    margin-left: -5px;
+    margin-top: auto;/
 }
 
 #footer-text-block a {
     color: #80a0b0;
 }
 
-
 #footer-text-block {
     display: flex;
     flex-direction: column; /* vertical alignment. 垂直排列 */
     justify-content: flex-start; /* align to the top. 对齐到顶部 */
     width: 60%;
-    padding-left: -35px;
 }
+
 #visitor-map {
-    width: 70%; 
-    height: 80px;
-    margin-right: -35px;
+    width: 150px; 
     overflow: hidden;
-    display: flex-start;
-    /* background-color: green; */
 }
 
 a.record-button {
@@ -431,10 +452,10 @@ a.record-button:hover {
     border: none;  /* Remove pseudo-underline on hover. 移除hover时的伪线 */
 }
 .social-icons a:first-child { 
-    margin-left: calc(0%);
+    margin-left: calc(20%);
 }
 .social-icons a:last-child { 
-    margin-right: calc(50%);
+    margin-right: calc(20%);
 }
 
 .social-icons a:active, 
@@ -494,47 +515,6 @@ a.record-button:hover {
 .more-button i {
     margin-left: 5px;
     transition: transform 0.3s;
-}
-
-
-.wechat-hover {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    margin: 0px 0px 0px 0px;
-}
-
-.wechat-hover .qrcode {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    left: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 15px;
-    width: 150px;
-    height: 150px;
-    background: white;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    padding: 8px;
-    z-index: 100;
-    transition: all 0.3s ease;
-}
-
-.wechat-hover:hover .qrcode {
-    visibility: visible;
-    opacity: 1;
-}
-
-.qrcode img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.wechat-text {
-    margin-left: 8px;
 }
 
 
