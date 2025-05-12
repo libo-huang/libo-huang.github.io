@@ -577,8 +577,7 @@ a.record-button:hover {
         width: 100%;
         order: 1;
         padding: 20px 15px;
-        background-color: #f8f8f8;
-        border-bottom: 1px solid #ddd;
+        background-color: #eeeeee;
     }
     
     .content {
