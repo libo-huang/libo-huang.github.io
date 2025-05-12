@@ -518,164 +518,148 @@ a.record-button:hover {
 }
 
 
-/* 响应式设计 - 移动优先 */
-@media screen and (max-width: 768px) {
-    /* 整体布局调整 */
+
+@media screen and (max-width: 992px) {
     body {
-        width: 95%;
-        padding: 0 10px;
+        width: 90%;
     }
     
-    /* 导航栏优化 */
+    .sidebar {
+        width: 20%;
+    }
+    
+    .content {
+        margin-left: 25%;
+    }
+    
     .navbar {
-        padding: 0 10px;
-        height: 50px; /* 稍高一点方便触摸 */
+        padding: 0 5%;
     }
     
-    .navbar-logo {
-        margin-right: 10px;
+    .navbar-links a {
+        padding: 0 10px;
+        font-size: 16px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+        padding: 0 15px;
+    }
+    
+    .navbar {
+        height: 55px;
+        padding: 0 15px;
     }
     
     .navbar-logo img {
-        max-height: 80%;
+        max-height: 28px;
     }
     
     .navbar-links {
-        overflow-x: auto;
-        -webkit-overflow-scrolling: touch; /* iOS平滑滚动 */
+        padding-bottom: 5px;
     }
     
     .navbar-links a {
         padding: 0 12px;
-        font-size: 16px;
-        white-space: nowrap;
+        font-size: 15px;
     }
     
-    /* 主容器调整 */
     .main-container {
         flex-direction: column;
-        margin-top: 50px; /* 为固定导航栏留出空间 */
+        margin-top: 55px;
     }
     
-    /* 侧边栏优化 */
     .sidebar {
         position: static;
         width: 100%;
-        height: auto;
-        order: 2;
-        padding: 15px;
-        margin-top: 0;
-    }
-    
-    /* 内容区域优化 */
-    .content {
-        margin-left: 0;
         order: 1;
-        padding: 15px;
-        margin-top: 0;
+        padding: 20px 15px;
+        background-color: #f8f8f8;
+        border-bottom: 1px solid #ddd;
     }
     
-    /* 页脚优化 */
-    #footer {
-        flex-direction: column;
-        padding: 15px;
-    }
-    
-    #footer-text-block {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-    
-    #visitor-map {
-        width: 100%;
-        margin-right: 0;
-    }
-    
-    /* 联系信息优化 */
-    .contact-line {
-        margin-bottom: 0.8em;
-    }
-    
-    .contact-text {
-        margin-left: 2em; /* 更大的间距 */
-    }
-    
-    /* 新闻列表优化 */
-    .news-list li {
-        padding-left: 3em;
-        text-indent: -3.5em;
-        margin-top: 0.7em;
-    }
-    
-    /* 微信二维码优化 */
-    .wechat-hover .qrcode {
-        left: 50%;
-        top: 100%;
-        transform: translateX(-50%);
+    .content {
+        order: 2;
         margin-left: 0;
-        margin-top: 10px;
-        width: 120px;
-        height: 120px;
+        padding: 20px 15px;
     }
     
-    /* 社交图标优化 */
+    .wechat-hover .qrcode {
+        left: 0;
+        top: 100%;
+        transform: translateX(0);
+        width: 140px;
+    }
+    
     .social-icons {
-        justify-content: center;
-        gap: 15px;
+        justify-content: space-around;
     }
     
-    .social-icons a:first-child,
-    .social-icons a:last-child {
-        margin: 0;
-    }
-    
-    /* 标题优化 */
-    h1, h2, h3 {
-        margin-top: 0.5em;
-        margin-bottom: 0.3em;
-        padding-bottom: 0.1em;
-    }
-    
-    h1 {
-        font-size: 140%;
-    }
-    
-    h2 {
-        font-size: 120%;
-    }
-    
-    /* 按钮优化 */
-    .more-button {
-        padding: 8px 15px; /* 更大的点击区域 */
-    }
-    
-    .h2-button {
-        font-size: 14px;
-        padding: 2px 5px;
+    .social-icons a {
+        margin: 0 !important;
+        width: 2.5rem;
+        height: 2.5rem;
     }
 }
 
-/* 针对更小屏幕的优化 */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 576px) {
+    body {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+    
+    h1 { font-size: 135%; }
+    h2 { font-size: 120%; }
+    h3 { font-size: 110%; }
+    
+    .navbar {
+        height: 50px;
+    }
+    
+    .navbar-logo img {
+        max-height: 24px;
+    }
+    
     .navbar-links a {
         padding: 0 8px;
         font-size: 14px;
     }
     
-    .navbar-logo img {
-        max-width: 80px;
+    .sidebar, .content {
+        padding: 15px 10px;
     }
     
-    .contact-text {
-        font-size: 14px;
+    .more-button {
+        padding: 10px 15px;
+    }
+    
+    .contact-line {
+        margin-bottom: 1em;
+    }
+    
+    .news-list li {
+        padding-left: 3.5em;
+        text-indent: -3.5em;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .navbar-links a {
+        font-size: 13px;
+        padding: 0 6px;
     }
     
     .news-list li {
         font-size: 14px;
+        padding-left: 3em;
+        text-indent: -3em;
     }
     
-    p {
-        font-size: 15px;
-        line-height: 1.4;
+    .wechat-hover .qrcode {
+        width: 110px;
+        height: 110px;
     }
 }
