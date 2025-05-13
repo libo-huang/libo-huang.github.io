@@ -210,7 +210,7 @@ img {
     display: flex;
     align-items: center;
     height: 100%;
-    margin-right: 5%; /*图片和链接之间的间距*/
+    margin-right: 4%; /*图片和链接之间的间距*/
 }
 
 .navbar-logo img {
