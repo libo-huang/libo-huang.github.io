@@ -210,7 +210,7 @@ img {
     display: flex;
     align-items: center;
     height: 100%;
-    margin-right: 6%; /*图片和链接之间的间距*/
+    margin-right: 5%; /*图片和链接之间的间距*/
 }
 
 .navbar-logo img {
@@ -289,7 +289,7 @@ img {
     text-align: center;   
     color: #0156a3;
     margin-right: 0.5em;  
-    font-size: 1.25em;    
+    font-size: 1.2em;    
     vertical-align: middle;
     float: left;           
     /* vertical-align: top; */
