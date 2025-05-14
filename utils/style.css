@@ -363,7 +363,7 @@ img {
     display: flex;
     flex-direction: column; /* vertical alignment. 垂直排列 */
     justify-content: flex-start; /* align to the top. 对齐到顶部 */
-    width: 60%;
+    width: 50%;
 }
 
 #visitor-map {
