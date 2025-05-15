@@ -362,11 +362,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function updateLastModified() {
     var lastModified = new Date(document.lastModified);
-    var month = (lastModified.getMonth() + 1).toString().padStart(2, '0'); // 月份补
-    var day = lastModified.getDate().toString().padStart(2, '0');
+    var month = (lastModified.getMonth() + 1).toString().padStart(2, '0'); 
     var year = lastModified.getFullYear();
-    var formattedDate = month + '/' + day + '/' + year;
-    
+    var formattedDate = year + '.' + month;
     document.getElementById("lastUpdate").innerText = "Last Update: " + formattedDate;
 }
 
