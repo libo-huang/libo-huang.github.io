@@ -193,22 +193,12 @@ His research interests include machine learning theories and deep learning appli
 <h2 id="news">News</h2>
 <div id="ul-container0"></div>
 <script>
-// Load the content of /news.html
-// 加载 /news.html 的内容
 fetch('/html/news.html')
     .then(response => response.text())
     .then(data => {
-        // Create a temporary DOM element to parse HTML content
-        // 创建一个临时的 DOM 元素来解析 HTML 内容
         const tempDiv = document.createElement('div');
         tempDiv.innerHTML = data;
-
-        // Find and copy the specified <ul id="module0"> module
-        // 查找并复制指定的 <ul id="module0"> 模块
         const ulModule = tempDiv.querySelector('#module0');
-        
-        // Insert the copied module into the ul-container0 div in /utils/news.html
-        // 将复制的模块插入到 /utils/news.html 中的 ul-container0 div 中
         if (ulModule) {
             document.getElementById('ul-container0').appendChild(ulModule.cloneNode(true));
         }
@@ -234,22 +224,12 @@ Publications
 </h2>
 <div id="ul-container1"></div>
 <script>
-    // Load the content of /publications.html
-    // 加载 /publications.html 的内容
     fetch('/html/publications.html')
         .then(response => response.text())
         .then(data => {
-            // Create a temporary DOM element to parse HTML content
-            // 创建一个临时的 DOM 元素来解析 HTML 内容
             const tempDiv = document.createElement('div');
             tempDiv.innerHTML = data;
-
-            // Find and copy the specified <ul id="module1"> module
-            // 查找并复制指定的 <ul id="module1"> 模块
-            const ulModule = tempDiv.querySelector('#module1');
-            
-            // Insert the copied module into the ul-container div in /utils/publications.html
-            // 将复制的模块插入到 /utils/publications.html 中的 ul-container div 中
+            const ulModule = tempDiv.querySelector('#module1'); 
             if (ulModule) {
                 document.getElementById('ul-container1').appendChild(ulModule.cloneNode(true));
             }
@@ -273,22 +253,12 @@ Publications
 <h2 id="others">Others</h2>
 <div id="ul-container2"></div>
 <script>
-// Load the content of /others.html
-// 加载 /others.html 的内容
 fetch('/html/others.html')
     .then(response => response.text())
     .then(data => {
-        // Create a temporary DOM element to parse HTML content
-        // 创建一个临时的 DOM 元素来解析 HTML 内容
         const tempDiv = document.createElement('div');
         tempDiv.innerHTML = data;
-
-        // Find and copy the specified <ul id="module2"> module
-        // 查找并复制指定的 <ul id="module2"> 模块
         const ulModule = tempDiv.querySelector('#module2');
-        
-        // Insert the copied module into the ul-container2 div in /utils/others.html
-        // 将复制的模块插入到 /utils/others.html 中的 ul-container2 div 中
         if (ulModule) {
             document.getElementById('ul-container2').appendChild(ulModule.cloneNode(true));
         }
@@ -368,43 +338,25 @@ function updateLastModified() {
     document.getElementById("lastUpdate").innerText = "Last Update: " + formattedDate;
 }
 
-// JavaScript for Copy Functionality
-// JavaScript 用于复制功能
-function copyToClipboard(button) {  //  insert button argument. 传入button参数.
-    // Get a deep copy of the pre element (with all children)
-    // 获取pre元素的深拷贝（包含所有子节点）
+
+function copyToClipboard(button) {
     const preElement = document.querySelector("pre").cloneNode(true);
-    // Remove button from copy
-    // 从拷贝中移除按钮
     const buttonInClone = preElement.querySelector(".copy-button");
     if (buttonInClone) {
         buttonInClone.remove();
     }
-    // Get plain text content
-    // 获取纯净的文本内容
     const codeBlock = preElement.innerText;
-    
     navigator.clipboard.writeText(codeBlock).then(function() {
-        // change button text and style on success
-        // 成功时改变按钮文字和样式
         button.textContent = "copied";
-        button.style.backgroundColor = "#4CAF50"; // optional: turns green on success. 可选：成功时变绿色.
-        
-        // 3 seconds to recovery
-        // 3秒后恢复原状
+        button.style.backgroundColor = "#4CAF50";
         setTimeout(function() {
             button.textContent = "copy";
             button.style.backgroundColor = "#0156a3";
         }, 2000);
         
     }, function() {
-        //  change button text and style on failure
-        // 失败时改变按钮文字和样式
         button.textContent = "failed";
-        button.style.backgroundColor = "#f44336"; // optional: turns red on failure. 可选：失败时变红色
-        
-        // 3 seconds to recovery
-        // 3秒后恢复原状
+        button.style.backgroundColor = "#f44336";
         setTimeout(function() {
             button.textContent = "copy";
             button.style.backgroundColor = "#0156a3";
@@ -412,11 +364,8 @@ function copyToClipboard(button) {  //  insert button argument. 传入button参�
     });
 };
 
-// Smooth Scroll Function
-// 平滑滚动函数
+
 document.addEventListener('DOMContentLoaded', function() {
-    // Add click event for navigation links
-    // 为导航栏链接添加点击事件
     document.querySelectorAll('.navbar a').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
@@ -425,8 +374,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const targetElement = document.querySelector(targetId);
             
             if (targetElement) {
-                // Calculate navbar height (45px) with additional offset (20px)
-                // 计算导航栏高度(45px)并添加额外偏移(20px)
                 const navbarHeight = 45;
                 const extraOffset = 20;
                 const targetPosition = targetElement.offsetTop - navbarHeight - extraOffset;
@@ -435,8 +382,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     top: targetPosition,
                     behavior: 'smooth'
                 });
-                // Update navbar active state
-                // 更新导航栏活动状态
                 document.querySelectorAll('.navbar a').forEach(link => {
                     link.classList.remove('active');
                 });
@@ -445,8 +390,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Update active nav item during scrolling
-    // 滚动时更新活动导航项
     window.addEventListener('scroll', function() {
         const sections = document.querySelectorAll('h2[id]');
         let currentSection = '';
