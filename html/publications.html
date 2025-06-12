@@ -2,7 +2,7 @@
 <head>
 <script>
 	function copyToClipboard(button) {
-        const preElement = document.querySelector("pre").cloneNode(true);
+        const preElement = button.closest("pre").cloneNode(true);
         const buttonInClone = preElement.querySelector(".copy-button");
         if (buttonInClone) {
             buttonInClone.remove();
