@@ -31,7 +31,6 @@
 
 
 
-<!-- Navigation bar -->
 <div class="navbar">
     <div class="navbar-logo">
         <img src="/utils/ict.png">
@@ -120,7 +119,7 @@
         </p>
         <p class="contact-line">
             <i class="fa-solid fa-envelope fa-fw icon-fixed"></i> 
-            <a href="mailto:huanglibo@ict.ac.cn">huanglibo(at)ict.ac.cn</a>
+            <span class="email-protect" data-user="huanglibo" data-domain="ict.ac.cn"></span>
         </p>
     </div>
 
@@ -189,7 +188,7 @@
     </li>
 </ul>
 <p>
-    <span style="color: #e74c3c; font-weight: bold;">招生与实习招聘</span>：本课题组每年在机器学习、深度学习与最优化方向招收<span style="color: #e74c3c;">1-2名硕士/博士研究生</span>，并提供<span style="color: #e74c3c;">1-2个实习（或称联培、交换、客座、访问）岗位</span>（优秀本科生亦可申请），实习形式支持远程或线下。请有兴趣的候选人将个人简历发送至<a href="mailto:huanglibo@ict.ac.cn">邮箱</a>。
+    <span style="color: #e74c3c; font-weight: bold;">招生与实习招聘</span>：本课题组每年在机器学习、深度学习与最优化方向招收<span style="color: #e74c3c;">1-2名硕士/博士研究生</span>，并提供<span style="color: #e74c3c;">1-2个实习（或称联培、交换、客座、访问）岗位</span>（优秀本科生亦可申请），实习形式支持远程或线下。请有兴趣的候选人将个人简历发送至<span class="email-protect" data-user="huanglibo" data-domain="ict.ac.cn"></span>.。
 </p>
   
 
@@ -197,8 +196,6 @@
 <h2 id="news">最新动态</h2>
 <div id="ul-container0"></div>
 <script>
-// Load the content of /news.html
-// 加载 /news.html 的内容
 fetch('/html/news.html')
     .then(response => response.text())
     .then(data => {
@@ -265,7 +262,6 @@ fetch('/html/others.html')
         const tempDiv = document.createElement('div');
         tempDiv.innerHTML = data;
         const ulModule = tempDiv.querySelector('#module2');
-        
         if (ulModule) {
             document.getElementById('ul-container2').appendChild(ulModule.cloneNode(true));
         }
@@ -293,15 +289,6 @@ fetch('/html/others.html')
       }
     }
 </script>
-
-<!-- <script>
-    (function(){
-        var bp = document.createElement('script');
-        bp.src = 'https://push.zhanzhang.baidu.com/push.js';
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script> -->
 
 <script>
 addBackToTop({
@@ -415,7 +402,34 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const emailElements = document.querySelectorAll('.email-protect');
+    emailElements.forEach(el => {
+        const user = el.getAttribute('data-user');
+        const domain = el.getAttribute('data-domain');
+        el.innerHTML = `<a href="mailto:${user}@${domain}">${user}(at)${domain}</a>`;
+    });
+});
+function decodeEmail(encoded) {
+    let decoded = "";
+    for (let i = 0; i < encoded.length; i++) {
+        decoded += String.fromCharCode(encoded.charCodeAt(i) - 1);
+    }
+    return decoded;
+}
+setTimeout(() => {
+    const encodedEmail = 'ivbojmcp#jbub!bd#nb';
+    const realEmail = decodeEmail(encodedEmail).replace('#', '@').replace('!', '.');
+    document.getElementById('secure-email').innerHTML = 
+        `<a href="mailto:${realEmail}">${realEmail.replace('@', '(at)')}</a>`;
+}, 1500);
 </script>
+
+<noscript>
+    <style>.email-protect { display:none; }</style>
+    <p><i>Please enable JavaScript to view contact email</i></p>
+</noscript>
 
 </body>
 </html>

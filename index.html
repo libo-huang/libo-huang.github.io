@@ -31,7 +31,6 @@
 
 
 
-<!-- Navigation bar -->
 <div class="navbar">
     <div class="navbar-logo">
         <img src="/utils/ict.png">
@@ -120,7 +119,7 @@
         </p>
         <p class="contact-line">
             <i class="fa-solid fa-envelope fa-fw icon-fixed"></i> 
-            <a href="mailto:huanglibo@ict.ac.cn">huanglibo(at)ict.ac.cn</a>
+            <span class="email-protect" data-user="huanglibo" data-domain="ict.ac.cn"></span>
         </p>
     </div>
     
@@ -189,7 +188,7 @@ His research interests include machine learning theories and deep learning appli
     </li>
 </ul>
 <p>
-    <span style="color: #e74c3c; font-weight: bold;">Recruitment Announcement</span>: We are offering <span style="color: #e74c3c;">1-2 Master / Ph.D. positions</span> and <span style="color: #e74c3c;">1-2 internship openings</span> (exceptional undergraduates are also eligible) annually in the fields of machine learning, deep learning, and optimization. Both remote and on-site internship opportunities are available. Interested candidates are invited to submit your curriculum vitae via <a href="mailto:huanglibo@ict.ac.cn">email</a>.
+    <span style="color: #e74c3c; font-weight: bold;">Recruitment Announcement</span>: We are offering <span style="color: #e74c3c;">1-2 Master / Ph.D. positions</span> and <span style="color: #e74c3c;">1-2 internship openings</span> (exceptional undergraduates are also eligible) annually in the fields of machine learning, deep learning, and optimization. Both remote and on-site internship opportunities are available. Interested candidates are invited to submit your curriculum vitae via <span class="email-protect" data-user="huanglibo" data-domain="ict.ac.cn"></span>.
 </p>
 
 
@@ -291,15 +290,6 @@ fetch('/html/others.html')
     }
 </script>
 
-<!-- <script>
-    (function(){
-        var bp = document.createElement('script');
-        bp.src = 'https://push.zhanzhang.baidu.com/push.js';
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(bp, s);
-    })();
-</script> -->
-
 <script>
 addBackToTop({
     backgroundColor: '#fff',
@@ -368,7 +358,6 @@ function copyToClipboard(button) {
     });
 };
 
-
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.navbar a').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
@@ -413,7 +402,34 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const emailElements = document.querySelectorAll('.email-protect');
+    emailElements.forEach(el => {
+        const user = el.getAttribute('data-user');
+        const domain = el.getAttribute('data-domain');
+        el.innerHTML = `<a href="mailto:${user}@${domain}">${user}(at)${domain}</a>`;
+    });
+});
+function decodeEmail(encoded) {
+    let decoded = "";
+    for (let i = 0; i < encoded.length; i++) {
+        decoded += String.fromCharCode(encoded.charCodeAt(i) - 1);
+    }
+    return decoded;
+}
+setTimeout(() => {
+    const encodedEmail = 'ivbojmcp#jbub!bd#nb';
+    const realEmail = decodeEmail(encodedEmail).replace('#', '@').replace('!', '.');
+    document.getElementById('secure-email').innerHTML = 
+        `<a href="mailto:${realEmail}">${realEmail.replace('@', '(at)')}</a>`;
+}, 1500);
 </script>
+
+<noscript>
+    <style>.email-protect { display:none; }</style>
+    <p><i>Please enable JavaScript to view contact email</i></p>
+</noscript>
 
 </body>
 </html>
