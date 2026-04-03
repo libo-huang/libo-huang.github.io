@@ -10,7 +10,7 @@
     <meta property="og:url" content="https://libo-huang.github.io">
     <meta property="og:image" content="https://libo-huang.github.io/utils/libo-huang.png">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <link rel="stylesheet" href="/utils/style.css" type="text/css">
+    <link rel="stylesheet" href="./utils/style.css" type="text/css">
     <link rel="shortcut icon" href="/utils/ict-icon.jpeg">
     <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/academicons/1.8.6/css/academicons.min.css">
@@ -34,7 +34,7 @@
 <div class="navbar">
     <div class="navbar-logo">
         <a href="http://www.ict.ac.cn/" target="_blank" title="中国科学院计算技术研究所">
-            <img src="/utils/ict.png" alt="ICT Logo">
+            <img src="./utils/ict.png" alt="ICT Logo">
         </a>
     </div>
 
@@ -58,7 +58,7 @@
     </div>
 
     <div class="avatar-container">
-        <img src="/utils/libo-huang.png" alt="Libo Huang">
+        <img src="./utils/libo-huang.png" alt="Libo Huang">
     </div>
       
     <div id="toptitle">
@@ -263,9 +263,9 @@ function updateLastModified() {
 // 统一的模块自动加载器
 document.addEventListener('DOMContentLoaded', function() {
     const modules = [
-        { url: '/html/news.html', container: 'ul-container0', targetId: 'module0' },
-        { url: '/html/publications.html', container: 'ul-container1', targetId: 'module1' },
-        { url: '/html/others.html', container: 'ul-container2', targetId: 'module2' }
+        { url: './html/news.html', container: 'ul-container0', targetId: 'module0' },
+        { url: './html/publications.html', container: 'ul-container1', targetId: 'module1' },
+        { url: './html/others.html', container: 'ul-container2', targetId: 'module2' }
     ];
     modules.forEach(mod => {
         fetch(mod.url)
