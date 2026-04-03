@@ -25,10 +25,6 @@ a:hover {
     border-bottom: 1px #0156a3 dotted;
 }
 
-a:hover {
-    border-bottom: 1px gray dotted;
-}
-
 /* ==================== 标题区与顶部栏 ==================== */
 div#toptitle {
     margin-bottom: 1.5em;
@@ -243,11 +239,14 @@ img {
     align-items: center;
     height: 100%;
     margin-right: 4%;
+    flex-shrink: 0;
+    z-index: 9999;
 }
 
 .navbar-logo img {
     height: 80%;
     width: auto;
+    display: block;
 }
 
 .navbar-links {
@@ -268,6 +267,22 @@ img {
     height: 100%;
     text-decoration: none;
     font-size: 18px;
+}
+
+.navbar-logo a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: transparent !important; /* 强制覆盖，保持背景透明 */
+    padding: 0; /* 防止出现多余的边距变形 */
+    border: none !important; /* 防止被全局链接边框影响 */
+}
+
+.navbar-logo a:hover {
+    background-color: transparent !important; /* 鼠标悬浮时，不显示深蓝背景 */
+    /* opacity: 0.85; */
+    border-bottom: none !important; /* 强行去掉悬浮时多出来的 1px 底部边框 */
+    transform: none !important; /* 确保不产生意外位移 */
 }
 
 .navbar a:hover {
@@ -303,6 +318,7 @@ img {
     overflow-y: auto;
 }
 
+
 /* ==================== 联系信息与图标 ==================== */
 .contact-info {
     margin-bottom: 1em;
@@ -325,9 +341,18 @@ img {
     overflow: hidden;
 }
 
-.contact-line {
-    /* margin-bottom: 1.8em; line-height: 1.2; overflow: hidden; */
+
+.avatar-container {
+    text-align: left;
+    margin-bottom: 1.5em;
 }
+.avatar-container img {
+    width: 65%;
+    max-width: 175px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
 
 /* ==================== 微信悬浮二维码 ==================== */
 .wechat-hover {
@@ -701,6 +726,18 @@ a.record-button:hover {
     
     /* 调整手机端的联系方式布局 */
     .contact-info {text-align: left; display: inline-block; margin-top: 15px;}
+
+    .content {
+        margin-top: 20px;
+        margin-left: 0;
+        padding: 20px;
+        border-radius: 0; /* 手机端去掉圆角和阴影以节省空间 */
+        box-shadow: none;
+    }
+    
+    .avatar-container {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 576px) {

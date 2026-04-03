@@ -33,8 +33,11 @@
 
 <div class="navbar">
     <div class="navbar-logo">
-        <img src="/utils/ict.png" alt="ICT Logo">
+        <a href="http://www.ict.ac.cn/" target="_blank" title="中国科学院计算技术研究所">
+            <img src="/utils/ict.png" alt="ICT Logo">
+        </a>
     </div>
+
     <div class="navbar-links">
         <a href="#about_me" class="active">个人简介</a>
         <a href="#research_interests">研究兴趣</a>
@@ -53,15 +56,10 @@
     <div class="language-switch">
         <a href="/index.html">EN</a> | <a href="/index_zh-CN.html">中文</a>
     </div>
-    <table style="background-color: transparent; margin-bottom: 1.5em;">
-        <tbody>
-            <tr>
-                <td style="text-align: left; background-color: transparent;">
-                    <img src="/utils/libo-huang.png" width="60%" style="border-radius: 50%;">
-                </td>
-            </tr>
-        </tbody>
-    </table>
+
+    <div class="avatar-container">
+        <img src="/utils/libo-huang.png" alt="Libo Huang">
+    </div>
 
     <div id="toptitle">
         <h1>黄礼泊</h1>
@@ -88,7 +86,6 @@
         <p class="contact-line">
             <i class="fa-solid fa-house fa-fw icon-fixed"></i>
             <span class="contact-text"><a href="https://libo-huang.github.io/">libo-huang.github.io</a></span>
-        </p>
         </p>
         <p class="contact-line">
             <i class="fa-solid fa-envelope fa-fw icon-fixed"></i> 
@@ -178,21 +175,6 @@
 
 <h2 id="news">最新动态</h2>
 <div id="ul-container0"></div>
-<script>
-fetch('/html/news.html')
-    .then(response => response.text())
-    .then(data => {
-        const tempDiv = document.createElement('div');
-        tempDiv.innerHTML = data;
-        const ulModule = tempDiv.querySelector('#module0');       
-        if (ulModule) {
-            document.getElementById('ul-container0').appendChild(ulModule.cloneNode(true));
-        }
-    })
-    .catch(error => {
-        console.error('Error loading content:', error);
-    });
-</script>
 
 
 
@@ -209,50 +191,13 @@ fetch('/html/news.html')
 
 </h2>
 <div id="ul-container1"></div>
-<script>
-    fetch('/html/publications.html')
-        .then(response => response.text())
-        .then(data => {
-            const tempDiv = document.createElement('div');
-            tempDiv.innerHTML = data;
-            const ulModule = tempDiv.querySelector('#module1');
-            if (ulModule) {
-                document.getElementById('ul-container1').appendChild(ulModule.cloneNode(true));
-            }
-        })
-        .catch(error => {
-            console.error('Error loading content:', error);
-        });
-</script>
-
-
-
-
-
-
-    
-
 
 
 
 
 <h2 id="others">其他</h2>
 <div id="ul-container2"></div>
-<script>
-fetch('/html/others.html')
-    .then(response => response.text())
-    .then(data => {
-        const tempDiv = document.createElement('div');
-        tempDiv.innerHTML = data;
-        const ulModule = tempDiv.querySelector('#module2');
-        if (ulModule) {
-            document.getElementById('ul-container2').appendChild(ulModule.cloneNode(true));
-        }
-    })
-    .catch(error => {
-        console.error('Error loading content:', error);
-    });
-</script>
+
 
 
 </div>
@@ -315,6 +260,28 @@ function updateLastModified() {
     document.getElementById("lastUpdate").innerText = "最近更新：" + formattedDate;
 }
 
+// 统一的模块自动加载器
+document.addEventListener('DOMContentLoaded', function() {
+    const modules = [
+        { url: '/html/news.html', container: 'ul-container0', targetId: 'module0' },
+        { url: '/html/publications.html', container: 'ul-container1', targetId: 'module1' },
+        { url: '/html/others.html', container: 'ul-container2', targetId: 'module2' }
+    ];
+    modules.forEach(mod => {
+        fetch(mod.url)
+            .then(response => response.text())
+            .then(data => {
+                const tempDiv = document.createElement('div');
+                tempDiv.innerHTML = data;
+                const moduleContent = tempDiv.querySelector('#' + mod.targetId);
+                if (moduleContent) {
+                    document.getElementById(mod.container).appendChild(moduleContent.cloneNode(true));
+                }
+            })
+            .catch(error => console.error('Error loading module:', error));
+    });
+});
+
 function copyToClipboard(button) {
     const preElement = button.closest("pre").cloneNode(true);
     const buttonInClone = preElement.querySelector(".copy-button");
@@ -322,7 +289,6 @@ function copyToClipboard(button) {
         buttonInClone.remove();
     }
     const codeBlock = preElement.innerText;
-    
     navigator.clipboard.writeText(codeBlock).then(function() {
         button.textContent = "已复制";
         button.style.backgroundColor = "#4CAF50";
@@ -341,7 +307,6 @@ function copyToClipboard(button) {
     });
 };
 
-// 👇 把这段函数补充到下面
 function toggleBibtex(button) {
     const pubItem = button.closest('.pub-item');
     const codeBlock = pubItem.querySelector('.code-block');
