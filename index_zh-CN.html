@@ -41,7 +41,6 @@
         <a href="#news">最新动态</a>
         <a href="#publications">主要论文</a>
         <a href="#others">其他</a>
-        <!-- <a href="/html/record.html" class="record-button" id="recordButton">Record</a> -->
     </div>
 </div>
 
@@ -355,6 +354,22 @@ function copyToClipboard(button) {
         }, 2000);
     });
 };
+
+// 👇 把这段函数补充到下面
+function toggleBibtex(button) {
+    const pubItem = button.closest('.pub-item');
+    const codeBlock = pubItem.querySelector('.code-block');
+    
+    if (codeBlock.style.display === "none" || codeBlock.style.display === "") {
+        codeBlock.style.display = "block";
+        button.style.backgroundColor = "#0156a3";
+        button.style.color = "white";
+    } else {
+        codeBlock.style.display = "none";
+        button.style.backgroundColor = "transparent";
+        button.style.color = "#0156a3";
+    }
+}
 
 document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.navbar a').forEach(anchor => {

@@ -1,48 +1,19 @@
-<html>
-<head>
-<script>
-	function copyToClipboard(button) {
-        const preElement = button.closest("pre").cloneNode(true);
-        const buttonInClone = preElement.querySelector(".copy-button");
-        if (buttonInClone) {
-            buttonInClone.remove();
-        }
-        const codeBlock = preElement.innerText;
-        
-		navigator.clipboard.writeText(codeBlock).then(function() {
-			button.textContent = "已复制";
-			button.style.backgroundColor = "#4CAF50";            
-			setTimeout(function() {
-				button.textContent = "copy";
-				button.style.backgroundColor = "#0156a3";
-			}, 2000);
-			
-		}, function() {
-			button.textContent = "错误";
-			button.style.backgroundColor = "#f44336";
-			setTimeout(function() {
-				button.textContent = "copy";
-				button.style.backgroundColor = "#0156a3";
-			}, 2000);
-		});
-	}
-</script>
-</head>
-
-
-
-
-
 <div id="module1">
-TCMP-300: A Comprehensive Traditional Chinese Medicinal Plant Dataset for Plant Recognition
-&nbsp; 
-<a target="_blank" style="font-size:20px; color:#0156a3;" class="fa fa-file-pdf-o" href="
-https://www.nature.com/articles/s41597-025-05522-7.pdf
-"></a>
-&#32;
-<a target="_blank" style="font-size:20px; color: #0156a3;" class="fa fa-github" href="
-https://github.com/winycg/TCMP-300
-"></a>
+<div class="pub-note">
+    # Equal contribution &nbsp;&nbsp; &nbsp;&nbsp; * Corresponding author
+</div>
+    
+<div class="pub-item">
+<div class="pub-title">TCMP-300: A Comprehensive Traditional Chinese Medicinal Plant Dataset for Plant Recognition</div>
+<div class="pub-authors">Yanling Zhang, Wanhui Sun, Chuanguang Yang, <strong>Libo Huang</strong>, Zhulin An, Weilun Feng, Wenjing Tang, Yongjun Xu</div>
+<div class="pub-bottom-row">
+    <div class="pub-venue"><em>Scientific Data</em>, 2025</div>
+    <div class="pub-actions">
+        <a target="_blank" class="pub-btn" href="https://www.nature.com/articles/s41597-025-05522-7.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>
+        <a target="_blank" class="pub-btn" href="https://github.com/winycg/TCMP-300"><i class="fa fa-github"></i> Code</a>
+        <button class="pub-btn" onclick="toggleBibtex(this)"><i class="fa fa-quote-left"></i> Cite</button>
+    </div>
+</div>
 <pre class="code-block">
 @article{zhang2025tcmp,
     title={TCMP-300: A Comprehensive Traditional Chinese Medicinal Plant Dataset for Plant Recognition},
@@ -55,12 +26,18 @@ https://github.com/winycg/TCMP-300
     publisher={Nature Publishing Group UK London}
 }
 <button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
+</div>
 
-Classification-Based False Alarm Suppression for SAR Target Detection
-&nbsp; 
-<a target="_blank" style="font-size:20px; color:#0156a3;" class="fa fa-file-pdf-o" href="
-https://ieeexplore.ieee.org/abstract/document/11043329
-"></a>
+<div class="pub-item">
+<div class="pub-title">Classification-Based False Alarm Suppression for SAR Target Detection</div>
+<div class="pub-authors">Nan Yang, <strong>Libo Huang</strong>, Zhulin An, Yongjun Xu, Xia Hong, Wing-Kuen Ling</div>
+<div class="pub-bottom-row">
+    <div class="pub-venue"><em>2025 IEEE International Symposium on Circuits and Systems (ISCAS)</em>, 2025</div>
+    <div class="pub-actions">
+        <a target="_blank" class="pub-btn" href="https://ieeexplore.ieee.org/abstract/document/11043329"><i class="fa fa-file-pdf-o"></i>PDF</a>
+        <button class="pub-btn" onclick="toggleBibtex(this)"><i class="fa fa-quote-left"></i> Cite</button>
+    </div>
+</div>
 <pre class="code-block">
 @inproceedings{yang2025classification,
     title={Classification-Based False Alarm Suppression for SAR Target Detection},
@@ -71,13 +48,19 @@ https://ieeexplore.ieee.org/abstract/document/11043329
     organization={IEEE}
 }
 <button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
+</div>
 
-Foundation models and intelligent decision-making: Progress, challenges, and perspectives
-&nbsp; 
-<a target="_blank" style="font-size:20px; color:#0156a3;" class="fa fa-file-pdf-o" href="
-https://www.cell.com/the-innovation/fulltext/S2666-6758(25)00151-1
-"></a>
-<span class="badge">Cover Paper</span>
+<div class="pub-item">
+<div class="pub-title">Foundation models and intelligent decision-making: Progress, challenges, and perspectives</div>
+<div class="pub-authors">Jincai Huang, Yongjun Xu, etc.</div>
+<div class="pub-bottom-row">
+    <div class="pub-venue"><em>The Innovation</em>, 2025</div>
+    <div class="pub-actions">
+        <span class="pub-badge" style="background-color: #8e44ad;">Cover Paper</span>
+        <a target="_blank" class="pub-btn" href="https://www.cell.com/the-innovation/fulltext/S2666-6758(25)00151-1"><i class="fa fa-file-pdf-o"></i> PDF</a>
+        <button class="pub-btn" onclick="toggleBibtex(this)"><i class="fa fa-quote-left"></i> Cite</button>
+    </div>
+</div>
 <pre class="code-block">
 @article{HUANG2025100948,
     title = {Foundation models and intelligent decision-making: Progress, challenges, and perspectives},
@@ -88,17 +71,19 @@ https://www.cell.com/the-innovation/fulltext/S2666-6758(25)00151-1
     author = {Jincai Huang and Yongjun Xu, etc.},
 }
 <button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
+</div>
 
-
-Low-redundancy Distillation for continual learning
-&nbsp; 
-<a target="_blank" style="font-size:20px; color:#0156a3;" class="fa fa-file-pdf-o" href="
-https://www.sciencedirect.com/science/article/pii/S0031320325003723
-"></a>
-&#32;
-<a target="_blank" style="font-size:20px; color: #0156a3;" class="fa fa-github" href="
-https://github.com/EMLS-ICTCAS/LoRD
-"></a>
+<div class="pub-item">
+<div class="pub-title">Low-redundancy Distillation for continual learning</div>
+<div class="pub-authors">Ruiqi Liu, Boyu Diao, <strong>Libo Huang</strong>, Zijia An, Hangda Liu, Zhulin An, Yongjun Xu</div>
+<div class="pub-bottom-row">
+    <div class="pub-venue"><em>Pattern Recognition</em>, 2025</div>
+    <div class="pub-actions">
+        <a target="_blank" class="pub-btn" href="https://www.sciencedirect.com/science/article/pii/S0031320325003723"><i class="fa fa-file-pdf-o"></i> PDF</a>
+        <a target="_blank" class="pub-btn" href="https://github.com/EMLS-ICTCAS/LoRD"><i class="fa fa-github"></i> Code</a>
+        <button class="pub-btn" onclick="toggleBibtex(this)"><i class="fa fa-quote-left"></i> Cite</button>
+    </div>
+</div>
 <pre class="code-block">
 @article{liu2025low,
     title={Low-redundancy Distillation for continual learning},
@@ -107,19 +92,21 @@ https://github.com/EMLS-ICTCAS/LoRD
     pages={111712},
     year={2025},
     publisher={Elsevier}
-    }
+}
 <button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
+</div>
 
-
-Multi-party Collaborative Attention Control for Image Customization
-&nbsp; 
-<a target="_blank" style="font-size:20px; color:#0156a3;" class="fa fa-file-pdf-o" href="
-https://arxiv.org/pdf/2505.01428
-"></a>
-&#32;
-<a target="_blank" style="font-size:20px; color: #0156a3;" class="fa fa-github" href="
-https://github.com/yanghan-yh/MCA-Ctrl
-"></a>
+<div class="pub-item">
+<div class="pub-title">Multi-party Collaborative Attention Control for Image Customization</div>
+<div class="pub-authors">Han Yang, Chuanguang Yang, Qiuli Wang, Zhulin An, Weilun Feng, <strong>Libo Huang</strong>, Yongjun Xu</div>
+<div class="pub-bottom-row">
+    <div class="pub-venue"><em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2025</div>
+    <div class="pub-actions">
+        <a target="_blank" class="pub-btn" href="https://arxiv.org/pdf/2505.01428"><i class="fa fa-file-pdf-o"></i> PDF</a>
+        <a target="_blank" class="pub-btn" href="https://github.com/yanghan-yh/MCA-Ctrl"><i class="fa fa-github"></i> Code</a>
+        <button class="pub-btn" onclick="toggleBibtex(this)"><i class="fa fa-quote-left"></i> Cite</button>
+    </div>
+</div>
 <pre class="code-block">
 @inproceedings{yang2025hsrdiff,
     title={Multi-party Collaborative Attention Control for Image Customization},
@@ -128,17 +115,19 @@ https://github.com/yanghan-yh/MCA-Ctrl
     year={2025}
 }
 <button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
+</div>
 
-
-HSRDiff: A Hierarchical Self-Regulation Diffusion Model for Stochastic Semantic Segmentation
-&nbsp; 
-<a target="_blank" style="font-size:20px; color:#0156a3;" class="fa fa-file-pdf-o" href="
-https://ojs.aaai.org/index.php/AAAI/article/view/32163
-"></a>
-&#32;
-<a target="_blank" style="font-size:20px; color: #0156a3;" class="fa fa-github" href="
-https://github.com/yanghan-yh/HSRDiff
-"></a>
+<div class="pub-item">
+<div class="pub-title">HSRDiff: A Hierarchical Self-Regulation Diffusion Model for Stochastic Semantic Segmentation</div>
+<div class="pub-authors">Han Yang, Chuanguang Yang, Zhulin An, <strong>Libo Huang</strong>, Yongjun Xu</div>
+<div class="pub-bottom-row">
+    <div class="pub-venue"><em>AAAI Conference on Artificial Intelligence (AAAI)</em>, 2025</div>
+    <div class="pub-actions">
+        <a target="_blank" class="pub-btn" href="https://ojs.aaai.org/index.php/AAAI/article/view/32163"><i class="fa fa-file-pdf-o"></i> PDF</a>
+        <a target="_blank" class="pub-btn" href="https://github.com/yanghan-yh/HSRDiff"><i class="fa fa-github"></i> Code</a>
+        <button class="pub-btn" onclick="toggleBibtex(this)"><i class="fa fa-quote-left"></i> Cite</button>
+    </div>
+</div>
 <pre class="code-block">
 @inproceedings{yang2025hsrdiff,
     title={HSRDiff: A Hierarchical Self-Regulation Diffusion Model for Stochastic Semantic Segmentation},
@@ -150,18 +139,20 @@ https://github.com/yanghan-yh/HSRDiff
     year={2025}
 }
 <button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
+</div>
 
-
-Multi-Teacher Knowledge Distillation with Reinforcement Learning for Visual Recognition
-&nbsp; 
-<a target="_blank" style="font-size:20px; color:#0156a3;" class="fa fa-file-pdf-o" href="
-https://ojs.aaai.org/index.php/AAAI/article/view/32990
-"></a>
-&#32;
-<a target="_blank" style="font-size:20px; color: #0156a3;" class="fa fa-github" href="
-https://github.com/winycg/MTKD-RL
-"></a>
-<span class="badge">Oral</span>
+<div class="pub-item">
+<div class="pub-title">Multi-Teacher Knowledge Distillation with Reinforcement Learning for Visual Recognition</div>
+<div class="pub-authors">Chuanguang Yang, Xinqiang Yu, Han Yang, Zhulin An, Chengqing Yu, <strong>Libo Huang</strong>, Yongjun Xu</div>
+<div class="pub-bottom-row">
+    <div class="pub-venue"><em>AAAI Conference on Artificial Intelligence (AAAI)</em>, 2025</div>
+    <div class="pub-actions">
+        <span class="pub-badge">Oral</span>
+        <a target="_blank" class="pub-btn" href="https://ojs.aaai.org/index.php/AAAI/article/view/32990"><i class="fa fa-file-pdf-o"></i> PDF</a>
+        <a target="_blank" class="pub-btn" href="https://github.com/winycg/MTKD-RL"><i class="fa fa-github"></i> Code</a>
+        <button class="pub-btn" onclick="toggleBibtex(this)"><i class="fa fa-quote-left"></i> Cite</button>
+    </div>
+</div>
 <pre class="code-block">
 @inproceedings{yang2025multi,
     title={Multi-Teacher Knowledge Distillation with Reinforcement Learning for Visual Recognition},
@@ -173,18 +164,20 @@ https://github.com/winycg/MTKD-RL
     year={2025}
 }
 <button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
+</div>
 
-
-MPQ-DM: Mixed Precision Quantization for Extremely Low Bit Diffusion Models
-&nbsp; 
-<a target="_blank" style="font-size:20px; color:#0156a3;" class="fa fa-file-pdf-o" href="
-https://ojs.aaai.org/index.php/AAAI/article/view/33823
-"></a>
-&#32;
-<a target="_blank" style="font-size:20px; color: #0156a3;" class="fa fa-github" href="
-https://github.com/cantbebetter2/MPQ-DM
-"></a>
-<span class="badge">Oral</span>
+<div class="pub-item">
+<div class="pub-title">MPQ-DM: Mixed Precision Quantization for Extremely Low Bit Diffusion Models</div>
+<div class="pub-authors">Weilun Feng, Haotong Qin, Chuanguang Yang, Zhulin An, <strong>Libo Huang</strong>, Boyu Diao, Fei Wang, Renshuai Tao, Yongjun Xu, Michele Magno</div>
+<div class="pub-bottom-row">
+    <div class="pub-venue"><em>AAAI Conference on Artificial Intelligence (AAAI)</em>, 2025</div>
+    <div class="pub-actions">
+        <span class="pub-badge">Oral</span>
+        <a target="_blank" class="pub-btn" href="https://ojs.aaai.org/index.php/AAAI/article/view/33823"><i class="fa fa-file-pdf-o"></i> PDF</a>
+        <a target="_blank" class="pub-btn" href="https://github.com/cantbebetter2/MPQ-DM"><i class="fa fa-github"></i> Code</a>
+        <button class="pub-btn" onclick="toggleBibtex(this)"><i class="fa fa-quote-left"></i> Cite</button>
+    </div>
+</div>
 <pre class="code-block">
 @inproceedings{feng2025mpq,
     title={MPQ-DM: Mixed Precision Quantization for Extremely Low Bit Diffusion Models},
@@ -196,13 +189,18 @@ https://github.com/cantbebetter2/MPQ-DM
     year={2025}
 }
 <button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
+</div>
 
-
-OLN++: Improved Object Localization Network for Open-world Object Detection
-&nbsp; 
-<a target="_blank" style="font-size:20px; color:#0156a3;" class="fa fa-file-pdf-o" href="
-https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10889938
-"></a>
+<div class="pub-item">
+<div class="pub-title">OLN++: Improved Object Localization Network for Open-world Object Detection</div>
+<div class="pub-authors">Haonan Mai, <strong>Libo Huang</strong>, Zhulin An, Jiarui Zhao, Chuanguang Yang, Erhu Zhao, Yongjun Xu</div>
+<div class="pub-bottom-row">
+    <div class="pub-venue"><em>IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</em>, 2025</div>
+    <div class="pub-actions">
+        <a target="_blank" class="pub-btn" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10889938"><i class="fa fa-file-pdf-o"></i> PDF</a>
+        <button class="pub-btn" onclick="toggleBibtex(this)"><i class="fa fa-quote-left"></i> Cite</button>
+    </div>
+</div>
 <pre class="code-block">
 @inproceedings{mai2025oln++,
     title={OLN++: Improved Object Localization Network for Open-world Object Detection},
@@ -213,13 +211,18 @@ https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10889938
     organization={IEEE}
 }
 <button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
+</div>
 
-
-IOR: Inversed Objects Replay for Incremental Object Detection
-&nbsp; 
-<a target="_blank" style="font-size:20px; color:#0156a3;" class="fa fa-file-pdf-o" href="
-https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10888892
-"></a>
+<div class="pub-item">
+<div class="pub-title">IOR: Inversed Objects Replay for Incremental Object Detection</div>
+<div class="pub-authors">Zijia An, Boyu Diao, <strong>Libo Huang</strong>, Ruiqi Liu, Zhulin An, Yongjun Xu</div>
+<div class="pub-bottom-row">
+    <div class="pub-venue"><em>IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)</em>, 2025</div>
+    <div class="pub-actions">
+        <a target="_blank" class="pub-btn" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10888892"><i class="fa fa-file-pdf-o"></i> PDF</a>
+        <button class="pub-btn" onclick="toggleBibtex(this)"><i class="fa fa-quote-left"></i> Cite</button>
+    </div>
+</div>
 <pre class="code-block">
 @inproceedings{an2025ior,
     title={IOR: Inversed Objects Replay for Incremental Object Detection},
@@ -230,17 +233,19 @@ https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10888892
     organization={IEEE}
 }
 <button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
+</div>
 
-
-A Survey on Causal Reinforcement Learning
-&nbsp; 
-<a target="_blank" style="font-size:20px; color:#0156a3;" class="fa fa-file-pdf-o" href="
-https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10771589
-"></a>
-&#32;
-<a target="_blank" style="font-size:20px; color: #0156a3;" class="fa fa-github" href="
-    https://github.com/libo-huang/Awesome-Causal-Reinforcement-Learning
-"></a>
+<div class="pub-item">
+<div class="pub-title">A Survey on Causal Reinforcement Learning</div>
+<div class="pub-authors">Yan Zeng, Ruichu Cai, Fuchun Sun, <strong>Libo Huang</strong>, Zhifeng Hao</div>
+<div class="pub-bottom-row">
+    <div class="pub-venue"><em>IEEE Transactions on Neural Networks and Learning Systems (IEEE TNNLS)</em>, 2024</div>
+    <div class="pub-actions">
+        <a target="_blank" class="pub-btn" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10771589"><i class="fa fa-file-pdf-o"></i> PDF</a>
+        <a target="_blank" class="pub-btn" href="https://github.com/libo-huang/Awesome-Causal-Reinforcement-Learning"><i class="fa fa-github"></i> Code</a>
+        <button class="pub-btn" onclick="toggleBibtex(this)"><i class="fa fa-quote-left"></i> Cite</button>
+    </div>
+</div>
 <pre class="code-block">
 @article{zeng2024survey,
     title={A Survey on Causal Reinforcement Learning},
@@ -253,17 +258,19 @@ https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10771589
     publisher={IEEE}
 }
 <button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
+</div>
 
-
-Continual Learning in the Frequency Domain
-&nbsp 
-<a target="_blank" style="font-size:20px; color:#0156a3;" class="fa fa-file-pdf-o" href="
-https://proceedings.neurips.cc/paper_files/paper/2024/file/9b224ace8963c9385ad5e2b5c9039b97-Paper-Conference.pdf
-"></a>
-&#32;
-<a target="_blank" style="font-size:20px; color: #0156a3;" class="fa fa-github" href="
-    https://github.com/EMLS-ICTCAS/CLFD
-"></a>
+<div class="pub-item">
+<div class="pub-title">Continual Learning in the Frequency Domain</div>
+<div class="pub-authors">RuiQi Liu, Boyu Diao, <strong>Libo Huang</strong>, Zijia An, Zhulin An, Yongjun Xu</div>
+<div class="pub-bottom-row">
+    <div class="pub-venue"><em>Annual Conference on Neural Information Processing Systems (NeurIPS)</em>, 2024</div>
+    <div class="pub-actions">
+        <a target="_blank" class="pub-btn" href="https://proceedings.neurips.cc/paper_files/paper/2024/file/9b224ace8963c9385ad5e2b5c9039b97-Paper-Conference.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>
+        <a target="_blank" class="pub-btn" href="https://github.com/EMLS-ICTCAS/CLFD"><i class="fa fa-github"></i> Code</a>
+        <button class="pub-btn" onclick="toggleBibtex(this)"><i class="fa fa-quote-left"></i> Cite</button>
+    </div>
+</div>
 <pre class="code-block">
 @inproceedings{liu2024continual,
     title={Continual Learning in the Frequency Domain},
@@ -274,18 +281,19 @@ https://proceedings.neurips.cc/paper_files/paper/2024/file/9b224ace8963c9385ad5e
     year={2024}
 }
 <button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
+</div>
 
-
-
-CLIP-KD: An Empirical Study of CLIP Model Distillation
-&nbsp; 
-<a target="_blank" style="font-size:20px; color:#0156a3;" class="fa fa-file-pdf-o" href="
-    https://openaccess.thecvf.com/content/CVPR2024/papers/Yang_CLIP-KD_An_Empirical_Study_of_CLIP_Model_Distillation_CVPR_2024_paper.pdf
-"></a>
-&#32;
-<a target="_blank" style="font-size:20px; color: #0156a3;" class="fa fa-github" href="
-    https://github.com/winycg/CLIP-KD
-"></a>
+<div class="pub-item">
+<div class="pub-title">CLIP-KD: An Empirical Study of CLIP Model Distillation</div>
+<div class="pub-authors">Chuanguang Yang, Zhulin An, <strong>Libo Huang</strong>, Junyu Bi, Xinqiang Yu, Han Yang, Boyu Diao, Yongjun Xu</div>
+<div class="pub-bottom-row">
+    <div class="pub-venue"><em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2024</div>
+    <div class="pub-actions">
+        <a target="_blank" class="pub-btn" href="https://openaccess.thecvf.com/content/CVPR2024/papers/Yang_CLIP-KD_An_Empirical_Study_of_CLIP_Model_Distillation_CVPR_2024_paper.pdf"><i class="fa fa-file-pdf-o"></i> PDF</a>
+        <a target="_blank" class="pub-btn" href="https://github.com/winycg/CLIP-KD"><i class="fa fa-github"></i> Code</a>
+        <button class="pub-btn" onclick="toggleBibtex(this)"><i class="fa fa-quote-left"></i> Cite</button>
+    </div>
+</div>
 <pre class="code-block">
 @inproceedings{yang2024clip,
     title={CLIP-KD: An Empirical Study of CLIP Model Distillation},
@@ -295,16 +303,18 @@ CLIP-KD: An Empirical Study of CLIP Model Distillation
     year={2024}
 }
 <button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
+</div>
 
-
-
-
-
-Online Policy Distillation with Decision-Attention
-&nbsp; 
-<a target="_blank" style="font-size:20px; color:#0156a3;" class="fa fa-file-pdf-o" href="
-https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10651412
-"></a>
+<div class="pub-item">
+<div class="pub-title">Online Policy Distillation with Decision-Attention</div>
+<div class="pub-authors">Xinqiang Yu, Chuanguang Yang, Chengqing Yu, <strong>Libo Huang</strong>, Zhulin An, Yongjun Xu</div>
+<div class="pub-bottom-row">
+    <div class="pub-venue"><em>International Joint Conference on Neural Networks (IJCNN)</em>, 2024</div>
+    <div class="pub-actions">
+        <a target="_blank" class="pub-btn" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10651412"><i class="fa fa-file-pdf-o"></i> PDF</a>
+        <button class="pub-btn" onclick="toggleBibtex(this)"><i class="fa fa-quote-left"></i> Cite</button>
+    </div>
+</div>
 <pre class="code-block">
 @inproceedings{yu2024online,
     title={Online Policy Distillation with Decision-Attention},
@@ -315,22 +325,20 @@ https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10651412
     organization={IEEE}
 }
 <button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
+</div>
 
-
-
-
-
-
-Relational Diffusion Distillation For Efficient Image Generation
-&nbsp; 
-<a target="_blank" style="font-size:20px; color:#0156a3;" class="fa fa-file-pdf-o" href="
-    https://dl.acm.org/doi/pdf/10.1145/3664647.3680768
-"></a>
-&#32;
-<a target="_blank" style="font-size:20px; color: #0156a3;" class="fa fa-github" href="
-    https://github.com/cantbebetter2/RDD
-"></a>
-<span class="badge">Oral</span>
+<div class="pub-item">
+<div class="pub-title">Relational Diffusion Distillation For Efficient Image Generation</div>
+<div class="pub-authors">Weilun Feng, Chuanguang Yang, Zhulin An, <strong>Libo Huang</strong>, Boyu Diao, Fei Wang, Yongjun Xu</div>
+<div class="pub-bottom-row">
+    <div class="pub-venue"><em>ACM International Conference on Multimedia (ACM MM)</em>, 2024</div>
+    <div class="pub-actions">
+        <span class="pub-badge">Oral</span>
+        <a target="_blank" class="pub-btn" href="https://dl.acm.org/doi/pdf/10.1145/3664647.3680768"><i class="fa fa-file-pdf-o"></i> PDF</a>
+        <a target="_blank" class="pub-btn" href="https://github.com/cantbebetter2/RDD"><i class="fa fa-github"></i> Code</a>
+        <button class="pub-btn" onclick="toggleBibtex(this)"><i class="fa fa-quote-left"></i> Cite</button>
+    </div>
+</div>
 <pre class="code-block">
 @inproceedings{feng2024relational,
     title={Relational Diffusion Distillation For Efficient Image Generation},
@@ -340,20 +348,20 @@ Relational Diffusion Distillation For Efficient Image Generation
     year={2024}
 }
 <button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
+</div>
 
-
-
-
-
-KFC: Knowledge Reconstruction and Feedback Consolidation Enable Efficient and Effective Continual Generative Learning
-&nbsp;
-<a target="_blank" style="font-size:20px; color:#0156a3;" class="fa fa-file-pdf-o" href="
-    https://openreview.net/pdf?id=pVTcR8ig3R
-"></a>
-&#32;
-<a target="_blank" style="font-size:20px; color: #0156a3;" class="fa fa-github" href="
-    https://github.com/libo-huang/KFC
-"></a>
+<div class="pub-item">
+<div class="pub-title">KFC: Knowledge Reconstruction and Feedback Consolidation Enable Efficient and Effective Continual Generative Learning</div>
+<div class="pub-authors"><strong>Libo Huang</strong>, Zhulin An, Yan Zeng, Yongjun Xu, others</div>
+<div class="pub-bottom-row">
+    <div class="pub-venue"><em>International Conference on Learning Representations (ICLR) Tiny Papers Track</em>, 2024</div>
+    <div class="pub-actions">
+        <span class="pub-badge">Oral</span>
+        <a target="_blank" class="pub-btn" href="https://openreview.net/pdf?id=pVTcR8ig3R"><i class="fa fa-file-pdf-o"></i> PDF</a>
+        <a target="_blank" class="pub-btn" href="https://github.com/libo-huang/KFC"><i class="fa fa-github"></i> Code</a>
+        <button class="pub-btn" onclick="toggleBibtex(this)"><i class="fa fa-quote-left"></i> Cite</button>
+    </div>
+</div>
 <pre class="code-block">
 @inproceedings{huang2024kfc,
     title={KFC: Knowledge Reconstruction and Feedback Consolidation Enable Efficient and Effective Continual Generative Learning},
@@ -362,24 +370,20 @@ KFC: Knowledge Reconstruction and Feedback Consolidation Enable Efficient and Ef
     year={2024}
 }
 <button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
+</div>
 
-
-
-
-
-eTag: Class-Incremental Learning via Hierarchical Embedding Distillation and Task-Oriented Generation
-&nbsp;
-<a target="_blank" style="font-size:20px; color:#0156a3;" class="fa fa-file-pdf-o" href="
-    https://ojs.aaai.org/index.php/AAAI/article/view/29153
-"></a>
-&#32;
-<a target="_blank" style="font-size:20px; color: #0156a3;" class="fa fa-file-powerpoint-o" href="
-    https://underline.io/lecture/91937-etag-class-incremental-learning-via-embedding-distillation-and-task-oriented-generation
-"></a>
-&#32;
-<a target="_blank" style="font-size:20px; color: #0156a3;" class="fa fa-github" href="
-    https://github.com/libo-huang/eTag
-"></a>
+<div class="pub-item">
+<div class="pub-title">eTag: Class-Incremental Learning via Hierarchical Embedding Distillation and Task-Oriented Generation</div>
+<div class="pub-authors"><strong>Libo Huang</strong>, Yan Zeng, Chuanguang Yang, Zhulin An, Boyu Diao, Yongjun Xu</div>
+<div class="pub-bottom-row">
+    <div class="pub-venue"><em>AAAI Conference on Artificial Intelligence (AAAI)</em>, 2024</div>
+    <div class="pub-actions">
+        <a target="_blank" class="pub-btn" href="https://ojs.aaai.org/index.php/AAAI/article/view/29153"><i class="fa fa-file-pdf-o"></i> PDF</a>
+        <a target="_blank" class="pub-btn" href="https://underline.io/lecture/91937-etag-class-incremental-learning-via-embedding-distillation-and-task-oriented-generation"><i class="fa fa-file-powerpoint-o"></i> Slides</a>
+        <a target="_blank" class="pub-btn" href="https://github.com/libo-huang/eTag"><i class="fa fa-github"></i> Code</a>
+        <button class="pub-btn" onclick="toggleBibtex(this)"><i class="fa fa-quote-left"></i> Cite</button>
+    </div>
+</div>
 <pre class="code-block">
 @inproceedings{huang2024etag,
     title={eTag: Class-Incremental Learning via Embedding Distillation and Task-Oriented Generation},
@@ -391,17 +395,18 @@ eTag: Class-Incremental Learning via Hierarchical Embedding Distillation and Tas
     year={2024}
 }
 <button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
+</div>
 
-
-
-
-
-
-Automatic Spike Sorting with Low-Rank and Sparse Representation
-&nbsp;
-<a target="_blank" style="font-size:20px; color:#0156a3;" class="fa fa-file-pdf-o" href="
-https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10374166
-"></a>
+<div class="pub-item">
+<div class="pub-title">Automatical Spike Sorting with Low-Rank and Sparse Representation</div>
+<div class="pub-authors"><strong>Libo Huang</strong>, Lu Gan, Yan Zeng, Bingo Wing-Kuen Ling</div>
+<div class="pub-bottom-row">
+    <div class="pub-venue"><em>IEEE Transactions on Biomedical Engineering (IEEE TBE)</em>, 2023</div>
+    <div class="pub-actions">
+        <a target="_blank" class="pub-btn" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10374166"><i class="fa fa-file-pdf-o"></i> PDF</a>
+        <button class="pub-btn" onclick="toggleBibtex(this)"><i class="fa fa-quote-left"></i> Cite</button>
+    </div>
+</div>
 <pre class="code-block">
 @article{huang2023automatical,
     title={Automatical Spike Sorting with Low-Rank and Sparse Representation},
@@ -414,17 +419,19 @@ https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10374166
     publisher={IEEE}
 }
 <button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
+</div>
 
-
-A Unified Optimization Model of Feature Extraction and Clustering for Spike Sorting
-&nbsp;
-<a target="_blank" style="font-size:20px; color:#0156a3;" class="fa fa-file-pdf-o" href="
-https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9408665
-"></a>
-&#32;
-<a target="_blank" style="font-size:20px; color: #0156a3;" class="fa fa-github" href="
-    https://github.com/libo-huang/Unified-SS
-"></a>
+<div class="pub-item">
+<div class="pub-title">A Unified Optimization Model of Feature Extraction and Clustering for Spike Sorting</div>
+<div class="pub-authors"><strong>Libo Huang</strong>, Lu Gan, Bingo Wing-Kuen Ling</div>
+<div class="pub-bottom-row">
+    <div class="pub-venue"><em>IEEE Transactions on Neural Systems and Rehabilitation Engineering (IEEE TNSRE)</em>, 2021</div>
+    <div class="pub-actions">
+        <a target="_blank" class="pub-btn" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9408665"><i class="fa fa-file-pdf-o"></i> PDF</a>
+        <a target="_blank" class="pub-btn" href="https://github.com/libo-huang/Unified-SS"><i class="fa fa-github"></i> Code</a>
+        <button class="pub-btn" onclick="toggleBibtex(this)"><i class="fa fa-quote-left"></i> Cite</button>
+    </div>
+</div>
 <pre class="code-block">
 @article{huang2021unified,
     title={A Unified Optimization Model of Feature Extraction and Clustering for Spike Sorting},
@@ -436,17 +443,19 @@ https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9408665
     publisher={IEEE}
 }
 <button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
+</div>
 
-
-Nonlinear Causal Discovery with Multiple High-Dimensional Observations
-&nbsp;
-<a target="_blank" style="font-size:20px; color:#0156a3;" class="fa fa-file-pdf-o" href="
-https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9528890
-"></a>
-&#32;
-<a target="_blank" style="font-size:20px; color: #0156a3;" class="fa fa-github" href="
-    https://github.com/YanaZeng/HDDM
-"></a>
+<div class="pub-item">
+<div class="pub-title">Nonlinear Causal Discovery with Multiple High-Dimensional Observations</div>
+<div class="pub-authors">Yan Zeng, Zhifeng Hao, Ruichu Cai, Feng Xie, <strong>Libo Huang</strong>, Shohei Shimizu</div>
+<div class="pub-bottom-row">
+    <div class="pub-venue"><em>IEEE Transactions on Neural Networks and Learning Systems (IEEE TNNLS)</em>, 2021</div>
+    <div class="pub-actions">
+        <a target="_blank" class="pub-btn" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9528890"><i class="fa fa-file-pdf-o"></i> PDF</a>
+        <a target="_blank" class="pub-btn" href="https://github.com/YanaZeng/HDDM"><i class="fa fa-github"></i> Code</a>
+        <button class="pub-btn" onclick="toggleBibtex(this)"><i class="fa fa-quote-left"></i> Cite</button>
+    </div>
+</div>
 <pre class="code-block">
 @article{zeng2021nonlinear,
     title={Nonlinear Causal Discovery with Multiple High-Dimensional Observations},
@@ -459,13 +468,18 @@ https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9528890
     publisher={IEEE}
 }
 <button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
+</div>
 
-
-基于CUDA的多信道锋电位实时分类方法
-&nbsp;
-<a target="_blank" style="font-size:20px; color:#0156a3;" class="fa fa-file-pdf-o" href="
-https://cstj.cqvip.com/Qikan/Article/Detail?id=7100912272&from=Qikan_Search_Index
-"></a>
+<div class="pub-item">
+<div class="pub-title">基于CUDA的多信道锋电位实时分类方法</div>
+<div class="pub-authors">蔡瑞初, 赵坤垚, <strong>黄礼泊</strong>, 何炯, 陈瑶</div>
+<div class="pub-bottom-row">
+    <div class="pub-venue"><em>计算机工程与设计</em>, 2020</div>
+    <div class="pub-actions">
+        <a target="_blank" class="pub-btn" href="https://cstj.cqvip.com/Qikan/Article/Detail?id=7100912272&from=Qikan_Search_Index"><i class="fa fa-file-pdf-o"></i> PDF</a>
+        <button class="pub-btn" onclick="toggleBibtex(this)"><i class="fa fa-quote-left"></i> Cite</button>
+    </div>
+</div>
 <pre class="code-block">
 @article{ruicc2020cuda,
     title={基于CUDA的多信道锋电位实时分类方法},
@@ -477,16 +491,20 @@ https://cstj.cqvip.com/Qikan/Article/Detail?id=7100912272&from=Qikan_Search_Inde
     year={2020}
 }
 <button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
+</div>
 
-Spike Sorting Based On Low-Rank And Sparse Representation
-&nbsp;
-<a target="_blank" style="font-size:20px; color:#0156a3;" class="fa fa-file-pdf-o" href="
-https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9102837
-"></a>
-&#32;
-<a target="_blank" style="font-size:20px; color: #0156a3;" class="fa fa-file-powerpoint-o" href="
-    https://drive.google.com/file/d/1WpeTHbhCtw9ptyd2cZQ1rIysWMk4Btt-/view
-"></a>
+<div class="pub-item">
+<div class="pub-title">Spike Sorting Based On Low-Rank And Sparse Representation</div>
+<div class="pub-authors"><strong>Libo Huang</strong>, Bingo Wing-Kuen Ling, Yan Zeng, Lu Gan</div>
+<div class="pub-bottom-row">
+    <div class="pub-venue"><em>IEEE International Conference on Multimedia and Expo (ICME)</em>, 2020</div>
+    <div class="pub-actions">
+        <span class="pub-badge">Oral</span>
+        <a target="_blank" class="pub-btn" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9102837"><i class="fa fa-file-pdf-o"></i> PDF</a>
+        <a target="_blank" class="pub-btn" href="https://drive.google.com/file/d/1WpeTHbhCtw9ptyd2cZQ1rIysWMk4Btt-/view"><i class="fa fa-file-powerpoint-o"></i> Slides</a>
+        <button class="pub-btn" onclick="toggleBibtex(this)"><i class="fa fa-quote-left"></i> Cite</button>
+    </div>
+</div>
 <pre class="code-block">
 @inproceedings{huang2020spike,
     title={Spike Sorting Based On Low-Rank And Sparse Representation},
@@ -497,13 +515,18 @@ https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9102837
     organization={IEEE}
 }
 <button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
+</div>
 
-
-WMsorting: Wavelet Packets' Decomposition and Mutual Information-based Spike Sorting Method
-&nbsp;
-<a target="_blank" style="font-size:20px; color:#0156a3;" class="fa fa-file-pdf-o" href="
-https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8681441
-"></a>
+<div class="pub-item">
+<div class="pub-title">WMsorting: Wavelet Packets' Decomposition and Mutual Information-based Spike Sorting Method</div>
+<div class="pub-authors"><strong>Libo Huang</strong>, Bingo Wing-Kuen Ling, Ruichu Cai, Yan Zeng, Jiong He, Yao Chen</div>
+<div class="pub-bottom-row">
+    <div class="pub-venue"><em>IEEE Transactions on NanoBioscience (IEEE TNB)</em>, 2019</div>
+    <div class="pub-actions">
+        <a target="_blank" class="pub-btn" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8681441"><i class="fa fa-file-pdf-o"></i> PDF</a>
+        <button class="pub-btn" onclick="toggleBibtex(this)"><i class="fa fa-quote-left"></i> Cite</button>
+    </div>
+</div>
 <pre class="code-block">
 @article{huang2019wmsorting,
     title={WMsorting: Wavelet Packets' Decomposition and Mutual Information-based Spike Sorting Method},
@@ -516,13 +539,19 @@ https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8681441
     publisher={IEEE}
 }
 <button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
+</div>
 
-
-HASS: High Accuracy Spike Sorting with Wavelet Package Decomposition and Mutual Information
-&nbsp;
-<a target="_blank" style="font-size:20px; color:#0156a3;" class="fa fa-file-pdf-o" href="
-https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8621401
-"></a>
+<div class="pub-item">
+<div class="pub-title">HASS: High Accuracy Spike Sorting with Wavelet Package Decomposition and Mutual Information</div>
+<div class="pub-authors">Yao Chen, <strong>Libo Huang</strong>, Jiong He, Kunyao Zhao, Ruichu Cai, Zhifeng Hao</div>
+<div class="pub-bottom-row">
+    <div class="pub-venue"><em>IEEE International Conference on Bioinformatics and Biomedicine (BIBM)</em>, 2018</div>
+    <div class="pub-actions">
+        <span class="pub-badge">Oral</span>
+        <a target="_blank" class="pub-btn" href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8621401"><i class="fa fa-file-pdf-o"></i> PDF</a>
+        <button class="pub-btn" onclick="toggleBibtex(this)"><i class="fa fa-quote-left"></i> Cite</button>
+    </div>
+</div>
 <pre class="code-block">
 @inproceedings{chen2018hass,
     title={HASS: High Accuracy Spike Sorting with Wavelet Package Decomposition and Mutual Information},
@@ -533,7 +562,6 @@ https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8621401
     organization={IEEE}
 }
 <button class="copy-button" onclick="copyToClipboard(this)">copy</button></pre>
-
-
+</div>
 
 </div>
