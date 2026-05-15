@@ -582,13 +582,12 @@ a.record-button:hover {
     border: 1px solid #ececec;
     border-radius: 10px;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04); /* 增加柔和的阴影 */
+    /* box-shadow: 0 2px 8px rgba(0,0,0,0.04);  */
 }
 
 .pub-item:hover {
     background: #ececec;
     transform: translateY(0px);
-    /* box-shadow: 0 6px 16px rgba(0,0,0,0.1); */
 }
 
 .pub-title {
@@ -679,6 +678,39 @@ a.record-button:hover {
     color: #888888;
     margin-bottom: 10px;
     padding-left: 4px;
+}
+
+.pub-scroll-container {
+    max-height: 520px;
+    overflow-y: auto;
+    padding-right: 15px;
+    margin-top: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #c1c1c1 #f9f9f9;
+
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.pub-scroll-container::-webkit-scrollbar {
+    width: 6px;
+}
+.pub-scroll-container::-webkit-scrollbar-track {
+    /* background: #f1f1f1;  */
+    background: #f9f9f9;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+.pub-scroll-container::-webkit-scrollbar-thumb {
+    /* background: #c1c1c1;  */
+    background: #cccccc; 
+    border-radius: 10px;
+}
+.pub-scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #0156a3;
 }
 
 /* ==================== 响应式布局 ==================== */
