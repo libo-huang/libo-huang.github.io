@@ -257,6 +257,14 @@ img {
     justify-content: flex-start;
     overflow-x: auto;
     white-space: nowrap;
+    /* 隐藏 Firefox、IE 和 Edge 的滚动条 */
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
+}
+
+/* 隐藏 Chrome、Safari 和新版 Edge 的滚动条 */
+.navbar-links::-webkit-scrollbar {
+    display: none;
 }
 
 .navbar-links a {
@@ -307,6 +315,8 @@ img {
     flex-direction: column;
     overflow-y: hidden;
     min-height: 100vh;
+
+    padding-bottom: 220px;
 }
 
 .content {
@@ -405,15 +415,17 @@ img {
     align-items: flex-start;
     flex-wrap: nowrap;
     background-color: #eeeeee;
-    width: 100%;
-    margin-top: auto;
+    width: 15%;
+    bottom: 5px;
+    position: fixed;
 }
 
 #footer-text-block {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    width: 50%;
+    justify-content: flex-end;
+    flex: 1;
+    min-width: 0;
 }
 
 #footer-text-block a {
