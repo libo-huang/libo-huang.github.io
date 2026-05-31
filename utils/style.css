@@ -415,6 +415,9 @@ img {
     align-items: flex-start;
     flex-wrap: nowrap;
     background-color: #eeeeee;
+
+    /* width: 100%;
+    margin-top: auto; */
     width: 15%;
     bottom: 5px;
     position: fixed;
@@ -423,6 +426,9 @@ img {
 #footer-text-block {
     display: flex;
     flex-direction: column;
+
+    /* justify-content: flex-start;
+    width: 50%;  */
     justify-content: flex-end;
     flex: 1;
     min-width: 0;
@@ -747,6 +753,13 @@ a.record-button:hover {
         padding: 0 10px;
         font-size: 16px;
     }
+
+    #footer {
+        position: static;
+        width: 100%;
+        margin-top: 25px;
+        /* background-color: transparent; */
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -781,6 +794,14 @@ a.record-button:hover {
     
     .avatar-container {
         text-align: center;
+    }
+
+
+    #footer {
+        position: static;
+        width: 100%;
+        margin-top: 25px;
+        /* background-color: transparent; */
     }
 }
 
@@ -831,6 +852,13 @@ a.record-button:hover {
         padding-left: 3.5em;
         text-indent: -3.5em;
     }
+
+    #footer {
+        position: static;
+        width: 100%;
+        margin-top: 25px;
+        /* background-color: transparent; */
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -848,5 +876,12 @@ a.record-button:hover {
     .wechat-hover .qrcode {
         width: 110px;
         height: 110px;
+    }
+
+    #footer {
+        position: static;
+        width: 100%;
+        margin-top: 25px;
+        /* background-color: transparent; */
     }
 }
