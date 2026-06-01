@@ -305,18 +305,15 @@ img {
 }
 
 .sidebar {
-    width: 15%;
-    margin-top: 35px;
-    padding: 15px 10px 0px 0px;
-    position: fixed;
-    overflow-y: auto;
-    background-color: #eeeeee;
     display: flex;
+    width: 15%;
+    top: 45px;
+    position: fixed;
+    background-color: #eeeeee;
     flex-direction: column;
-    overflow-y: hidden;
     min-height: 100vh;
-
-    padding-bottom: 220px;
+    /* box-sizing: border-box; */
+    padding-right: 10px;
 }
 
 .content {
@@ -332,6 +329,7 @@ img {
 /* ==================== 联系信息与图标 ==================== */
 .contact-info {
     margin-bottom: 1em;
+    font-size: 14px;
 }
 
 .icon-fixed {
@@ -414,11 +412,10 @@ img {
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: nowrap;
-    background-color: #eeeeee;
     /* width: 100%;
     margin-top: auto; */
     width: 15%;
-    bottom: 5px;
+    bottom: 0px;
     position: fixed;
 }
 
@@ -427,7 +424,7 @@ img {
     flex-direction: column;
     /* justify-content: flex-start;
     width: 50%;  */
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     flex: 1;
     min-width: 0;
 }
@@ -825,6 +822,14 @@ a.record-button:hover {
         padding: 20px;
         border-radius: 0;
         box-shadow: none;
+    }
+
+    .wechat-hover .qrcode {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        margin-left: 0;
+        margin-top: 0;
     }
     
     #footer {
