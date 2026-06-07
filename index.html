@@ -128,10 +128,8 @@
 
         <div id="footer-text-block">
             <div style="margin-bottom: 4px;">
-                <span id="lastUpdate"></span>&nbsp;&nbsp;&nbsp;
-                <span style="text-decoration: none;"><a target="_blank" href="https://github.com/libo-huang/libo-huang.github.io?tab=MIT-1-ov-file">Privacy Policy</a></span><br>
-                <span>All rights reserved</span>&nbsp;&nbsp;&nbsp;
-                <span>&copy;2024 Libo Huang</span>
+                &copy;<span id="copyright-year">2024</span> Libo Huang. All rights reserved<br>
+                <span id="lastUpdate"></span>
             </div>
         </div>
     </div>
@@ -232,6 +230,11 @@ Publications
 </script>
 
 <script>
+const startYear = 2024;
+const currentYear = new Date().getFullYear();
+const yearText = currentYear > startYear ? startYear + "–" + currentYear : startYear;
+document.getElementById("copyright-year").textContent = yearText;
+
 addBackToTop({
     backgroundColor: '#fff',
     innerHTML: 'Back to Top',

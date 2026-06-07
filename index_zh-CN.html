@@ -128,10 +128,8 @@
 
         <div id="footer-text-block">
             <div style="margin-bottom: 4px;">
-                <span id="lastUpdate"></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <span style="text-decoration: none;"><a target="_blank" href="https://github.com/libo-huang/libo-huang.github.io?tab=MIT-1-ov-file">隐私权政策</a></span><br>
-                <span>版权所有</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <span></span>&copy;2024 黄礼泊</span>
+                &copy;<span id="copyright-year">2024</span> 黄礼泊 版权所有<br>
+                <span id="lastUpdate"></span>
             </div>
         </div>
     </div>
@@ -154,7 +152,7 @@
 </h2>
 
 <p>
-    黄礼泊是<a href="https://www.cas.cn/" target="_blank">中国科学院</a><a href="http://www.ict.ac.cn/" target="_blank">计算技术研究所</a>的助理研究员（全职在编）。他能独立指导计算机科学方向博士生和硕士生。在此之前，他作为博士后研究员（2021.10-2024.8）和实习研究员（2021.7-2021.10）在中国科学院计算技术研究所从事深度学习方面的研究，合作导师为<a href="https://www.ict.ac.cn/sourcedb/cn/jssrck/200909/t20090917_2496751.html" target="_blank">徐勇军研究员</a>（主任）和<a href="https://www.ict.ac.cn/sourcedb/cn/jssrck/201411/t20141115_4253427.html" target="_blank">安竹林副研究员</a>。            
+    黄礼泊是<a href="https://www.cas.cn/" target="_blank">中国科学院</a><a href="http://www.ict.ac.cn/" target="_blank">计算技术研究所</a>全职在编助理教授（助理研究员）。他能独立指导计算机科学方向博士生和硕士生。在此之前，他作为博士后研究员（2021.10-2024.8）和实习研究员（2021.7-2021.10）在中国科学院计算技术研究所从事深度学习方面的研究，合作导师为<a href="https://www.ict.ac.cn/sourcedb/cn/jssrck/200909/t20090917_2496751.html" target="_blank">徐勇军研究员</a>（主任）和<a href="https://www.ict.ac.cn/sourcedb/cn/jssrck/201411/t20141115_4253427.html" target="_blank">安竹林副研究员</a>。            
 </p>
 <p>
     他于<a href="https://www.gdut.edu.cn/" target="_blank">广东工业大学</a>（2018-2021，导师为<a href="https://yzw.gdut.edu.cn/info/1118/1991.htm" target="_blank">Wing-Kuen Ling教授</a>，IET Fellow/国家海外高层次人才）和<a href="https://www.brunel.ac.uk/" target="_blank">英国布鲁内尔大学</a>（2019-2020，导师为<a href="https://www.brunel.ac.uk/people/lu-gan" target="_blank">Lu Gan教授</a>）联合培养获得机器学习博士学位。
@@ -232,6 +230,11 @@
 </script>
 
 <script>
+const startYear = 2024;
+const currentYear = new Date().getFullYear();
+const yearText = currentYear > startYear ? startYear + "–" + currentYear : startYear;
+document.getElementById("copyright-year").textContent = yearText;
+
 addBackToTop({
     backgroundColor: '#fff',
     innerHTML: 'Back to Top',
