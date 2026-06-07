@@ -595,7 +595,9 @@ a.record-button:hover {
     border: 1px solid #ececec;
     border-radius: 10px;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
-    /* box-shadow: 0 2px 8px rgba(0,0,0,0.04);  */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04); 
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
 }
 
 .pub-item:hover {
@@ -705,6 +707,8 @@ a.record-button:hover {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
     padding: 20px;
     margin-bottom: 20px;
+    scroll-snap-type: y mandatory; 
+    scroll-padding-top: 20px;
 }
 
 .pub-scroll-container::-webkit-scrollbar {
