@@ -689,7 +689,7 @@ a.record-button:hover {
 }
 
 .pub-note {
-    font-size: small;
+    font-size: 0.85em;
     color: #888888;
     margin-bottom: 10px;
     padding-left: 4px;
@@ -728,6 +728,22 @@ a.record-button:hover {
 .pub-scroll-container::-webkit-scrollbar-thumb:hover {
     background: #0156a3;
 }
+
+/* ==================== others ==================== */
+.oth-note {
+    font-size: 0.85em;
+    color: #888888;
+    margin-top: -5px;
+    padding-left: 4px;
+}
+
+
+
+
+
+
+
+
 
 /* ==================== 响应式布局 ==================== */
 @media screen and (max-width: 992px) {
