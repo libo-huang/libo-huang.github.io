@@ -33,9 +33,43 @@ div#toptitle {
     justify-content: space-between;
 }
 
-.language-switch {
+.language-switch-group {
     margin-left: auto;
+    margin-top: 8px;
+    display: inline-flex;
+    background-color: #e0e0e0;
+    padding: 2px;
+    border-radius: 15px;
+    font-size: 11px;
+    font-family: sans-serif;
 }
+
+.language-switch-group .lang-btn {
+    padding: 3px 10px;
+    color: #666666 !important;
+    border-radius: 13px;
+    text-decoration: none !important;
+    border-bottom: none !important;
+    transition: all 0.2s ease;
+}
+
+.language-switch-group .lang-btn:hover {
+    color: #0156a3 !important;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.language-switch-group .lang-btn.active {
+    background-color: #ffffff;
+    color: #0156a3 !important;
+    font-weight: bold;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    cursor: default;
+    pointer-events: none;
+}
+
+
+
+
 
 div#toptitle h1 {
     margin-bottom: 0.0em;
@@ -867,6 +901,11 @@ a.record-button:hover {
         text-align: left;
         width: 100%;
         padding-right: 0;       
+    }
+
+    .language-switch-group {
+        margin: 0 auto 15px auto;
+        display: inline-flex;
     }
 }
 
