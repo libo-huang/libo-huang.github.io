@@ -408,7 +408,6 @@ img {
 .wechat-hover .qrcode {
     visibility: hidden;
     opacity: 0;
-    position: fixed;
     z-index: 1000;
     position: absolute;
     left: 100%;

@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -14,7 +16,7 @@
     <link rel="shortcut icon" href="/utils/ict-icon.jpeg">
     <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/academicons/1.8.6/css/academicons.min.css">
     <link rel="stylesheet" href="/utils/style.css?v={{ site.time | date: '%s' }}">
-    <script src="https://kit.fontawesome.com/b59a433526.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script src="/utils/vanilla-back-to-top.min.js"></script>
     <title>黄礼泊@中科院计算所</title>
 </head>
@@ -79,7 +81,7 @@
         </p>
         <p class="contact-line">
             <div class="wechat-hover">
-                <i class="fa fa-wechat fa-fw icon-fixed"></i> libohuang_ict
+                <i class="fa-brands fa-weixin fa-fw icon-fixed"></i> libohuang_ict
                 <span class="qrcode"> <img src="/utils/wechat.png" alt="wechat"> </span>
             </div>
         </p>
@@ -145,7 +147,7 @@
 个人简介
 <a href="https://www.linkedin.com/in/lbhuang/?locale=zh_CN" target="_blank" style="text-decoration: none; margin-left: 10px; border: none;">
     <button class="h2-button">
-        <i class="fa fa-linkedin-square" style="font-size:15px; color:#0156a3; margin-right: 5px;"></i>
+        <i class="fa-brands fa-linkedin" style="font-size:15px; color:#0156a3; margin-right: 5px;"></i>
         领英
     </button>
 </a>
@@ -185,8 +187,7 @@
 
 
 <h2 id="news">最新动态</h2>
-<div id="ul-container0"></div>
-
+{% include news.html %}
 
 
 
@@ -201,14 +202,13 @@
 </a>
 
 </h2>
-<div id="ul-container1"></div>
+{% include publications.html %}
 
 
 
 
 <h2 id="others">其他</h2>
-<div id="ul-container2"></div>
-
+{% include others.html %}
 
 
 </div>
@@ -275,28 +275,6 @@ function updateLastModified() {
     var formattedDate = year + '.' + month;
     document.getElementById("lastUpdate").innerText = "最近更新：" + formattedDate;
 }
-
-// 统一的模块自动加载器
-document.addEventListener('DOMContentLoaded', function() {
-    const modules = [
-        { url: './html/news.html', container: 'ul-container0', targetId: 'module0' },
-        { url: './html/publications.html', container: 'ul-container1', targetId: 'module1' },
-        { url: './html/others.html', container: 'ul-container2', targetId: 'module2' }
-    ];
-    modules.forEach(mod => {
-        fetch(mod.url)
-            .then(response => response.text())
-            .then(data => {
-                const tempDiv = document.createElement('div');
-                tempDiv.innerHTML = data;
-                const moduleContent = tempDiv.querySelector('#' + mod.targetId);
-                if (moduleContent) {
-                    document.getElementById(mod.container).appendChild(moduleContent.cloneNode(true));
-                }
-            })
-            .catch(error => console.error('Error loading module:', error));
-    });
-});
 
 function copyToClipboard(button) {
     const preElement = button.closest("pre").cloneNode(true);
@@ -391,19 +369,6 @@ document.addEventListener('DOMContentLoaded', function() {
         el.innerHTML = `<a href="mailto:${user}@${domain}">${user}(at)${domain}</a>`;
     });
 });
-function decodeEmail(encoded) {
-    let decoded = "";
-    for (let i = 0; i < encoded.length; i++) {
-        decoded += String.fromCharCode(encoded.charCodeAt(i) - 1);
-    }
-    return decoded;
-}
-setTimeout(() => {
-    const encodedEmail = 'ivbojmcp#jbub!bd#nb';
-    const realEmail = decodeEmail(encodedEmail).replace('#', '@').replace('!', '.');
-    document.getElementById('secure-email').innerHTML = 
-        `<a href="mailto:${realEmail}">${realEmail.replace('@', '(at)')}</a>`;
-}, 1500);
 </script>
 
 <noscript>
