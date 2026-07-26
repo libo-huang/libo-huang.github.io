@@ -12,6 +12,8 @@
     <meta property="og:url" content="https://libo-huang.github.io">
     <meta property="og:image" content="https://libo-huang.github.io/utils/libo-huang.png">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="theme-color" content="#0156a3">
+    <script src="/utils/theme.js"></script>
     <link rel="stylesheet" href="./utils/style.css" type="text/css">
     <link rel="shortcut icon" href="/utils/ict-icon.jpeg">
     <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/academicons/1.8.6/css/academicons.min.css">
@@ -54,11 +56,13 @@
 
 
 <div class="sidebar">
-    <div class="language-switch-group">
-        <a href="/index.html" class="lang-btn">EN</a>
-        <a href="/index_zh-CN.html" class="lang-btn active">中文</a>
+    <div class="sidebar-controls">
+        <div class="language-switch-group">
+            <a href="/index.html" class="lang-btn">EN</a>
+            <a href="/index_zh-CN.html" class="lang-btn active">中文</a>
+        </div>
+        <button id="theme-toggle" class="theme-toggle" type="button">◐ 自动</button>
     </div>
-
     <div class="avatar-container">
         <img src="./utils/libo-huang.png" alt="Libo Huang">
     </div>
@@ -171,7 +175,7 @@
     </button>
 </a>
 </h2>
-他的研究核心聚焦于<strong>面向开放环境的持续学习</strong>，贯穿“通用机理探索、开放场景验证”的学术脉络，致力打造具备记忆与自主演进能力的可靠与高效AI系统。主要研究方向包括：
+他的研究核心聚焦于<strong>面向开放环境的持续学习</strong>，贯穿“通用机理探索、开放场景验证”的学术脉络，致力打造具备记忆与自主演进能力的可靠与高效AI系统。主要研究兴趣包括：
 <ul>
     <li>
         <strong>机器认知与高效大模型：</strong>探究深度神经网络的持续判别与生成机理，结合知识蒸馏与低比特量化等模型压缩技术，实现开放环境下的数据规律挖掘与高效知识表示。
@@ -205,6 +209,15 @@
 </a>
 
 </h2>
+<div class="publication-search" role="search" aria-label="搜索论文">
+    <label class="visually-hidden" for="publication-search-input">搜索论文</label>
+    <div class="publication-search-box">
+        <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+        <input id="publication-search-input" type="search" placeholder="按标题、作者、会议或年份搜索……" autocomplete="off" spellcheck="false">
+        <span id="publication-search-count" class="publication-search-count" aria-live="polite"></span>
+    </div>
+    <p id="publication-search-empty" class="publication-search-empty" hidden>没有找到匹配的论文。</p>
+</div>
 {% include publications.html %}
 
 
@@ -245,30 +258,60 @@ addBackToTop({
 })
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.addEventListener('click', function(e) {
-        if (e.target && e.target.id === 'more-news-btn') {
-            const hiddenItems = document.querySelectorAll('.more-news');
-            let allVisible = true;
-            
-            hiddenItems.forEach(item => {
-                if (item.style.display === 'none') {
-                    allVisible = false;
-                }
+    const moreNewsButton = document.getElementById('more-news-btn');
+    const hiddenNewsItems = document.querySelectorAll('.more-news');
+    if (moreNewsButton && hiddenNewsItems.length) {
+        moreNewsButton.innerHTML = '更多动态 <i class="fas fa-chevron-down" aria-hidden="true"></i>';
+        moreNewsButton.addEventListener('click', function() {
+            const shouldShow = Array.from(hiddenNewsItems).some(item => getComputedStyle(item).display === 'none');
+            hiddenNewsItems.forEach(item => {
+                item.style.display = shouldShow ? 'list-item' : 'none';
             });
-            
-            hiddenItems.forEach(item => {
-                item.style.display = allVisible ? 'none' : 'list-item';
+            moreNewsButton.innerHTML = shouldShow
+                ? '收起动态 <i class="fas fa-chevron-up" aria-hidden="true"></i>'
+                : '更多动态 <i class="fas fa-chevron-down" aria-hidden="true"></i>';
+            moreNewsButton.classList.toggle('active', shouldShow);
+            moreNewsButton.setAttribute('aria-expanded', String(shouldShow));
+        });
+    }
+
+    const searchInput = document.getElementById('publication-search-input');
+    const searchCount = document.getElementById('publication-search-count');
+    const searchEmpty = document.getElementById('publication-search-empty');
+    const publicationContainer = document.querySelector('.pub-scroll-container');
+    const publicationItems = Array.from(document.querySelectorAll('.pub-item'));
+
+    if (searchInput && searchCount && searchEmpty && publicationContainer) {
+        const updatePublicationSearch = function() {
+            const terms = searchInput.value.toLocaleLowerCase().trim().split(/\s+/).filter(Boolean);
+            let visibleCount = 0;
+
+            publicationItems.forEach(item => {
+                const searchableText = Array.from(item.querySelectorAll('.pub-title, .pub-authors, .pub-venue'))
+                    .map(element => element.textContent)
+                    .join(' ')
+                    .toLocaleLowerCase();
+                const matches = terms.every(term => searchableText.includes(term));
+                item.hidden = !matches;
+                if (matches) visibleCount += 1;
             });
-            
-            if (allVisible) {
-                e.target.innerHTML = 'More News <i class="fas fa-chevron-down"></i>';
-                e.target.classList.remove('active');
-            } else {
-                e.target.innerHTML = 'Less News <i class="fas fa-chevron-up"></i>';
-                e.target.classList.add('active');
+
+            searchCount.textContent = terms.length
+                ? visibleCount + ' / ' + publicationItems.length
+                : '共 ' + publicationItems.length + ' 篇';
+            searchEmpty.hidden = visibleCount !== 0;
+            publicationContainer.hidden = visibleCount === 0;
+        };
+
+        searchInput.addEventListener('input', updatePublicationSearch);
+        searchInput.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && searchInput.value) {
+                searchInput.value = '';
+                updatePublicationSearch();
             }
-        }
-    });
+        });
+        updatePublicationSearch();
+    }
 });
 
 function updateLastModified() {
@@ -320,7 +363,7 @@ function toggleBibtex(button) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.navbar a').forEach(anchor => {
+    document.querySelectorAll('.navbar-links a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
             e.preventDefault();
             
@@ -336,7 +379,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     top: targetPosition,
                     behavior: 'smooth'
                 });
-                document.querySelectorAll('.navbar a').forEach(link => {
+                document.querySelectorAll('.navbar-links a[href^="#"]').forEach(link => {
                     link.classList.remove('active');
                 });
                 this.classList.add('active');
@@ -355,7 +398,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
         
-        document.querySelectorAll('.navbar a').forEach(link => {
+        document.querySelectorAll('.navbar-links a[href^="#"]').forEach(link => {
             link.classList.remove('active');
             if (link.getAttribute('href') === currentSection) {
                 link.classList.add('active');
