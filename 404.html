@@ -1,0 +1,28 @@
+---
+lang: en
+title: "Page not found | Libo Huang"
+description: "The requested page could not be found."
+canonical_path: /404.html
+og_locale: en_US
+alternate_locale: zh_CN
+sitemap: false
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include head.html %}
+</head>
+<body class="error-page">
+    <main class="error-card">
+        <p class="error-code">404</p>
+        <h1>Page not found</h1>
+        <p>The requested page may have moved or no longer exists.</p>
+        <p>您访问的页面不存在或已移动。</p>
+        <div class="error-actions">
+            <a class="pub-btn" href="{{ '/' | relative_url }}">English homepage</a>
+            <a class="pub-btn" href="{{ '/index_zh-CN.html' | relative_url }}">中文主页</a>
+        </div>
+    </main>
+</body>
+</html>
+

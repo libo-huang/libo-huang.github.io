@@ -25,6 +25,11 @@ a:hover {
     border-bottom: 1px #0156a3 dotted;
 }
 
+:focus-visible {
+    outline: 2px solid #0156a3;
+    outline-offset: 3px;
+}
+
 /* ==================== 标题区与顶部栏 ==================== */
 div#toptitle {
     margin-bottom: 0.8em;
@@ -53,7 +58,7 @@ div#toptitle {
     background-color: transparent;
     padding: 0;
     border-radius: 13px;
-    font-size: 11px;
+    font-size: 12px;
     font-family: sans-serif;
 }
 
@@ -65,7 +70,7 @@ div#toptitle {
     border-radius: 0 13px 13px 0;
     background-color: transparent;
     color: #444444;
-    font: 600 11px/1 sans-serif;
+    font: 600 12px/1 sans-serif;
     white-space: nowrap;
     cursor: pointer;
     transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
@@ -345,9 +350,11 @@ img {
 .navbar-links a {
     display: inline-flex;
     align-items: center;
+    box-sizing: border-box;
     color: white;
     padding: 0 15px;
     height: 100%;
+    border-bottom: 0;
     text-decoration: none;
     font-size: 18px;
 }
@@ -377,6 +384,7 @@ img {
     background-color: #002D72;
     color: white;
     height: 100%;
+    border-bottom: 0;
 }
 
 /* ==================== 主容器与侧边栏 ==================== */
@@ -416,21 +424,37 @@ img {
     font-size: 14px;
 }
 
+.contact-line {
+    display: grid;
+    grid-template-columns: 1.7em minmax(0, 1fr);
+    column-gap: 0.55em;
+    align-items: start;
+    margin: 0 0 0.65em;
+}
+
 .icon-fixed {
-    width: 1.2em;
+    width: 1.7em;
     text-align: center;
     color: #0156a3;
-    margin-right: 0.5em;
     font-size: 1.2em;
-    vertical-align: middle;
-    float: left;
+    line-height: 1.3;
+}
+
+.icon-fixed.ai-google-scholar-square {
+    font-size: 1.28em;
+    line-height: 1.1;
 }
 
 .contact-text {
-    display: inline-block;
     display: block;
-    text-indent: 0;
-    overflow: hidden;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    text-align: left;
+}
+
+.email-protect {
+    min-width: 0;
+    overflow-wrap: anywhere;
     text-align: left;
 }
 
@@ -442,7 +466,12 @@ img {
 }
 .avatar-container img {
     width: 65%;
+    height: auto;
     max-width: 175px;
+    display: inline-block;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
     border-radius: 50%;
     transition: transform 0.3s ease;
 }
@@ -452,29 +481,41 @@ img {
 .wechat-hover {
     position: relative;
     display: inline-block;
+    min-width: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: #224b8d;
+    font: inherit;
+    line-height: 1.3;
+    text-align: left;
     cursor: pointer;
-    margin: -0px 0px 0px 0px;
 }
 
 .wechat-hover .qrcode {
+    display: none;
+}
+
+.wechat-floating-qrcode {
+    display: block;
     visibility: hidden;
     opacity: 0;
-    z-index: 1000;
-    position: absolute;
-    left: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 15px;
+    z-index: 2147483647;
+    position: fixed;
+    left: 0;
+    top: 0;
     width: 150px;
     height: 150px;
     background: white;
     border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.28);
     padding: 8px;
-    transition: all 0.3s ease;
+    pointer-events: none;
+    isolation: isolate;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
 }
 
-.wechat-hover:hover .qrcode {
+.wechat-floating-qrcode.is-visible {
     visibility: visible;
     opacity: 1;
 }
@@ -560,15 +601,38 @@ a.record-button:hover {
     transition: all 0.3s ease;
 }
 
+.copy-success { background-color: #1f7a3f !important; }
+.copy-error { background-color: #b42318 !important; }
+
 .h2-button {
     font-size: 12px;
     display: inline-flex;
     align-items: center;
-    padding-left: 1px;
-    padding-right: 1px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    gap: 4px;
+    padding: 1px 4px;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    line-height: 1.2;
+    vertical-align: middle;
+    text-decoration: none;
     cursor: pointer;
+    margin-left: 5px;
+}
+
+.h2-button:hover {
+    color: #ffffff;
+    background-color: #0156a3;
+    border-bottom: 1px solid #0156a3;
+}
+
+.h2-button img {
+    width: 17px;
+    height: 17px;
+    object-fit: contain;
+}
+
+.h2-button i {
+    font-size: 16px;
 }
 
 #back-to-top {
@@ -825,6 +889,11 @@ a.record-button:hover {
     text-decoration: none;
 }
 
+.pub-btn.active {
+    color: #ffffff !important;
+    background-color: #0156a3;
+}
+
 .pub-badge {
     display: inline-flex;
     align-items: center;
@@ -891,6 +960,36 @@ a.record-button:hover {
     padding-left: 4px;
 }
 
+.list-ellipsis {
+    color: #888888;
+    list-style: none;
+}
+
+/* ==================== 404 页面 ==================== */
+.error-page {
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.error-card {
+    max-width: 560px;
+    padding: 36px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #dbe3ec;
+    border-radius: 14px;
+    box-shadow: 0 12px 36px rgba(15, 23, 42, 0.1);
+}
+
+.error-code {
+    margin: 0;
+    color: #0156a3;
+    font: 700 72px/1 Arial, sans-serif;
+}
+
 /* ==================== 黑夜主题 ==================== */
 html,
 body,
@@ -899,7 +998,7 @@ body,
 .pub-scroll-container,
 .code-block,
 div.codeblock > div.blockcontent,
-.wechat-hover .qrcode,
+.wechat-floating-qrcode,
 .sidebar-controls,
 .language-switch-group,
 .language-switch-group .lang-btn,
@@ -957,7 +1056,7 @@ html[data-theme="dark"] .navbar-links a {
 html[data-theme="dark"] .navbar-links a:hover {
     color: #ffffff !important;
     background-color: #224b8d;
-    border-bottom-color: transparent;
+    border-bottom: 0;
 }
 
 html[data-theme="dark"] .navbar-links a.active {
@@ -1073,10 +1172,22 @@ html[data-theme="dark"] .publication-search-empty {
     border-color: #334155;
 }
 
-html[data-theme="dark"] .wechat-hover .qrcode {
+html[data-theme="dark"] .wechat-floating-qrcode {
     background: #ffffff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
+
+html[data-theme="dark"] .wechat-hover { color: #93c5fd; }
+
+html[data-theme="dark"] .error-card {
+    color: #e5e7eb;
+    background: #111827;
+    border-color: #475569;
+}
+
+html[data-theme="dark"] .error-code { color: #93c5fd; }
+
+html[data-theme="dark"] :focus-visible { outline-color: #93c5fd; }
 
 html[data-theme="dark"] #back-to-top {
     color: #e5e7eb !important;
@@ -1105,7 +1216,7 @@ html[data-theme="dark"] #back-to-top {
 
 
 /* ==================== 响应式布局 ==================== */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1300px) {
     body {
         width: 90%;
     }
@@ -1179,7 +1290,7 @@ html[data-theme="dark"] #back-to-top {
         overflow: visible;
     }
 
-    .sidebar img[src*="libo-huang.png"] {
+    .avatar-container img {
         width: 150px !important; 
         max-width: 100%;
     }
@@ -1192,9 +1303,21 @@ html[data-theme="dark"] #back-to-top {
         justify-content: center;
     }
     .contact-info {
-        text-align: left; 
-        display: block;
-        margin-top: 15px;
+        width: min(560px, 100%);
+        margin: 15px auto 1em;
+        text-align: left;
+    }
+
+    .pub-scroll-container {
+        max-height: none;
+        overflow-y: visible;
+        scroll-snap-type: none;
+        padding: 12px;
+    }
+
+    .pub-item {
+        scroll-snap-align: none;
+        scroll-snap-stop: normal;
     }
 
     .content {
@@ -1210,14 +1333,6 @@ html[data-theme="dark"] #back-to-top {
         text-align: left;
     }
 
-    .wechat-hover .qrcode {
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        margin-left: 0;
-        margin-top: 0;
-    }
-    
     #footer {
         position: static;
         width: 100%;
@@ -1244,6 +1359,7 @@ html[data-theme="dark"] #back-to-top {
         justify-content: center;
         margin: 0 auto 15px;
     }
+
 }
 
 
@@ -1301,7 +1417,7 @@ html[data-theme="dark"] #back-to-top {
         text-indent: -3em;
     }
 
-    .wechat-hover .qrcode {
+    .wechat-floating-qrcode {
         width: 110px;
         height: 110px;
     }

@@ -1,26 +1,15 @@
 ---
+lang: en
+title: "Libo Huang @ ICT, CAS"
+description: "Libo Huang — Assistant Researcher at the Institute of Computing Technology, Chinese Academy of Sciences; research interests include continual learning, machine learning, deep learning, and causal learning."
+canonical_path: /
+og_locale: en_US
+alternate_locale: zh_CN
 ---
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="keywords" content="libo huang, huanglibo, libohuang, Libo Huang, Machine learning, Deep learning, Institute of Computing Technology, Chinese Academy of Sciences">
-    <meta name="description" content="Libo Huang - Assistant Researcher at the Institute of Computing Technology, Chinese Academy of Sciences; research interests include machine learning theories and deep learning applications">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Libo Huang @ ICT">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://libo-huang.github.io">
-    <meta property="og:image" content="https://libo-huang.github.io/utils/libo-huang.png">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta name="theme-color" content="#0156a3">
-    <script src="/utils/theme.js"></script>
-    <link rel="stylesheet" href="./utils/style.css" type="text/css">
-    <link rel="shortcut icon" href="/utils/ict-icon.jpeg">
-    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/academicons/1.8.6/css/academicons.min.css">
-    <link rel="stylesheet" href="/utils/style.css?v={{ site.time | date: '%s' }}">
-    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <script src="/utils/vanilla-back-to-top.min.js"></script>
-    <title>Libo Huang @ ICT, CAS</title>
+{% include head.html %}
 </head>
 
 
@@ -28,7 +17,7 @@
 
 
 
-<body onload="updateLastModified()"> 
+<body>
 
 
 
@@ -36,8 +25,8 @@
 
 <div class="navbar">
     <div class="navbar-logo">
-        <a href="http://www.ict.ac.cn/" target="_blank" title="中国科学院计算技术研究所">
-            <img src="./utils/ict.png" alt="ICT Logo">
+        <a href="https://www.ict.ac.cn/" target="_blank" title="中国科学院计算技术研究所" rel="noopener noreferrer">
+            <img src="./utils/ict.png" width="565" height="76" alt="Institute of Computing Technology logo">
         </a>
     </div>
 
@@ -64,7 +53,10 @@
         <button id="theme-toggle" class="theme-toggle" type="button">◐ Auto</button>
     </div>
     <div class="avatar-container">
-        <img src="./utils/libo-huang.png" alt="Libo Huang">
+        <picture>
+            <source srcset="./utils/libo-huang.webp" type="image/webp">
+            <img src="./utils/libo-huang.png" width="590" height="602" fetchpriority="high" alt="Libo Huang">
+        </picture>
     </div>
       
     <div id="toptitle">
@@ -83,12 +75,13 @@
             <i class="fa-solid fa-location-dot fa-fw icon-fixed"></i>
             <span class="contact-text">No. 6 Kexueyuan Nanlu, Zhongguancun, Haidian, Beijing, 100190, China / No. 158 Beiqing Road, Haidian, Beijing, 100095, China</span>
         </p>
-        <p class="contact-line">
-            <div class="wechat-hover">
-                <i class="fa-brands fa-weixin fa-fw icon-fixed"></i> libohuang_ict
-                <span class="qrcode"> <img src="/utils/wechat.png" alt="wechat"> </span>
-            </div>
-        </p>
+        <div class="contact-line">
+            <i class="fa-brands fa-weixin fa-fw icon-fixed"></i>
+            <button class="wechat-hover" type="button" aria-expanded="false" aria-controls="wechat-qr">
+                libohuang_ict
+                <span id="wechat-qr" class="qrcode"><img src="/utils/wechat.png" width="300" height="300" loading="lazy" alt="Libo Huang WeChat QR code"></span>
+            </button>
+        </div>
         <p class="contact-line">
             <i class="fa-solid fa-house fa-fw icon-fixed"></i>
             <span class="contact-text"><a href="https://libo-huang.github.io/">libo-huang.github.io</a></span>
@@ -99,27 +92,25 @@
         </p>
         <p class="contact-line">
             <i class="fa-brands fa-github fa-fw icon-fixed"></i>
-            <span class="contact-text"><a target="_blank" href="https://github.com/libo-huang">github.com/libo-huang</a></span>
+            <span class="contact-text"><a target="_blank" href="https://github.com/libo-huang" rel="noopener noreferrer">github.com/libo-huang</a></span>
         </p>
         <p class="contact-line">
             <i class="fa-brands fa-linkedin fa-fw icon-fixed"></i>
-            <span class="contact-text"><a target="_blank" href="https://www.linkedin.com/in/lbhuang">linkedin.com/in/lbhuang</a></span>
+            <span class="contact-text"><a target="_blank" href="https://www.linkedin.com/in/lbhuang" rel="noopener noreferrer">linkedin.com/in/lbhuang</a></span>
         </p>
         <p class="contact-line">
             <i class="ai ai-google-scholar-square fa-fw icon-fixed"></i>
-            <span class="contact-text"><a target="_blank" href="https://scholar.google.com/citations?user=ioraMaAAAAAJ">scholar.google.com/Libo Huang</a></span>
+            <span class="contact-text"><a target="_blank" href="https://scholar.google.com/citations?user=ioraMaAAAAAJ" rel="noopener noreferrer">scholar.google.com/Libo Huang</a></span>
         </p>
         <p class="contact-line">
             <i class="fa-brands fa-orcid fa-fw icon-fixed"></i>
-            <span class="contact-text"><a target="_blank" href="https://orcid.org/0000-0002-4479-5840">orcid.org/0000-0002-4479-5840</a></span>
+            <span class="contact-text"><a target="_blank" href="https://orcid.org/0000-0002-4479-5840" rel="noopener noreferrer">orcid.org/0000-0002-4479-5840</a></span>
         </p>
     </div>
-    
-    
     <div id="footer">
         <!-- <div id="footer-text-block">
             <p id="lastUpdate"></p>
-            <span style="text-decoration: none;"><a target="_blank" href="https://github.com/libo-huang/libo-huang.github.io?tab=MIT-1-ov-file">Privacy Policy</a></span>
+            <span style="text-decoration: none;"><a target="_blank" href="https://github.com/libo-huang/libo-huang.github.io?tab=MIT-1-ov-file" rel="noopener noreferrer">Privacy Policy</a></span>
                 All rights reserved</br>
                 &copy; 2024 Libo Huang
         </div>
@@ -135,7 +126,7 @@
         <div id="footer-text-block">
             <div style="margin-bottom: 4px;">
                 &copy;<span id="copyright-year">2024</span> Libo Huang. All rights reserved<br>
-                <span id="lastUpdate"></span>
+                <span id="lastUpdate">Last build: {{ site.time | date: "%Y.%m" }}</span>
             </div>
         </div>
     </div>
@@ -149,42 +140,38 @@
 
 <h2 id="about_me">
 About Me
-<a href="https://www.linkedin.com/in/lbhuang/" target="_blank" style="text-decoration: none; margin-left: 10px; border: none;">
-    <button class="h2-button">
-        <i class="fa-brands fa-linkedin" style="font-size:15px; color: #0156a3; margin-right: 5px;"></i>
-        LinkedIn
-    </button>
+<a class="h2-button" href="https://www.linkedin.com/in/lbhuang/" target="_blank" rel="noopener noreferrer">
+    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+    LinkedIn
 </a>
 </h2>
 
 <p>
-    Libo Huang is a full-time, tenure-track Assistant Professor (Assistant Researcher) at the <a href="http://english.ict.cas.cn/" target="_blank">Institute of Computing Technology (ICT)</a>, <a href="https://english.cas.cn/" target="_blank">Chinese Academy of Sciences (CAS)</a>. He can solely advise Ph.D. and master's students in Computer Science. Prior to joining the faculty, he worked as a postdoctoral researcher (2021.10 - 2024.8) and an intern researcher (2021.7-2021.10) at ICT, CAS, where he collaborated with <a href="https://scholar.google.com/citations?user=l34KxTYAAAAJ&hl=en" target="_blank">Prof. Yongjun Xu</a> and <a href="https://scholar.google.com/citations?user=daBvGcMAAAAJ&hl=en" target="_blank">Prof. Zhulin An</a> on deep learning research.
+    Libo Huang is a full-time, tenure-track Assistant Professor (Assistant Researcher) at the <a href="http://english.ict.cas.cn/" target="_blank" rel="noopener noreferrer">Institute of Computing Technology (ICT)</a>, <a href="https://english.cas.cn/" target="_blank" rel="noopener noreferrer">Chinese Academy of Sciences (CAS)</a>. He can solely advise Ph.D. and master's students in Computer Science. Prior to joining the faculty, he worked as a postdoctoral researcher (2021.10 - 2024.8) and an intern researcher (2021.7-2021.10) at ICT, CAS, where he collaborated with <a href="https://scholar.google.com/citations?user=l34KxTYAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Prof. Yongjun Xu</a> and <a href="https://scholar.google.com/citations?user=daBvGcMAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Prof. Zhulin An</a> on deep learning research.
 </p>
 <p>
-    He received his Ph.D. degree in Machine Learning under the joint supervision of <a href="https://wkling.gdut.edu.cn/" target="_blank">Prof. Wing-Kuen Ling</a> at <a href="https://english.gdut.edu.cn/" target="_blank">Guangdong University of Technology (GDUT)</a> (2018-2021) and <a href="https://www.brunel.ac.uk/people/lu-gan" target="_blank">Prof. Lu Gan</a> at <a href="https://www.brunel.ac.uk/" target="_blank">Brunel University of London</a> (2019-2020). 
-    Before that, he earned his M.Eng. degree in Computer Science from GDUT (2016-2018), supervised by <a href="https://english.stu.edu.cn/info/1024/1192.htm" target="_blank">Prof. Zhifeng Hao</a> and <a href="https://ruichucai.github.io/" target="_blank">Prof. Ruichu Cai</a>, and a B.S. degree in Mathematics from <a href="https://ewebsite.jxnu.edu.cn/" target="_blank">Jiangxi Normal University</a> (2012-2016).
+    He received his Ph.D. degree in Machine Learning under the joint supervision of <a href="https://wkling.gdut.edu.cn/" target="_blank" rel="noopener noreferrer">Prof. Wing-Kuen Ling</a> at <a href="https://english.gdut.edu.cn/" target="_blank" rel="noopener noreferrer">Guangdong University of Technology (GDUT)</a> (2018-2021) and <a href="https://www.brunel.ac.uk/people/lu-gan" target="_blank" rel="noopener noreferrer">Prof. Lu Gan</a> at <a href="https://www.brunel.ac.uk/" target="_blank" rel="noopener noreferrer">Brunel University of London</a> (2019-2020).
+    Before that, he earned his M.Eng. degree in Computer Science from GDUT (2016-2018), supervised by <a href="https://english.stu.edu.cn/info/1024/1192.htm" target="_blank" rel="noopener noreferrer">Prof. Zhifeng Hao</a> and <a href="https://ruichucai.github.io/" target="_blank" rel="noopener noreferrer">Prof. Ruichu Cai</a>, and a B.S. degree in Mathematics from <a href="https://ewebsite.jxnu.edu.cn/" target="_blank" rel="noopener noreferrer">Jiangxi Normal University</a> (2012-2016).
 </p>
 
 
 <h2 id="research_interests">
 Research Interests
-<a href="http://english.ict.cas.cn/rese/divi/net/202302/t20230209_326883.html" target="_blank" style="text-decoration: none; margin-left: 10px; border: none;">
-    <button class="h2-button">
-    <img src="/utils/ict-icon.jpeg" alt="" style="width: auto; height: 15px; margin-right: 5px;">
+<a class="h2-button" href="http://english.ict.cas.cn/rese/divi/net/202302/t20230209_326883.html" target="_blank" rel="noopener noreferrer">
+    <img src="/utils/ict-icon.png" width="60" height="50" alt="">
     Team Website
-    </button>
 </a>
 </h2>
 His core research focuses on <strong>Continual Learning in Open Environments</strong>, bridging the gap between fundamental mechanisms and real-world deployment to build reliable, efficient, and self-evolving AI systems. Specifically, his interests span:
 <ul>
     <li>
-        <strong>Machine Cognition & Efficient Foundation Models:</strong> Investigating continual discriminative and generative learning mechanisms, and leveraging model compression techniques (e.g., knowledge distillation and quantization) for efficient representation in open scenarios.
+        <strong>Machine Cognition &amp; Efficient Foundation Models:</strong> Investigating continual discriminative and generative learning mechanisms, and leveraging model compression techniques (e.g., knowledge distillation and quantization) for efficient representation in open scenarios.
     </li>
     <li>
-        <strong>Scene Perception & Multimodal Learning:</strong> Tackling 3D few-shot continual learning within noisy and data-scarce physical spaces (e.g., 3D Point Cloud analysis), and exploring the long-term collaborative evolution of multimodal knowledge across vision and language.
+        <strong>Scene Perception &amp; Multimodal Learning:</strong> Tackling 3D few-shot continual learning within noisy and data-scarce physical spaces (e.g., 3D Point Cloud analysis), and exploring the long-term collaborative evolution of multimodal knowledge across vision and language.
     </li>
     <li>
-        <strong>Theoretical Foundations & Causal Interpretability:</strong> Tracing the underlying mechanisms of catastrophic forgetting and exploring the causal origins of knowledge accumulation (Causal Learning) to empower AI systems with interpretable memory capabilities.
+        <strong>Theoretical Foundations &amp; Causal Interpretability:</strong> Tracing the underlying mechanisms of catastrophic forgetting and exploring the causal origins of knowledge accumulation (Causal Learning) to empower AI systems with interpretable memory capabilities.
     </li>
 </ul>
 <p>
@@ -202,11 +189,9 @@ His core research focuses on <strong>Continual Learning in Open Environments</st
 <h2 id="publications">
 Publications 
 
-<a href="https://scholar.google.com/citations?user=ioraMaAAAAAJ&hl=en&oi=ao" target="_blank" style="text-decoration: none; margin-left: 10px; border: none;">
-    <button class="h2-button">
-        <i class="ai ai-google-scholar-square" style="font-size:18px; color:#0156a3; margin-right: 5px; border: none;"></i>
-        Google Scholar
-    </button>
+<a class="h2-button" href="https://scholar.google.com/citations?user=ioraMaAAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener noreferrer">
+    <i class="ai ai-google-scholar-square" aria-hidden="true"></i>
+    Google Scholar
 </a>
 
 </h2>
@@ -231,195 +216,6 @@ Publications
 </div>
 
 
-
-<script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Libo Huang",
-      "url": "https://libo-huang.github.io",
-      "affiliation": {
-        "@type": "Organization",
-        "name": "Institute of Computing Technology, Chinese Academy of Sciences"
-      }
-    }
-</script>
-
-<script>
-const startYear = 2024;
-const currentYear = new Date().getFullYear();
-const yearText = currentYear > startYear ? startYear + "–" + currentYear : startYear;
-document.getElementById("copyright-year").textContent = yearText;
-
-addBackToTop({
-    backgroundColor: '#fff',
-    innerHTML: 'Back to Top',
-    textColor: '#333'
-})
-
-document.addEventListener('DOMContentLoaded', function() {
-    const moreNewsButton = document.getElementById('more-news-btn');
-    const hiddenNewsItems = document.querySelectorAll('.more-news');
-    if (moreNewsButton && hiddenNewsItems.length) {
-        moreNewsButton.addEventListener('click', function() {
-            const shouldShow = Array.from(hiddenNewsItems).some(item => getComputedStyle(item).display === 'none');
-            hiddenNewsItems.forEach(item => {
-                item.style.display = shouldShow ? 'list-item' : 'none';
-            });
-            moreNewsButton.innerHTML = shouldShow
-                ? 'Less News <i class="fas fa-chevron-up" aria-hidden="true"></i>'
-                : 'More News <i class="fas fa-chevron-down" aria-hidden="true"></i>';
-            moreNewsButton.classList.toggle('active', shouldShow);
-            moreNewsButton.setAttribute('aria-expanded', String(shouldShow));
-        });
-    }
-
-    const searchInput = document.getElementById('publication-search-input');
-    const searchCount = document.getElementById('publication-search-count');
-    const searchEmpty = document.getElementById('publication-search-empty');
-    const publicationContainer = document.querySelector('.pub-scroll-container');
-    const publicationItems = Array.from(document.querySelectorAll('.pub-item'));
-
-    if (searchInput && searchCount && searchEmpty && publicationContainer) {
-        const updatePublicationSearch = function() {
-            const terms = searchInput.value.toLocaleLowerCase().trim().split(/\s+/).filter(Boolean);
-            let visibleCount = 0;
-
-            publicationItems.forEach(item => {
-                const searchableText = Array.from(item.querySelectorAll('.pub-title, .pub-authors, .pub-venue'))
-                    .map(element => element.textContent)
-                    .join(' ')
-                    .toLocaleLowerCase();
-                const matches = terms.every(term => searchableText.includes(term));
-                item.hidden = !matches;
-                if (matches) visibleCount += 1;
-            });
-
-            searchCount.textContent = terms.length
-                ? visibleCount + ' / ' + publicationItems.length
-                : publicationItems.length + ' publications';
-            searchEmpty.hidden = visibleCount !== 0;
-            publicationContainer.hidden = visibleCount === 0;
-        };
-
-        searchInput.addEventListener('input', updatePublicationSearch);
-        searchInput.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape' && searchInput.value) {
-                searchInput.value = '';
-                updatePublicationSearch();
-            }
-        });
-        updatePublicationSearch();
-    }
-});
-
-function updateLastModified() {
-    var lastModified = new Date(document.lastModified);
-    var month = (lastModified.getMonth() + 1).toString().padStart(2, '0'); 
-    var year = lastModified.getFullYear();
-    var formattedDate = year + '.' + month;
-    document.getElementById("lastUpdate").innerText = "Last Update: " + formattedDate;
-}
-
-function copyToClipboard(button) {
-    const preElement = button.closest("pre").cloneNode(true);
-    const buttonInClone = preElement.querySelector(".copy-button");
-    if (buttonInClone) {
-        buttonInClone.remove();
-    }
-    const codeBlock = preElement.innerText;
-    navigator.clipboard.writeText(codeBlock).then(function() {
-        button.textContent = "copied";
-        button.style.backgroundColor = "#4CAF50";
-        setTimeout(function() {
-            button.textContent = "copy";
-            button.style.backgroundColor = "#0156a3";
-        }, 2000);
-        
-    }, function() {
-        button.textContent = "failed";
-        button.style.backgroundColor = "#f44336";
-        setTimeout(function() {
-            button.textContent = "copy";
-            button.style.backgroundColor = "#0156a3";
-        }, 2000);
-    });
-};
-
-function toggleBibtex(button) {
-    const pubItem = button.closest('.pub-item');
-    const codeBlock = pubItem.querySelector('.code-block');
-    
-    if (codeBlock.style.display === "none" || codeBlock.style.display === "") {
-        codeBlock.style.display = "block";
-        button.style.backgroundColor = "#0156a3";
-        button.style.color = "white";
-    } else {
-        codeBlock.style.display = "none";
-        button.style.backgroundColor = "transparent";
-        button.style.color = "#0156a3";
-    }
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.navbar-links a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            
-            if (targetElement) {
-                const navbarHeight = 45;
-                const extraOffset = 20;
-                const targetPosition = targetElement.offsetTop - navbarHeight - extraOffset;
-                
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
-                });
-                document.querySelectorAll('.navbar-links a[href^="#"]').forEach(link => {
-                    link.classList.remove('active');
-                });
-                this.classList.add('active');
-            }
-        });
-    });
-
-    window.addEventListener('scroll', function() {
-        const sections = document.querySelectorAll('h2[id]');
-        let currentSection = '';
-        
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop - 100;
-            if (window.scrollY >= sectionTop) {
-                currentSection = '#' + section.getAttribute('id');
-            }
-        });
-        
-        document.querySelectorAll('.navbar-links a[href^="#"]').forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === currentSection) {
-                link.classList.add('active');
-            }
-        });
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-    const emailElements = document.querySelectorAll('.email-protect');
-    emailElements.forEach(el => {
-        const user = el.getAttribute('data-user');
-        const domain = el.getAttribute('data-domain');
-        el.innerHTML = `<a href="mailto:${user}@${domain}">${user}(at)${domain}</a>`;
-    });
-});
-</script>
-
-<noscript>
-    <style>.email-protect { display:none; }</style>
-    <p><i>Please enable JavaScript to view contact email</i></p>
-</noscript>
 
 </body>
 </html>

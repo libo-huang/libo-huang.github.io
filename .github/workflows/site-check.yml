@@ -24,21 +24,21 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.1"
-
-      - name: Install Jekyll
-        run: gem install jekyll -v 3.9.5 --no-document
+          bundler: "2.4.22"
+          bundler-cache: true
 
       - name: Build site
-        run: jekyll build --strict_front_matter
+        run: bundle exec jekyll build --strict_front_matter
 
       - name: Check JavaScript syntax
-        run: node --check utils/theme.js
-
-      - name: Verify generated pages and assets
         run: |
-          test -s _site/index.html
-          test -s _site/index_zh-CN.html
-          test -s _site/utils/style.css
-          test -s _site/utils/theme.js
+          node --check utils/theme.js
+          node --check utils/main.js
+
+      - name: Validate generated HTML and internal links
+        run: bundle exec ruby scripts/check_site.rb _site
+
+      - name: Verify key interactive components
+        run: |
           grep -q 'publication-search-input' _site/index.html
           grep -q 'publication-search-input' _site/index_zh-CN.html

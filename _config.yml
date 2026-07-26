@@ -1,0 +1,17 @@
+title: "Libo Huang's Academic Homepage"
+description: "Libo Huang — Assistant Researcher at the Institute of Computing Technology, Chinese Academy of Sciences."
+url: "https://libo-huang.github.io"
+baseurl: ""
+timezone: Asia/Shanghai
+encoding: utf-8
+theme: null
+
+plugins:
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - scripts

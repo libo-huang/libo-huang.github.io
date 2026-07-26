@@ -1,0 +1,18 @@
+name: Libo Huang
+name_zh: 黄礼泊
+job_title: Assistant Researcher
+organization: Institute of Computing Technology, Chinese Academy of Sciences
+homepage: https://libo-huang.github.io/
+image: /utils/libo-huang.webp
+social_image: /utils/social-card.png
+same_as:
+  - https://github.com/libo-huang
+  - https://www.linkedin.com/in/lbhuang
+  - https://scholar.google.com/citations?user=ioraMaAAAAAJ
+  - https://orcid.org/0000-0002-4479-5840
+research_topics:
+  - Continual Learning
+  - Machine Learning
+  - Deep Learning
+  - Causal Learning
+

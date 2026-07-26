@@ -1,26 +1,15 @@
 ---
+lang: zh-CN
+title: "黄礼泊 @ 中科院计算所"
+description: "黄礼泊，中国科学院计算技术研究所助理研究员，研究方向包括持续学习、机器学习、深度学习和因果学习。"
+canonical_path: /index_zh-CN.html
+og_locale: zh_CN
+alternate_locale: en_US
 ---
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="keywords" content="黄礼泊, 机器学习, 深度学习, 中国科学院计算技术研究所">
-    <meta name="description" content="黄礼泊 - 中国科学院计算技术研究所助理研究员, 研究方向包括机器学习和深度学习">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="黄礼泊@中科院计算所">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://libo-huang.github.io">
-    <meta property="og:image" content="https://libo-huang.github.io/utils/libo-huang.png">
-    <meta http-equiv="X-Content-Type-Options" content="nosniff">
-    <meta name="theme-color" content="#0156a3">
-    <script src="/utils/theme.js"></script>
-    <link rel="stylesheet" href="./utils/style.css" type="text/css">
-    <link rel="shortcut icon" href="/utils/ict-icon.jpeg">
-    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/academicons/1.8.6/css/academicons.min.css">
-    <link rel="stylesheet" href="/utils/style.css?v={{ site.time | date: '%s' }}">
-    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <script src="/utils/vanilla-back-to-top.min.js"></script>
-    <title>黄礼泊@中科院计算所</title>
+{% include head.html %}
 </head>
    
 
@@ -28,7 +17,7 @@
 
 
 
-<body onload="updateLastModified()"> 
+<body>
 
 
 
@@ -36,8 +25,8 @@
 
 <div class="navbar">
     <div class="navbar-logo">
-        <a href="http://www.ict.ac.cn/" target="_blank" title="中国科学院计算技术研究所">
-            <img src="./utils/ict.png" alt="ICT Logo">
+        <a href="https://www.ict.ac.cn/" target="_blank" title="中国科学院计算技术研究所" rel="noopener noreferrer">
+            <img src="./utils/ict.png" width="565" height="76" alt="中国科学院计算技术研究所标志">
         </a>
     </div>
 
@@ -64,7 +53,10 @@
         <button id="theme-toggle" class="theme-toggle" type="button">◐ 自动</button>
     </div>
     <div class="avatar-container">
-        <img src="./utils/libo-huang.png" alt="Libo Huang">
+        <picture>
+            <source srcset="./utils/libo-huang.webp" type="image/webp">
+            <img src="./utils/libo-huang.png" width="590" height="602" fetchpriority="high" alt="黄礼泊">
+        </picture>
     </div>
 
     <div id="toptitle">
@@ -83,12 +75,13 @@
             <i class="fa-solid fa-location-dot fa-fw icon-fixed"></i>
             <span class="contact-text">北京市海淀区中关村科学院南路6号（100190）/北京市海淀区北清路158号 (100095)</span>
         </p>
-        <p class="contact-line">
-            <div class="wechat-hover">
-                <i class="fa-brands fa-weixin fa-fw icon-fixed"></i> libohuang_ict
-                <span class="qrcode"> <img src="/utils/wechat.png" alt="wechat"> </span>
-            </div>
-        </p>
+        <div class="contact-line">
+            <i class="fa-brands fa-weixin fa-fw icon-fixed"></i>
+            <button class="wechat-hover" type="button" aria-expanded="false" aria-controls="wechat-qr">
+                libohuang_ict
+                <span id="wechat-qr" class="qrcode"><img src="/utils/wechat.png" width="300" height="300" loading="lazy" alt="黄礼泊微信二维码"></span>
+            </button>
+        </div>
         <p class="contact-line">
             <i class="fa-solid fa-house fa-fw icon-fixed"></i>
             <span class="contact-text"><a href="https://libo-huang.github.io/">libo-huang.github.io</a></span>
@@ -99,27 +92,25 @@
         </p>
         <p class="contact-line">
             <i class="fa-brands fa-github fa-fw icon-fixed"></i>
-            <span class="contact-text"><a target="_blank" href="https://github.com/libo-huang">github.com/libo-huang</a></span>
+            <span class="contact-text"><a target="_blank" href="https://github.com/libo-huang" rel="noopener noreferrer">github.com/libo-huang</a></span>
         </p>
         <p class="contact-line">
             <i class="fa-brands fa-linkedin fa-fw icon-fixed"></i>
-            <span class="contact-text"><a target="_blank" href="https://www.linkedin.com/in/lbhuang">linkedin.com/in/lbhuang</a></span>
+            <span class="contact-text"><a target="_blank" href="https://www.linkedin.com/in/lbhuang" rel="noopener noreferrer">linkedin.com/in/lbhuang</a></span>
         </p>
         <p class="contact-line">
             <i class="ai ai-google-scholar-square fa-fw icon-fixed"></i>
-            <span class="contact-text"><a target="_blank" href="https://scholar.google.com/citations?user=ioraMaAAAAAJ">scholar.google.com/Libo Huang</a></span>
+            <span class="contact-text"><a target="_blank" href="https://scholar.google.com/citations?user=ioraMaAAAAAJ" rel="noopener noreferrer">scholar.google.com/Libo Huang</a></span>
         </p>
         <p class="contact-line">
             <i class="fa-brands fa-orcid fa-fw icon-fixed"></i>
-            <span class="contact-text"><a target="_blank" href="https://orcid.org/0000-0002-4479-5840">orcid.org/0000-0002-4479-5840</a></span>
+            <span class="contact-text"><a target="_blank" href="https://orcid.org/0000-0002-4479-5840" rel="noopener noreferrer">orcid.org/0000-0002-4479-5840</a></span>
         </p>
     </div>
-
-
     <div id="footer">
         <!-- <div id="footer-text-block">
             <p id="lastUpdate"></p>
-            <span style="text-decoration: none;"><a target="_blank" href="https://github.com/libo-huang/libo-huang.github.io?tab=MIT-1-ov-file">隐私权政策</a></span>
+            <span style="text-decoration: none;"><a target="_blank" href="https://github.com/libo-huang/libo-huang.github.io?tab=MIT-1-ov-file" rel="noopener noreferrer">隐私权政策</a></span>
                 版权所有</br>
                 &copy; 2024 黄礼泊
         </div>
@@ -135,7 +126,7 @@
         <div id="footer-text-block">
             <div style="margin-bottom: 4px;">
                 &copy;<span id="copyright-year">2024</span> 黄礼泊 版权所有<br>
-                <span id="lastUpdate"></span>
+                <span id="lastUpdate">最近构建：{{ site.time | date: "%Y.%m" }}</span>
             </div>
         </div>
     </div>
@@ -149,30 +140,26 @@
 
 <h2 id="about_me">
 个人简介
-<a href="https://www.linkedin.com/in/lbhuang/?locale=zh_CN" target="_blank" style="text-decoration: none; margin-left: 10px; border: none;">
-    <button class="h2-button">
-        <i class="fa-brands fa-linkedin" style="font-size:15px; color:#0156a3; margin-right: 5px;"></i>
-        领英
-    </button>
+<a class="h2-button" href="https://www.linkedin.com/in/lbhuang/?locale=zh_CN" target="_blank" rel="noopener noreferrer">
+    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+    领英
 </a>
 </h2>
 
 <p>
-    黄礼泊是<a href="https://www.cas.cn/" target="_blank">中国科学院</a><a href="http://www.ict.ac.cn/" target="_blank">计算技术研究所</a>全职在编助理教授（助理研究员）。他能独立指导计算机科学方向博士生和硕士生。在此之前，他作为博士后研究员（2021.10-2024.8）和实习研究员（2021.7-2021.10）在中国科学院计算技术研究所从事深度学习方面的研究，合作导师为<a href="https://www.ict.ac.cn/sourcedb/cn/jssrck/200909/t20090917_2496751.html" target="_blank">徐勇军研究员</a>（主任）和<a href="https://www.ict.ac.cn/sourcedb/cn/jssrck/201411/t20141115_4253427.html" target="_blank">安竹林副研究员</a>。            
+    黄礼泊是<a href="https://www.cas.cn/" target="_blank" rel="noopener noreferrer">中国科学院</a><a href="https://www.ict.ac.cn/" target="_blank" rel="noopener noreferrer">计算技术研究所</a>全职在编助理教授（助理研究员）。他能独立指导计算机科学方向博士生和硕士生。在此之前，他作为博士后研究员（2021.10-2024.8）和实习研究员（2021.7-2021.10）在中国科学院计算技术研究所从事深度学习方面的研究，合作导师为<a href="https://www.ict.ac.cn/sourcedb/cn/jssrck/200909/t20090917_2496751.html" target="_blank" rel="noopener noreferrer">徐勇军研究员</a>（主任）和<a href="https://www.ict.ac.cn/sourcedb/cn/jssrck/201411/t20141115_4253427.html" target="_blank" rel="noopener noreferrer">安竹林副研究员</a>。
 </p>
 <p>
-    他于<a href="https://www.gdut.edu.cn/" target="_blank">广东工业大学</a>（2018-2021，导师为<a href="https://yzw.gdut.edu.cn/info/1118/1991.htm" target="_blank">Wing-Kuen Ling教授</a>，IET Fellow/国家海外高层次人才）和<a href="https://www.brunel.ac.uk/" target="_blank">英国布鲁内尔大学</a>（2019-2020，导师为<a href="https://www.brunel.ac.uk/people/lu-gan" target="_blank">Lu Gan教授</a>）联合培养获得机器学习工学博士学位。
-    此前，他在广东工业大学攻读计算机科学工学硕士学位（2016-2018），导师为<a href="https://www.stu.edu.cn/xxgk/dzld1/hzf.htm" target="_blank">郝志峰教授</a>（汕头大学校长）和<a href="https://www.gdut.edu.cn/info/1959/21676.htm" target="_blank">蔡瑞初教授</a>（国家优青）；并在<a href="https://www.jxnu.edu.cn/" target="_blank">江西师范大学</a>（2012-2016）获得数学理学学士学位。
+    他于<a href="https://www.gdut.edu.cn/" target="_blank" rel="noopener noreferrer">广东工业大学</a>（2018-2021，导师为<a href="https://yzw.gdut.edu.cn/info/1118/1991.htm" target="_blank" rel="noopener noreferrer">Wing-Kuen Ling教授</a>，IET Fellow/国家海外高层次人才）和<a href="https://www.brunel.ac.uk/" target="_blank" rel="noopener noreferrer">英国布鲁内尔大学</a>（2019-2020，导师为<a href="https://www.brunel.ac.uk/people/lu-gan" target="_blank" rel="noopener noreferrer">Lu Gan教授</a>）联合培养获得机器学习工学博士学位。
+    此前，他在广东工业大学攻读计算机科学工学硕士学位（2016-2018），导师为<a href="https://www.stu.edu.cn/xxgk/dzld1/hzf.htm" target="_blank" rel="noopener noreferrer">郝志峰教授</a>（汕头大学校长）和<a href="https://www.gdut.edu.cn/info/1959/21676.htm" target="_blank" rel="noopener noreferrer">蔡瑞初教授</a>（国家优青）；并在<a href="https://www.jxnu.edu.cn/" target="_blank" rel="noopener noreferrer">江西师范大学</a>（2012-2016）获得数学理学学士学位。
 </p>
 
 
 <h2 id="research_interests">
 研究兴趣
-<a href="https://ict.cas.cn/jssgk/zzjg/kyxt/zxzx/js/" target="_blank" style="text-decoration: none; margin-left: 10px; border: none;">
-    <button class="h2-button">
-    <img src="/utils/ict-icon.jpeg" alt="" style="width: auto; height: 15px; margin-right: 5px;">
+<a class="h2-button" href="https://ict.cas.cn/jssgk/zzjg/kyxt/zxzx/js/" target="_blank" rel="noopener noreferrer">
+    <img src="/utils/ict-icon.png" width="60" height="50" alt="">
     团队主页
-    </button>
 </a>
 </h2>
 他的研究核心聚焦于<strong>面向开放环境的持续学习</strong>，贯穿“通用机理探索、开放场景验证”的学术脉络，致力打造具备记忆与自主演进能力的可靠与高效AI系统。主要研究兴趣包括：
@@ -201,11 +188,9 @@
 <h2 id="publications">
 主要论文 
 
-<a href="https://scholar.google.com/citations?user=ioraMaAAAAAJ&hl=cn" target="_blank" style="text-decoration: none; margin-left: 10px; border: none;">
-    <button class="h2-button">
-        <i class="ai ai-google-scholar-square" style="font-size:18px; color:#0156a3; margin-right: 5px; border: none;"></i>
-        谷歌学术
-    </button>
+<a class="h2-button" href="https://scholar.google.com/citations?user=ioraMaAAAAAJ&amp;hl=cn" target="_blank" rel="noopener noreferrer">
+    <i class="ai ai-google-scholar-square" aria-hidden="true"></i>
+    谷歌学术
 </a>
 
 </h2>
@@ -231,196 +216,6 @@
 </div>
 
 
-
-<script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Libo Huang",
-      "url": "https://libo-huang.github.io",
-      "affiliation": {
-        "@type": "Organization",
-        "name": "Institute of Computing Technology, Chinese Academy of Sciences"
-      }
-    }
-</script>
-
-<script>
-const startYear = 2024;
-const currentYear = new Date().getFullYear();
-const yearText = currentYear > startYear ? startYear + "–" + currentYear : startYear;
-document.getElementById("copyright-year").textContent = yearText;
-
-addBackToTop({
-    backgroundColor: '#fff',
-    innerHTML: 'Back to Top',
-    textColor: '#333'
-})
-
-document.addEventListener('DOMContentLoaded', function() {
-    const moreNewsButton = document.getElementById('more-news-btn');
-    const hiddenNewsItems = document.querySelectorAll('.more-news');
-    if (moreNewsButton && hiddenNewsItems.length) {
-        moreNewsButton.innerHTML = '更多动态 <i class="fas fa-chevron-down" aria-hidden="true"></i>';
-        moreNewsButton.addEventListener('click', function() {
-            const shouldShow = Array.from(hiddenNewsItems).some(item => getComputedStyle(item).display === 'none');
-            hiddenNewsItems.forEach(item => {
-                item.style.display = shouldShow ? 'list-item' : 'none';
-            });
-            moreNewsButton.innerHTML = shouldShow
-                ? '收起动态 <i class="fas fa-chevron-up" aria-hidden="true"></i>'
-                : '更多动态 <i class="fas fa-chevron-down" aria-hidden="true"></i>';
-            moreNewsButton.classList.toggle('active', shouldShow);
-            moreNewsButton.setAttribute('aria-expanded', String(shouldShow));
-        });
-    }
-
-    const searchInput = document.getElementById('publication-search-input');
-    const searchCount = document.getElementById('publication-search-count');
-    const searchEmpty = document.getElementById('publication-search-empty');
-    const publicationContainer = document.querySelector('.pub-scroll-container');
-    const publicationItems = Array.from(document.querySelectorAll('.pub-item'));
-
-    if (searchInput && searchCount && searchEmpty && publicationContainer) {
-        const updatePublicationSearch = function() {
-            const terms = searchInput.value.toLocaleLowerCase().trim().split(/\s+/).filter(Boolean);
-            let visibleCount = 0;
-
-            publicationItems.forEach(item => {
-                const searchableText = Array.from(item.querySelectorAll('.pub-title, .pub-authors, .pub-venue'))
-                    .map(element => element.textContent)
-                    .join(' ')
-                    .toLocaleLowerCase();
-                const matches = terms.every(term => searchableText.includes(term));
-                item.hidden = !matches;
-                if (matches) visibleCount += 1;
-            });
-
-            searchCount.textContent = terms.length
-                ? visibleCount + ' / ' + publicationItems.length
-                : '共 ' + publicationItems.length + ' 篇';
-            searchEmpty.hidden = visibleCount !== 0;
-            publicationContainer.hidden = visibleCount === 0;
-        };
-
-        searchInput.addEventListener('input', updatePublicationSearch);
-        searchInput.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape' && searchInput.value) {
-                searchInput.value = '';
-                updatePublicationSearch();
-            }
-        });
-        updatePublicationSearch();
-    }
-});
-
-function updateLastModified() {
-    var lastModified = new Date(document.lastModified);
-    var month = (lastModified.getMonth() + 1).toString().padStart(2, '0'); 
-    var year = lastModified.getFullYear();
-    var formattedDate = year + '.' + month;
-    document.getElementById("lastUpdate").innerText = "最近更新：" + formattedDate;
-}
-
-function copyToClipboard(button) {
-    const preElement = button.closest("pre").cloneNode(true);
-    const buttonInClone = preElement.querySelector(".copy-button");
-    if (buttonInClone) {
-        buttonInClone.remove();
-    }
-    const codeBlock = preElement.innerText;
-    navigator.clipboard.writeText(codeBlock).then(function() {
-        button.textContent = "已复制";
-        button.style.backgroundColor = "#4CAF50";
-        setTimeout(function() {
-            button.textContent = "copy";
-            button.style.backgroundColor = "#0156a3";
-        }, 2000);
-        
-    }, function() {
-        button.textContent = "错误";
-        button.style.backgroundColor = "#f44336";
-        setTimeout(function() {
-            button.textContent = "copy";
-            button.style.backgroundColor = "#0156a3";
-        }, 2000);
-    });
-};
-
-function toggleBibtex(button) {
-    const pubItem = button.closest('.pub-item');
-    const codeBlock = pubItem.querySelector('.code-block');
-    
-    if (codeBlock.style.display === "none" || codeBlock.style.display === "") {
-        codeBlock.style.display = "block";
-        button.style.backgroundColor = "#0156a3";
-        button.style.color = "white";
-    } else {
-        codeBlock.style.display = "none";
-        button.style.backgroundColor = "transparent";
-        button.style.color = "#0156a3";
-    }
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.navbar-links a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            
-            if (targetElement) {
-                const navbarHeight = 45;
-                const extraOffset = 20;
-                const targetPosition = targetElement.offsetTop - navbarHeight - extraOffset;
-                
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
-                });
-                document.querySelectorAll('.navbar-links a[href^="#"]').forEach(link => {
-                    link.classList.remove('active');
-                });
-                this.classList.add('active');
-            }
-        });
-    });
-
-    window.addEventListener('scroll', function() {
-        const sections = document.querySelectorAll('h2[id]');
-        let currentSection = '';
-        
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop - 100;
-            if (window.scrollY >= sectionTop) {
-                currentSection = '#' + section.getAttribute('id');
-            }
-        });
-        
-        document.querySelectorAll('.navbar-links a[href^="#"]').forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === currentSection) {
-                link.classList.add('active');
-            }
-        });
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-    const emailElements = document.querySelectorAll('.email-protect');
-    emailElements.forEach(el => {
-        const user = el.getAttribute('data-user');
-        const domain = el.getAttribute('data-domain');
-        el.innerHTML = `<a href="mailto:${user}@${domain}">${user}(at)${domain}</a>`;
-    });
-});
-</script>
-
-<noscript>
-    <style>.email-protect { display:none; }</style>
-    <p><i>Please enable JavaScript to view contact email</i></p>
-</noscript>
 
 </body>
 </html>

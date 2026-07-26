@@ -1,0 +1,53 @@
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ page.description | escape }}">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#0156a3">
+
+    <title>{{ page.title | escape }}</title>
+    <link rel="canonical" href="{{ page.canonical_path | absolute_url }}">
+    <link rel="alternate" hreflang="en" href="{{ '/' | absolute_url }}">
+    <link rel="alternate" hreflang="zh-CN" href="{{ '/index_zh-CN.html' | absolute_url }}">
+    <link rel="alternate" hreflang="x-default" href="{{ '/' | absolute_url }}">
+
+    <meta property="og:title" content="{{ page.title | escape }}">
+    <meta property="og:description" content="{{ page.description | escape }}">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="{{ page.canonical_path | absolute_url }}">
+    <meta property="og:image" content="{{ site.data.profile.social_image | absolute_url }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="{{ page.og_locale }}">
+    <meta property="og:locale:alternate" content="{{ page.alternate_locale }}">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ page.title | escape }}">
+    <meta name="twitter:description" content="{{ page.description | escape }}">
+    <meta name="twitter:image" content="{{ site.data.profile.social_image | absolute_url }}">
+
+    <link rel="icon" type="image/png" href="{{ '/utils/ict-icon.png' | relative_url }}">
+    <link rel="preconnect" href="https://cdn.bootcdn.net" crossorigin>
+    <script src="{{ '/utils/theme.js' | relative_url }}"></script>
+    <link rel="stylesheet" href="{{ '/utils/style.css' | relative_url }}?v={{ site.time | date: '%s' }}">
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha384-qpNsn9fNAkiBXwcwfxPTn1Ou6UU9P6pYGWQqLRIJOlPsAKOA+8XzN2coCnVnb8Fa" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha384-blOohCVdhjmtROpu8+CfTnUWham9nkX7P7OZQMst+RUnhtoY/9qemFAkIKOYxDI3" crossorigin="anonymous">
+    <script defer src="{{ '/utils/vanilla-back-to-top.min.js' | relative_url }}"></script>
+    <script defer src="{{ '/utils/main.js' | relative_url }}"></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "{{ site.data.profile.name }}",
+      "alternateName": "{{ site.data.profile.name_zh }}",
+      "url": "{{ '/' | absolute_url }}",
+      "image": "{{ site.data.profile.image | absolute_url }}",
+      "jobTitle": "{{ site.data.profile.job_title }}",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "{{ site.data.profile.organization }}"
+      },
+      "sameAs": {{ site.data.profile.same_as | jsonify }},
+      "knowsAbout": {{ site.data.profile.research_topics | jsonify }}
+    }
+    </script>
