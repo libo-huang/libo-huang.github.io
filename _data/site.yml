@@ -1,0 +1,105 @@
+navigation:
+  - id: about_me
+    en: About Me
+    zh-CN: 个人简介
+  - id: research_interests
+    en: Research Interests
+    zh-CN: 研究兴趣
+  - id: news
+    en: News
+    zh-CN: 最新动态
+  - id: publications
+    en: Publications
+    zh-CN: 主要论文
+  - id: others
+    en: Others
+    zh-CN: 其他
+
+locales:
+  en:
+    logo_alt: Institute of Computing Technology logo
+    name: Libo Huang
+    avatar_alt: Libo Huang
+    theme: "◐ Auto"
+    recruitment_title: Recruitment
+    recruitment_summary: Master/Ph.D. and visiting/internship openings
+    recruitment_body: We are offering <strong>1-2 Master / Ph.D. positions</strong> and <strong>1-2 visiting/internship openings</strong> (exceptional undergraduates are also eligible) annually in the fields of machine learning, deep learning, and optimization. Both remote and on-site opportunities are available. Interested candidates are invited to submit their curriculum vitae via
+    copyright_name: Libo Huang. All rights reserved
+    build_label: "Last build:"
+    more_news: More News
+  zh-CN:
+    logo_alt: 中国科学院计算技术研究所标志
+    name: 黄礼泊
+    avatar_alt: 黄礼泊
+    theme: "◐ 自动"
+    recruitment_title: 招生与实习招聘
+    recruitment_summary: 硕博招生及实习、联培、访问机会
+    recruitment_body: 课题组每年在机器学习与深度学习方向招收<strong>1-2名硕士/博士研究生</strong>、<strong>1-2个实习/联培/交换/客座/访问岗</strong>（优秀本科生亦可申请），实习支持远程或线下参与科研。请有兴趣的候选人将个人简历发送至
+    copyright_name: 黄礼泊 版权所有
+    build_label: 最近构建：
+    more_news: 更多动态
+
+contacts:
+  - key: position
+    icon: fa-solid fa-address-card
+    label_en: Position
+    label_zh-CN: 职位
+    value_en: Assistant Researcher
+    value_zh-CN: 助理研究员
+  - key: affiliation
+    icon: fa-solid fa-building-columns
+    label_en: Affiliation
+    label_zh-CN: 单位
+    value_en: Institute of Computing Technology, Chinese Academy of Sciences
+    value_zh-CN: 中国科学院，计算技术研究所
+  - key: address
+    icon: fa-solid fa-location-dot
+    label_en: Address
+    label_zh-CN: 地址
+    value_en: No. 6 Kexueyuan Nanlu, Zhongguancun, Haidian, Beijing, 100190, China. <br><br> No. 158 Beiqing Road, Haidian, Beijing, 100095, China.
+    value_zh-CN: 北京市海淀区中关村科学院南路6号（100190）<br><br> 北京市海淀区北清路158号（100095）
+  - key: wechat
+    icon: fa-brands fa-weixin
+    label_en: WeChat
+    label_zh-CN: 微信
+    value_en: libohuang_ict
+    value_zh-CN: libohuang_ict
+  - key: homepage
+    icon: fa-solid fa-house
+    label_en: Homepage
+    label_zh-CN: 个人主页
+    value_en: libo-huang.github.io
+    value_zh-CN: libo-huang.github.io
+    url: https://libo-huang.github.io/
+  - key: email
+    icon: fa-solid fa-envelope
+    label_en: Email
+    label_zh-CN: 邮箱
+  - key: github
+    icon: fa-brands fa-github
+    label_en: GitHub
+    label_zh-CN: GitHub
+    value_en: github.com/libo-huang
+    value_zh-CN: github.com/libo-huang
+    url: https://github.com/libo-huang
+  - key: linkedin
+    icon: fa-brands fa-linkedin
+    label_en: LinkedIn
+    label_zh-CN: 领英
+    value_en: linkedin.com/in/lbhuang
+    value_zh-CN: linkedin.com/in/lbhuang
+    url: https://www.linkedin.com/in/lbhuang
+  - key: scholar
+    icon: ai ai-google-scholar-square
+    label_en: Google Scholar
+    label_zh-CN: 谷歌学术
+    value_en: scholar.google.com/Libo Huang
+    value_zh-CN: scholar.google.com/Libo Huang
+    url: https://scholar.google.com/citations?user=ioraMaAAAAAJ
+  - key: orcid
+    icon: fa-brands fa-orcid
+    label_en: ORCID
+    label_zh-CN: ORCID
+    value_en: orcid.org/0000-0002-4479-5840
+    value_zh-CN: orcid.org/0000-0002-4479-5840
+    url: https://orcid.org/0000-0002-4479-5840

@@ -23,118 +23,10 @@ alternate_locale: en_US
 
 
 
-<div class="navbar">
-    <div class="navbar-logo">
-        <a href="https://www.ict.ac.cn/" target="_blank" title="中国科学院计算技术研究所" rel="noopener noreferrer">
-            <img src="./utils/ict.png" width="565" height="76" alt="中国科学院计算技术研究所标志">
-        </a>
-    </div>
-
-    <div class="navbar-links">
-        <a href="#about_me" class="active">个人简介</a>
-        <a href="#research_interests">研究兴趣</a>
-        <a href="#news">最新动态</a>
-        <a href="#publications">主要论文</a>
-        <a href="#others">其他</a>
-    </div>
-</div>
-
-
+{% include navbar.html %}
 
 <div class="main-container">
-
-
-<div class="sidebar">
-    <div class="sidebar-controls">
-        <div class="language-switch-group">
-            <a href="/index.html" class="lang-btn">EN</a>
-            <a href="/index_zh-CN.html" class="lang-btn active">中文</a>
-        </div>
-        <button id="theme-toggle" class="theme-toggle" type="button">◐ 自动</button>
-    </div>
-    <div class="avatar-container">
-        <picture>
-            <source srcset="./utils/libo-huang.webp" type="image/webp">
-            <img src="./utils/libo-huang.png" width="590" height="602" fetchpriority="high" alt="黄礼泊">
-        </picture>
-    </div>
-
-    <div id="toptitle">
-        <h1>黄礼泊</h1>
-    </div>
-    <div class="contact-info">
-        <p class="contact-line">
-            <i class="fa-solid fa-address-card fa-fw icon-fixed"></i>
-            <span class="contact-text">助理研究员</span>
-        </p>
-        <p class="contact-line">
-            <i class="fa-solid fa-building-columns fa-fw icon-fixed"></i>
-            <span class="contact-text">中国科学院，计算技术研究所</span>
-        </p>
-        <p class="contact-line">
-            <i class="fa-solid fa-location-dot fa-fw icon-fixed"></i>
-            <span class="contact-text">北京市海淀区中关村科学院南路6号（100190）/北京市海淀区北清路158号 (100095)</span>
-        </p>
-        <div class="contact-line">
-            <i class="fa-brands fa-weixin fa-fw icon-fixed"></i>
-            <button class="wechat-hover" type="button" aria-expanded="false" aria-controls="wechat-qr">
-                libohuang_ict
-                <span id="wechat-qr" class="qrcode"><img src="/utils/wechat.png" width="300" height="300" loading="lazy" alt="黄礼泊微信二维码"></span>
-            </button>
-        </div>
-        <p class="contact-line">
-            <i class="fa-solid fa-house fa-fw icon-fixed"></i>
-            <span class="contact-text"><a href="https://libo-huang.github.io/">libo-huang.github.io</a></span>
-        </p>
-        <p class="contact-line">
-            <i class="fa-solid fa-envelope fa-fw icon-fixed"></i> 
-            <span class="email-protect" data-user="huanglibo" data-domain="ict.ac.cn"></span>
-        </p>
-        <p class="contact-line">
-            <i class="fa-brands fa-github fa-fw icon-fixed"></i>
-            <span class="contact-text"><a target="_blank" href="https://github.com/libo-huang" rel="noopener noreferrer">github.com/libo-huang</a></span>
-        </p>
-        <p class="contact-line">
-            <i class="fa-brands fa-linkedin fa-fw icon-fixed"></i>
-            <span class="contact-text"><a target="_blank" href="https://www.linkedin.com/in/lbhuang" rel="noopener noreferrer">linkedin.com/in/lbhuang</a></span>
-        </p>
-        <p class="contact-line">
-            <i class="ai ai-google-scholar-square fa-fw icon-fixed"></i>
-            <span class="contact-text"><a target="_blank" href="https://scholar.google.com/citations?user=ioraMaAAAAAJ" rel="noopener noreferrer">scholar.google.com/Libo Huang</a></span>
-        </p>
-        <p class="contact-line">
-            <i class="fa-brands fa-orcid fa-fw icon-fixed"></i>
-            <span class="contact-text"><a target="_blank" href="https://orcid.org/0000-0002-4479-5840" rel="noopener noreferrer">orcid.org/0000-0002-4479-5840</a></span>
-        </p>
-    </div>
-    <div id="footer">
-        <!-- <div id="footer-text-block">
-            <p id="lastUpdate"></p>
-            <span style="text-decoration: none;"><a target="_blank" href="https://github.com/libo-huang/libo-huang.github.io?tab=MIT-1-ov-file" rel="noopener noreferrer">隐私权政策</a></span>
-                版权所有</br>
-                &copy; 2024 黄礼泊
-        </div>
-        <div id="visitor-map">
-            <script type='text/javascript' id='clustrmaps' src='//cdn.clustrmaps.com/map_v2.js?cl=b3b3b3&w=150&t=n&d=AyN9AOF-wHXWzcFivyTqlXYJqGGlXEO0UdmGyQcaQk4&co=eeeeee&cmo=224b8d&cmn=0156a3'></script>
-        </div>
-        <script>
-            document.getElementById('visitor-map').addEventListener('click', function(event) {
-                event.preventDefault();
-            });
-        </script> -->
-
-        <div id="footer-text-block">
-            <div style="margin-bottom: 4px;">
-                &copy;<span id="copyright-year">2024</span> 黄礼泊 版权所有<br>
-                <span id="lastUpdate">最近构建：{{ site.time | date: "%Y.%m" }}</span>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-
-
+{% include sidebar.html %}
 
 <div class="content">
 
@@ -174,12 +66,6 @@ alternate_locale: en_US
         <strong>理论底座与因果机理：</strong>溯源对抗“知识遗忘”的内在机理，挖掘驱动知识积累的因果本源，结合因果强化学习赋予大模型可解释的记忆能力。
     </li>
 </ul>
-<p>
-    <span style="color: red; font-weight: bold;">招生与实习招聘</span>：课题组每年在机器学习与深度学习方向招收<span style="color: red;">1-2名硕士/博士研究生</span>、<span style="color: red;">1-2个实习/联培/交换/客座/访问岗</span>（优秀本科生亦可申请），实习支持远程或线下参与科研。请有兴趣的候选人将个人简历发送至<span class="email-protect" data-user="huanglibo" data-domain="ict.ac.cn"></span>。
-</p>
-  
-
-
 <h2 id="news">最新动态</h2>
 {% include news.html %}
 

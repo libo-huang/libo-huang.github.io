@@ -1,0 +1,13 @@
+{% assign locale = site.data.site.locales[page.lang] %}
+<div class="navbar">
+    <div class="navbar-logo">
+        <a href="https://www.ict.ac.cn/" target="_blank" title="中国科学院计算技术研究所" rel="noopener noreferrer">
+            <img src="{{ '/utils/ict.png' | relative_url }}" width="565" height="76" alt="{{ locale.logo_alt }}">
+        </a>
+    </div>
+    <div class="navbar-links">
+        {% for item in site.data.site.navigation %}
+        <a href="#{{ item.id }}"{% if forloop.first %} class="active"{% endif %}>{{ item[page.lang] }}</a>
+        {% endfor %}
+    </div>
+</div>

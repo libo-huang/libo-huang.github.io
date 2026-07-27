@@ -1,0 +1,134 @@
+[
+  {
+    "more": false,
+    "html": "[2026.07]\n\t\t 1 paper accepted to ACMMM 2026: MorphDreamer: Progressive Particle Splitting for Weighted Entropy Regularized Variational Text-to-3D Generation.\n\t\t Congrats Yingmei!"
+  },
+  {
+    "more": false,
+    "html": "[2026.05]\n\t\t 1 paper accepted to IEEE TPAMI 2026: MPQ-DMv2: Flexible Residual Mixed Precision Quantization for Low-Bit Diffusion Models with Temporal Distillation.\n\t\t Congrats Weilun!"
+  },
+  {
+    "more": false,
+    "html": "[2026.05]\n\t\t 1 paper accepted to KDD 2026: PrePrompt: Predictive Prompting for Class Incremental Learning."
+  },
+  {
+    "more": false,
+    "html": "[2026.05]\n\t\t 2 papers accepted to ICML 2026: \n\t\t WorldCache: Accelerating World Models for Free via Heterogeneous Token Caching,\n\t\t Fast-SAM3D: 3Dfy Anything in Images but Faster.\n\t\t Congrats Weilun, Mingqiang, and Guoxin!"
+  },
+  {
+    "more": false,
+    "html": "[2026.03]\n\t\t 1 paper accepted to ICME 2026: DFM: Difference Feature Modeling with Text-Guided Gated Contrastive Loss for Remote Sensing Image Change Captioning. Congrats Yelin!"
+  },
+  {
+    "more": false,
+    "html": "[2026.02]\n\t\t4 papers accepted to CVPR 2026: \n\t\t(1) Representation-Steered Incremental Adapter-Tuning for Class-Incremental Learning with Pre-Trained Models,\n\t\t(2) EfficientVPR: Toward Efficient Visual Place Recognition via Scene-Aware Prompt Tuning and Adaptive Feature Enhancement,\n\t\t(3) Parameterized Prompt for Incremental Object Detection,\n\t\t(4) Distilling Out-of-Distribution Knowledge from Large Language Models for CLIP Generalization [findings workshop].\n\t\tCongrats Jiarui, Wenjing, Zijia, and Qiji!"
+  },
+  {
+    "more": false,
+    "html": "[2026.01]\n\t\t3 papers accepted to ICLR 2026: \n\t\t(1) QuantSparse: Comprehensively Compressing Video Diffusion Transformer with Model Quantization and Attention Sparsification,\n\t\t(2) Quantized Visual Geometry Grounded Transformer,\n\t\t(3) Point-UQ: An Uncertainty-Quantification Paradigm for Point Cloud Few-Shot Class Incremental Learning.\n\t\tCongrats Weilun and Xiangqi!"
+  },
+  {
+    "more": true,
+    "html": "[2025.12]\n\t\t获中国科学院计算技术研究所2025年度“优秀研究人员”。"
+  },
+  {
+    "more": true,
+    "html": "[2025.09]\n\t\t1 paper accepted to NeurIPS 2025: S<sup>2</sup>Q-VDiT: Accurate Quantized Video Diffusion Transformer with Salient Data and Sparse Token Distillation. Congrats Weilun!"
+  },
+  {
+    "more": true,
+    "html": "[2025.07]\n\t\t1 paper accepted to IEEE Transactions on Circuits and Systems for Video Technology: AF-YOLO: Asymptotic Feature Extraction and Fusion for Aerial Object Detection. Congrats Xiaowei!"
+  },
+  {
+    "more": true,
+    "html": "[2025.06]\n\t\t1 paper accepted to Scientific Data: TCMP-300: A Comprehensive Traditional Chinese Medicinal Plant Dataset for Plant Recognition."
+  },
+  {
+    "more": true,
+    "html": "[2025.05]\n\t\t1 survey paper accepted to The Innovation <span class=\"text-accent\">as cover paper</span>: Foundation Models and Intelligent Decision-making: Progress, Challenges, and Perspectives. \n\t\t(新闻：TheInnovation创新——<a target=\"_blank\" href=\"https://mp.weixin.qq.com/s/Hj1wQTTS-aXpl_dw2qmVxA\" rel=\"noopener noreferrer\">The Innovation | 决策智能：让基础模型成为超级大脑</a>；\n\t\t 中国指挥与控制学会——<a target=\"_blank\" href=\"https://mp.weixin.qq.com/s/PPJG-G9R-UQxlqZB8jxBFA\" rel=\"noopener noreferrer\">CICC大模型与决策智能专委会最新研究成果在The Innovation发表</a>)"
+  },
+  {
+    "more": true,
+    "html": "[2025.05]\n\t\t2 papers accepted to ICML 2025: \n\t\t(1) Geometric Feature Embedding for Effective 3D Few-Shot Class Incremental Learning,\n\t\t(2) Q-VDiT: Towards Accurate Quantization of Video-Generation Diffusion Transformers.\n\t\tCongrats Xiangqi and Weilun!"
+  },
+  {
+    "more": true,
+    "html": "[2025.04]\n\t\t1 paper accepted to Pattern Recognition: Low-redundancy Distillation for Continual Learning. Congrats Ruiqi!"
+  },
+  {
+    "more": true,
+    "html": "[2025.04]\n\t\t1 paper accepted to CVPR 2025: Multi-party Collaborative Attention Control for Image Customization. Congrats Han!"
+  },
+  {
+    "more": true,
+    "html": "[2025.01]\n\t\t1 paper accepted to ISCAS 2025: Classification-Based False Alarm Suppression for SAR Target Detection. Congrats Nan!"
+  },
+  {
+    "more": true,
+    "html": "[2024.12]\n\t\t3 papers accepted to AAAI 2025 (<span class=\"text-accent\">two orals</span>):\n\t\t(1) MPQ-DM: Mixed Precision Quantization for Extremely Low Bit Diffusion Models, \n\t\t(2) Multi-Teacher Knowledge Distillation with Reinforcement Learning for Visual Recognition,\n\t\t(3) HSRDiff: A Hierarchical Self-Regulation Diffusion Model for Stochastic Semantic Segmentation.\n\t\tCongrats Chuanguang (&amp; Xinqiang), Weilun, and Han!"
+  },
+  {
+    "more": true,
+    "html": "[2024.12]\n\t\t2 papers accepted to ICASSP 2025:\n\t\t(1) IOR: Inversed Objects Replay for Incremental Object Detection,\n\t\t(2) OLN++: Improved Object Localization Network for Open-world Object Detection.\n\t\tCongrats Zijia and Haonan!"
+  },
+  {
+    "more": true,
+    "html": "[2024.09]\n\t\t1 paper accepted to NeurIPS 2024: Continual Learning in the Frequency Domain. Congrats Ruiqi!"
+  },
+  {
+    "more": true,
+    "html": "[2024.08]\n\t\t1 paper accepted to Cognitive Computation: PDD: Pruning Neural Networks During Knowledge Distillation!"
+  },
+  {
+    "more": true,
+    "html": "[2024.07]\n\t\t1 paper accepted to ACMMM 2024 <span class=\"text-accent\">as oral</span>: Relational Diffusion Distillation For Efficient Image Generation. Congrats Weilun!"
+  },
+  {
+    "more": true,
+    "html": "[2024.05]\n\t\t1 survey paper accepted to IEEE Transactions on Neural Networks and Learning Systems: A Survey on Causal Reinforcement Learning."
+  },
+  {
+    "more": true,
+    "html": "[2024.02]\n\t\t1 paper accepted to ICLR 2024: KFC: Knowledge Reconstruction and Feedback Consolidation Enable Efficient and Effective Continual Generative Learning."
+  },
+  {
+    "more": true,
+    "html": "[2024.01]\n\t\t2 papers accepted to CSCWD 2024: (1) Online Relational Knowledge Distillation for Image Classification, (2) Class-wise Image Mixture Guided Self-Knowledge Distillation  for Image Classification."
+  },
+  {
+    "more": true,
+    "html": "[2023.12]\n\t\t获中国科学院计算技术研究所2023年度“优秀研究人员”。"
+  },
+  {
+    "more": true,
+    "html": "[2023.12]\n\t\t获<a target=\"_blank\" href=\"https://iacc.pazhoulab-huangpu.com/contest/\" rel=\"noopener noreferrer\">第二届粤港澳大湾区（黄埔）国际算法算例大赛“序列任务的持续学习”</a>殿军（4/725）。"
+  },
+  {
+    "more": true,
+    "html": "[2023.12]\n\t\t1 paper accepted to AAAI 2024: eTag: Class-Incremental Learning via Embedding Distillation and Task-Oriented Generation."
+  },
+  {
+    "more": true,
+    "html": "[2023.12]\n\t\t1 paper accepted to IEEE Transactions on Biomedical Engineering (<a target=\"_blank\" href=\"https://www.scimagojr.com/journalsearch.php?q=16318&amp;tip=sid&amp;clean=0\" class=\"text-accent\" rel=\"noopener noreferrer\">年发文量&lt;400</a>): Automatic Spike Sorting with Low-Rank and Sparse Representation."
+  },
+  {
+    "more": true,
+    "html": "[2021.09]\n\t\t1 paper accepted to IEEE Transactions on Neural Networks and Learning Systems: Nonlinear Causal Discovery for High-Dimensional Deterministic Data."
+  },
+  {
+    "more": true,
+    "html": "[2021.04]\n\t\t1 paper accepted to IEEE Transactions on Neural Systems and Rehabilitation Engineering (<a target=\"_blank\" href=\"https://www.scimagojr.com/journalsearch.php?q=16321&amp;tip=sid&amp;clean=0\" class=\"text-accent\" rel=\"noopener noreferrer\">年发文量&lt;300</a>): A Unified Optimization Model of Feature Extraction and Clustering for Spike Sorting."
+  },
+  {
+    "more": true,
+    "html": "[2020.06]\n\t\t1 paper accepted to ICME 2020: Spike Sorting Based On Low-Rank And Sparse Representation."
+  },
+  {
+    "more": true,
+    "html": "[2019.04]\n\t\t1 paper accepted to IEEE Transactions on NanoBioscience: WMsorting: Wavelet Packets' Decomposition and Mutual Information-Based Spike Sorting Method."
+  },
+  {
+    "more": true,
+    "html": "[2018.10]\n\t\t1 paper accepted to BIBM 2018: HASS: High Accuracy Spike Sorting with Wavelet Package Decomposition and Mutual Information."
+  }
+]

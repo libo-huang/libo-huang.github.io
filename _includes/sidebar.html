@@ -1,0 +1,58 @@
+{% assign locale = site.data.site.locales[page.lang] %}
+<div class="sidebar">
+    <div class="sidebar-controls">
+        <div class="language-switch-group">
+            <a href="{{ '/index.html' | relative_url }}" class="lang-btn{% if page.lang == 'en' %} active{% endif %}">EN</a>
+            <a href="{{ '/index_zh-CN.html' | relative_url }}" class="lang-btn{% if page.lang == 'zh-CN' %} active{% endif %}">中文</a>
+        </div>
+        <button id="theme-toggle" class="theme-toggle" type="button">{{ locale.theme }}</button>
+    </div>
+    <div class="avatar-container">
+        <picture>
+            <source srcset="{{ '/utils/libo-huang.webp' | relative_url }}" type="image/webp">
+            <img src="{{ '/utils/libo-huang.png' | relative_url }}" width="590" height="602" fetchpriority="high" alt="{{ locale.avatar_alt }}">
+        </picture>
+    </div>
+    <div id="toptitle"><h1>{{ locale.name }}</h1></div>
+    <div class="contact-info" aria-label="{% if page.lang == 'zh-CN' %}联系方式{% else %}Contact information{% endif %}">
+        {% for contact in site.data.site.contacts %}
+        {% assign label_key = 'label_' | append: page.lang %}
+        {% assign value_key = 'value_' | append: page.lang %}
+        <div class="contact-line" data-contact="{{ contact.key }}" data-label="{{ contact[label_key] }}">
+            <i class="{{ contact.icon }} fa-fw icon-fixed" aria-hidden="true"></i>
+            {% if contact.key == 'email' %}
+            <span class="email-protect" data-user="huanglibo" data-domain="ict.ac.cn"></span>
+            {% elsif contact.key == 'wechat' %}
+            <button class="wechat-hover" type="button" aria-expanded="false" aria-controls="wechat-qr">
+                {{ contact[value_key] }}
+                <span id="wechat-qr" class="qrcode">
+                    <span class="qrcode-label">WeChat · {{ contact[value_key] }}</span>
+                    <img src="{{ '/utils/wechat.png' | relative_url }}" width="300" height="300" loading="lazy" alt="{{ locale.name }} WeChat QR code">
+                </span>
+            </button>
+            {% elsif contact.url %}
+            <span class="contact-text"><a href="{{ contact.url }}"{% unless contact.key == 'homepage' %} target="_blank" rel="noopener noreferrer"{% endunless %}>{{ contact[value_key] }}</a></span>
+            {% else %}
+            <span class="contact-text">{{ contact[value_key] }}</span>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+    <details class="recruitment-card">
+        <summary class="recruitment-summary">
+            <i class="fa-solid fa-thumbtack recruitment-pin" aria-hidden="true"></i>
+            <span><strong>{{ locale.recruitment_title }}</strong><small>{{ locale.recruitment_summary }}</small></span>
+        </summary>
+        <div class="recruitment-content">
+            <p>{{ locale.recruitment_body }} <span class="email-protect" data-user="huanglibo" data-domain="ict.ac.cn"></span>{% if page.lang == 'zh-CN' %}。{% else %}.{% endif %}</p>
+        </div>
+    </details>
+    <div id="footer">
+        <div id="footer-text-block">
+            <div class="footer-meta">
+                &copy;<span id="copyright-year">2024</span> {{ locale.copyright_name }}<br>
+                <span id="lastUpdate">{{ locale.build_label }}{{ site.time | date: "%Y.%m" }}</span>
+            </div>
+        </div>
+    </div>
+</div>

@@ -23,118 +23,10 @@ alternate_locale: zh_CN
 
 
 
-<div class="navbar">
-    <div class="navbar-logo">
-        <a href="https://www.ict.ac.cn/" target="_blank" title="中国科学院计算技术研究所" rel="noopener noreferrer">
-            <img src="./utils/ict.png" width="565" height="76" alt="Institute of Computing Technology logo">
-        </a>
-    </div>
-
-    <div class="navbar-links">
-        <a href="#about_me" class="active">About Me</a>
-        <a href="#research_interests">Research Interests</a>
-        <a href="#news">News</a>
-        <a href="#publications">Publications</a>
-        <a href="#others">Others</a>
-    </div>
-</div>
-
-
+{% include navbar.html %}
 
 <div class="main-container">
-
-
-<div class="sidebar">
-    <div class="sidebar-controls">
-        <div class="language-switch-group">
-            <a href="/index.html" class="lang-btn active">EN</a>
-            <a href="/index_zh-CN.html" class="lang-btn">中文</a>
-        </div>
-        <button id="theme-toggle" class="theme-toggle" type="button">◐ Auto</button>
-    </div>
-    <div class="avatar-container">
-        <picture>
-            <source srcset="./utils/libo-huang.webp" type="image/webp">
-            <img src="./utils/libo-huang.png" width="590" height="602" fetchpriority="high" alt="Libo Huang">
-        </picture>
-    </div>
-      
-    <div id="toptitle">
-        <h1>Libo Huang</h1>
-    </div>
-    <div class="contact-info">
-        <p class="contact-line">
-            <i class="fa-solid fa-address-card fa-fw icon-fixed"></i>
-            <span class="contact-text">Assistant Researcher</span>
-        </p>
-        <p class="contact-line">
-            <i class="fa-solid fa-building-columns fa-fw icon-fixed"></i>
-            <span class="contact-text">Institute of Computing Technology, Chinese Academy of Sciences</span>
-        </p>
-        <p class="contact-line">
-            <i class="fa-solid fa-location-dot fa-fw icon-fixed"></i>
-            <span class="contact-text">No. 6 Kexueyuan Nanlu, Zhongguancun, Haidian, Beijing, 100190, China / No. 158 Beiqing Road, Haidian, Beijing, 100095, China</span>
-        </p>
-        <div class="contact-line">
-            <i class="fa-brands fa-weixin fa-fw icon-fixed"></i>
-            <button class="wechat-hover" type="button" aria-expanded="false" aria-controls="wechat-qr">
-                libohuang_ict
-                <span id="wechat-qr" class="qrcode"><img src="/utils/wechat.png" width="300" height="300" loading="lazy" alt="Libo Huang WeChat QR code"></span>
-            </button>
-        </div>
-        <p class="contact-line">
-            <i class="fa-solid fa-house fa-fw icon-fixed"></i>
-            <span class="contact-text"><a href="https://libo-huang.github.io/">libo-huang.github.io</a></span>
-        </p>
-        <p class="contact-line">
-            <i class="fa-solid fa-envelope fa-fw icon-fixed"></i> 
-            <span class="email-protect" data-user="huanglibo" data-domain="ict.ac.cn"></span>
-        </p>
-        <p class="contact-line">
-            <i class="fa-brands fa-github fa-fw icon-fixed"></i>
-            <span class="contact-text"><a target="_blank" href="https://github.com/libo-huang" rel="noopener noreferrer">github.com/libo-huang</a></span>
-        </p>
-        <p class="contact-line">
-            <i class="fa-brands fa-linkedin fa-fw icon-fixed"></i>
-            <span class="contact-text"><a target="_blank" href="https://www.linkedin.com/in/lbhuang" rel="noopener noreferrer">linkedin.com/in/lbhuang</a></span>
-        </p>
-        <p class="contact-line">
-            <i class="ai ai-google-scholar-square fa-fw icon-fixed"></i>
-            <span class="contact-text"><a target="_blank" href="https://scholar.google.com/citations?user=ioraMaAAAAAJ" rel="noopener noreferrer">scholar.google.com/Libo Huang</a></span>
-        </p>
-        <p class="contact-line">
-            <i class="fa-brands fa-orcid fa-fw icon-fixed"></i>
-            <span class="contact-text"><a target="_blank" href="https://orcid.org/0000-0002-4479-5840" rel="noopener noreferrer">orcid.org/0000-0002-4479-5840</a></span>
-        </p>
-    </div>
-    <div id="footer">
-        <!-- <div id="footer-text-block">
-            <p id="lastUpdate"></p>
-            <span style="text-decoration: none;"><a target="_blank" href="https://github.com/libo-huang/libo-huang.github.io?tab=MIT-1-ov-file" rel="noopener noreferrer">Privacy Policy</a></span>
-                All rights reserved</br>
-                &copy; 2024 Libo Huang
-        </div>
-        <div id="visitor-map">
-            <script type='text/javascript' id='clustrmaps' src='https://cdn.clustrmaps.com/map_v2.js?cl=b3b3b3&w=150&t=n&d=AyN9AOF-wHXWzcFivyTqlXYJqGGlXEO0UdmGyQcaQk4&co=eeeeee&cmo=224b8d&cmn=0156a3'></script>
-        </div>
-        <script>
-            document.getElementById('visitor-map').addEventListener('click', function(event) {
-                event.preventDefault();
-            });
-        </script> -->
-
-        <div id="footer-text-block">
-            <div style="margin-bottom: 4px;">
-                &copy;<span id="copyright-year">2024</span> Libo Huang. All rights reserved<br>
-                <span id="lastUpdate">Last build: {{ site.time | date: "%Y.%m" }}</span>
-            </div>
-        </div>
-    </div>
-    
-</div>
-
-
-
+{% include sidebar.html %}
 
 <div class="content">
 
@@ -174,12 +66,6 @@ His core research focuses on <strong>Continual Learning in Open Environments</st
         <strong>Theoretical Foundations &amp; Causal Interpretability:</strong> Tracing the underlying mechanisms of catastrophic forgetting and exploring the causal origins of knowledge accumulation (Causal Learning) to empower AI systems with interpretable memory capabilities.
     </li>
 </ul>
-<p>
-    <span style="color: red; font-weight: bold;">Recruitment Announcement</span>: We are offering <span style="color: red;">1-2 Master / Ph.D. positions</span> and <span style="color: red;">1-2 visiting/internship openings</span> (exceptional undergraduates are also eligible) annually in the fields of machine learning, deep learning, and optimization. Both remote and on-site opportunities are available. Interested candidates are invited to submit their curriculum vitae via <span class="email-protect" data-user="huanglibo" data-domain="ict.ac.cn"></span>.
-</p>
-
-
-
 <h2 id="news">News</h2>
 {% include news.html %}
 
