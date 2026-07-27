@@ -337,9 +337,15 @@
                 Math.max(edge, window.innerWidth - qrWidth - edge)
             );
             let top = buttonRect.top - qrHeight - gap;
-            if (top < edge) top = buttonRect.bottom + gap;
+            const below = top < edge;
+            if (below) top = buttonRect.bottom + gap;
             qrcode.style.left = `${Math.round(left)}px`;
             qrcode.style.top = `${Math.round(top)}px`;
+            qrcode.classList.toggle('is-below', below);
+            qrcode.style.setProperty(
+                '--wechat-arrow-left',
+                `${Math.round(Math.min(Math.max(14, buttonRect.left + buttonRect.width / 2 - left), qrWidth - 14))}px`
+            );
         };
 
         const show = () => {
