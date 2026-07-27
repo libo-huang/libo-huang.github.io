@@ -475,22 +475,21 @@ img {
     margin: 0;
     padding: 0;
     color: var(--contact-color, #475569);
-    background: #ffffff;
-    border: 1px solid #e2e8f0;
+    /* background: #ffffff; */
+    /* border: 1px solid #e2e8f0; */
     border-radius: 50%;
     box-sizing: border-box;
     cursor: pointer;
-    box-shadow: 0 2px 7px rgba(15, 23, 42, 0.07);
     transition: color 0.18s ease, background-color 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
 }
 
 .contact-info.is-enhanced .contact-line:hover,
 .contact-info.is-enhanced .contact-line:focus-visible,
 .contact-info.is-enhanced .contact-line[aria-expanded="true"] {
-    color: #ffffff;
-    background: #0156a3;
-    border-color: #cbd5e1;
-    box-shadow: 0 3px 10px rgba(15, 23, 42, 0.1);
+    color: #0156a3;
+    /* background: green; */
+    /* border-color: green; */
+    /* box-shadow: 0 3px 10px rgba(15, 23, 42, 0.1); */
 }
 
 .contact-line[data-contact="position"] { --contact-color: #0156a3; }
@@ -1364,10 +1363,10 @@ html[data-theme="dark"] .contact-line[data-contact="orcid"] { --contact-color: #
 html[data-theme="dark"] .contact-info.is-enhanced .contact-line:hover,
 html[data-theme="dark"] .contact-info.is-enhanced .contact-line:focus-visible,
 html[data-theme="dark"] .contact-info.is-enhanced .contact-line[aria-expanded="true"] {
-    color: #0156a3;
-    background: #ffffff;
-    border-color: #475569;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    color: #93c5fd;
+    /* background: #0156a3; */
+    /* border-color: #475569; */
+    /* box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); */
 }
 
 html[data-theme="dark"] .recruitment-card {
