@@ -1260,6 +1260,37 @@ a.record-button:hover {
     list-style: none;
 }
 
+.alumni-item {
+    /* list-style: none; */
+}
+
+.alumni-details summary {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35em;
+    cursor: pointer;
+    list-style: none;
+}
+
+.alumni-details summary::-webkit-details-marker {
+    display: none;
+}
+
+.alumni-details summary::before {
+    content: "+";
+    color: #0156a3;
+    font-weight: bold;
+}
+
+.alumni-details[open] summary::before {
+    content: "-";
+}
+
+.alumni-details ul {
+    margin-top: 0.2em;
+    margin-bottom: 0;
+}
+
 /* ==================== 404 页面 ==================== */
 .error-page {
     display: grid;
