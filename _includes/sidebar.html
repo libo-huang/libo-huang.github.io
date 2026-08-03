@@ -41,12 +41,22 @@
     <details class="recruitment-card">
         <summary class="recruitment-summary">
             <i class="fa-solid fa-thumbtack recruitment-pin" aria-hidden="true"></i>
-            <span><strong>{{ locale.recruitment_title }}</strong><small>{{ locale.recruitment_summary }}</small></span>
+            <span><strong>{{ locale.recruitment1_title }}</strong><small>{{ locale.recruitment1_summary }}</small></span>
         </summary>
         <div class="recruitment-content">
-            <p>{{ locale.recruitment_body }} <span class="email-protect" data-user="huanglibo" data-domain="ict.ac.cn"></span>{% if page.lang == 'zh-CN' %}。{% else %}.{% endif %}</p>
+            <p>{{ locale.recruitment1_body }} <span class="email-protect" data-user="huanglibo" data-domain="ict.ac.cn"></span>{% if page.lang == 'zh-CN' %}。{% else %}.{% endif %}</p>
         </div>
     </details>
+    <details class="recruitment-card" style="margin-top: 5px;">
+        <summary class="recruitment-summary">
+            <i class="fa-solid fa-thumbtack recruitment-pin" aria-hidden="true"></i>
+            <span><strong>{{ locale.recruitment2_title }}</strong><small>{{ locale.recruitment2_summary }}</small></span>
+        </summary>
+        <div class="recruitment-content">
+            <p>{{ locale.recruitment2_body }} <span class="email-protect" data-user="huanglibo" data-domain="ict.ac.cn"></span>{% if page.lang == 'zh-CN' %}。{% else %}.{% endif %}</p>
+        </div>
+    </details>
+
     <div id="footer">
         <div id="footer-text-block">
             <div class="footer-meta">
