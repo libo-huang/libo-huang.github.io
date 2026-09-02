@@ -1944,8 +1944,8 @@ html[data-theme="dark"] #back-to-top {
 
     .research-interests-figure {
         order: 2;
-        width: min(380px, 100%);
-        max-width: 380px;
+        width: min(280px, 100%);
+        max-width: 280px;
         margin: 14px auto 0;
     }
 
