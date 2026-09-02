@@ -213,6 +213,7 @@
                 return;
             }
             detail.classList.add('contact-popover');
+            detail.dataset.contact = item.dataset.contact || '';
             detail.dataset.label = item.dataset.label || '';
             detail.id = `contact-detail-${index + 1}`;
             detail.setAttribute('role', 'group');

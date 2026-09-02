@@ -1,6 +1,7 @@
 /* ==================== 全局与基础样式 ==================== */
 html {
     background-color: #eeeeee;
+    scrollbar-gutter: stable;
 }
 
 body {
@@ -311,6 +312,7 @@ img {
     height: 45px;
     z-index: 1000;
     padding: 0 11%;
+    border-bottom: 1px solid transparent;
     box-sizing: border-box;
 }
 
@@ -590,6 +592,50 @@ img {
 .contact-popover a:hover {
     color: #0156a3 !important;
     border-bottom-color: #0156a3;
+}
+
+.research-interests-layout {
+    display: block;
+    margin-bottom: 0.8em;
+}
+
+.research-interests-text {
+    min-width: 0;
+    text-align: justify;
+}
+
+.research-interests-figure {
+    float: right;
+    width: min(280px, 34%);
+    max-width: 280px;
+    margin: 0 8px 10px 28px;
+    aspect-ratio: 1.1;
+    overflow: hidden;
+}
+
+.research-interests-figure img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.research-image-dark {
+    display: none !important;
+}
+
+html[data-theme="dark"] .research-image-light {
+    display: none !important;
+}
+
+html[data-theme="dark"] .research-image-dark {
+    display: block !important;
+}
+
+.research-interests-layout::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .recruitment-card {
@@ -1416,8 +1462,83 @@ html[data-theme="dark"] .contact-info.is-enhanced .contact-line:focus-visible,
 html[data-theme="dark"] .contact-info.is-enhanced .contact-line[aria-expanded="true"] {
     color: #93c5fd;
     /* background: #0156a3; */
-    /* border-color: #475569; */
+    /* border-color: #475569;
     /* box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3); */
+}
+
+html[data-theme="dark"] .contact-line[data-contact="homepage"] a,
+html[data-theme="dark"] .contact-line[data-contact="email"] a,
+html[data-theme="dark"] .contact-line[data-contact="github"] a,
+html[data-theme="dark"] .contact-line[data-contact="linkedin"] a,
+html[data-theme="dark"] .contact-line[data-contact="scholar"] a,
+html[data-theme="dark"] .contact-line[data-contact="orcid"] a,
+html[data-theme="dark"] .contact-line[data-contact="homepage"] a:visited,
+html[data-theme="dark"] .contact-line[data-contact="email"] a:visited,
+html[data-theme="dark"] .contact-line[data-contact="github"] a:visited,
+html[data-theme="dark"] .contact-line[data-contact="linkedin"] a:visited,
+html[data-theme="dark"] .contact-line[data-contact="scholar"] a:visited,
+html[data-theme="dark"] .contact-line[data-contact="orcid"] a:visited,
+html[data-theme="dark"] .contact-line[data-contact="homepage"] a:hover,
+html[data-theme="dark"] .contact-line[data-contact="email"] a:hover,
+html[data-theme="dark"] .contact-line[data-contact="github"] a:hover,
+html[data-theme="dark"] .contact-line[data-contact="linkedin"] a:hover,
+html[data-theme="dark"] .contact-line[data-contact="scholar"] a:hover,
+html[data-theme="dark"] .contact-line[data-contact="orcid"] a:hover,
+html[data-theme="dark"] .contact-line[data-contact="homepage"] a:active,
+html[data-theme="dark"] .contact-line[data-contact="email"] a:active,
+html[data-theme="dark"] .contact-line[data-contact="github"] a:active,
+html[data-theme="dark"] .contact-line[data-contact="linkedin"] a:active,
+html[data-theme="dark"] .contact-line[data-contact="scholar"] a:active,
+html[data-theme="dark"] .contact-line[data-contact="orcid"] a:active,
+html[data-theme="dark"] .contact-line[data-contact="homepage"] a:focus-visible,
+html[data-theme="dark"] .contact-line[data-contact="email"] a:focus-visible,
+html[data-theme="dark"] .contact-line[data-contact="github"] a:focus-visible,
+html[data-theme="dark"] .contact-line[data-contact="linkedin"] a:focus-visible,
+html[data-theme="dark"] .contact-line[data-contact="scholar"] a:focus-visible,
+html[data-theme="dark"] .contact-line[data-contact="orcid"] a:focus-visible {
+    color: #0156a3 !important;
+}
+
+html[data-theme="dark"] .contact-popover[data-contact="homepage"] a,
+html[data-theme="dark"] .contact-popover[data-contact="email"] a,
+html[data-theme="dark"] .contact-popover[data-contact="github"] a,
+html[data-theme="dark"] .contact-popover[data-contact="linkedin"] a,
+html[data-theme="dark"] .contact-popover[data-contact="scholar"] a,
+html[data-theme="dark"] .contact-popover[data-contact="orcid"] a,
+html[data-theme="dark"] .contact-popover[data-contact="homepage"] a:visited,
+html[data-theme="dark"] .contact-popover[data-contact="email"] a:visited,
+html[data-theme="dark"] .contact-popover[data-contact="github"] a:visited,
+html[data-theme="dark"] .contact-popover[data-contact="linkedin"] a:visited,
+html[data-theme="dark"] .contact-popover[data-contact="scholar"] a:visited,
+html[data-theme="dark"] .contact-popover[data-contact="orcid"] a:visited,
+html[data-theme="dark"] .contact-popover[data-contact="homepage"] a:hover,
+html[data-theme="dark"] .contact-popover[data-contact="email"] a:hover,
+html[data-theme="dark"] .contact-popover[data-contact="github"] a:hover,
+html[data-theme="dark"] .contact-popover[data-contact="linkedin"] a:hover,
+html[data-theme="dark"] .contact-popover[data-contact="scholar"] a:hover,
+html[data-theme="dark"] .contact-popover[data-contact="orcid"] a:hover,
+html[data-theme="dark"] .contact-popover[data-contact="homepage"] a:active,
+html[data-theme="dark"] .contact-popover[data-contact="email"] a:active,
+html[data-theme="dark"] .contact-popover[data-contact="github"] a:active,
+html[data-theme="dark"] .contact-popover[data-contact="linkedin"] a:active,
+html[data-theme="dark"] .contact-popover[data-contact="scholar"] a:active,
+html[data-theme="dark"] .contact-popover[data-contact="orcid"] a:active,
+html[data-theme="dark"] .contact-popover[data-contact="homepage"] a:focus-visible,
+html[data-theme="dark"] .contact-popover[data-contact="email"] a:focus-visible,
+html[data-theme="dark"] .contact-popover[data-contact="github"] a:focus-visible,
+html[data-theme="dark"] .contact-popover[data-contact="linkedin"] a:focus-visible,
+html[data-theme="dark"] .contact-popover[data-contact="scholar"] a:focus-visible,
+html[data-theme="dark"] .contact-popover[data-contact="orcid"] a:focus-visible {
+    color: #0156a3 !important;
+}
+
+html[data-theme="dark"] .contact-line[data-contact="homepage"] a:hover,
+html[data-theme="dark"] .contact-line[data-contact="email"] a:hover,
+html[data-theme="dark"] .contact-line[data-contact="github"] a:hover,
+html[data-theme="dark"] .contact-line[data-contact="linkedin"] a:hover,
+html[data-theme="dark"] .contact-line[data-contact="scholar"] a:hover,
+html[data-theme="dark"] .contact-line[data-contact="orcid"] a:hover {
+    border-bottom-color: #0156a3;
 }
 
 html[data-theme="dark"] .recruitment-card {
@@ -1727,6 +1848,31 @@ html[data-theme="dark"] #back-to-top {
 
     .content p, .content li {
         text-align: left;
+    }
+
+    .research-interests-layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) minmax(140px, 38%);
+        gap: 0 24px;
+        align-items: start;
+    }
+
+    .research-interests-text {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .research-interests-figure {
+        float: none;
+        grid-column: 2;
+        grid-row: 1;
+        width: 100%;
+        max-width: none;
+        margin: 0;
+    }
+
+    .research-interests-layout::after {
+        display: none;
     }
 
     #footer {
