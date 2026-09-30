@@ -1,7 +1,11 @@
 [
   {
     "more": false,
-    "html": "[2026.09] I will serve as the Area Chair for <a target=\"_blank\" href=\"https://openreview.net/group?id=ICLR.cc/2027/Conference/Area_Chairs\" rel=\"noopener noreferrer\">ICLR 2027</a>."
+    "html": "[2026.09] 1 paper accepted to NeurIPS 2026 <span class=\"text-accent\">as spotlight</span>: <a target=\"_blank\" href=\"https://arxiv.org/pdf/2609.33518\" rel=\"noopener noreferrer\">SceneScaffold: Active Scene-State Construction for Unified 3D Scene Understanding</a>. Congrats Xiangqi!"
+  },
+  {
+    "more": false,
+    "html": "[2026.09] I will serve as the Area Chair for <a target=\"_blank\" href=\"https://openreview.net/group?id=ICLR.cc/2027/Conference/Area_Chairs\" rel=\"noopener noreferrer\">ICLR 2027</a> and <a target=\"_blank\" href=\"https://openreview.net/group?id=aistats.org/AISTATS/2027/Conference/Area_Chairs\" rel=\"noopener noreferrer\">AISTATS 2027</a>."
   },
   {
     "more": false,
@@ -9,7 +13,7 @@
   },
   {
     "more": false,
-    "html": "[2026.08] 1 paper accepted to The Innovation 2026: <a target=\"_blank\" href=\"https://www.cell.com/the-innovation/fulltext/S2666-6758(26)00277-8\" rel=\"noopener noreferrer\">AI for science: Progress, challenges, and perspectives</a>."
+    "html": "[2026.08] 1 paper accepted to The Innovation 2026: <a target=\"_blank\" href=\"https://www.cell.com/the-innovation/fulltext/S2666-6758(26)00277-8\" rel=\"noopener noreferrer\">AI for Science: Progress, Challenges, and Perspectives</a>."
   },
   {
     "more": false,

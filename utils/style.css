@@ -1043,6 +1043,7 @@ a.record-button:hover {
 
 .text-accent {
     color: #e74c3c;
+    font-weight: bold;
 }
 
 .text-meta {
