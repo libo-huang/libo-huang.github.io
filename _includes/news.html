@@ -1,7 +1,7 @@
 {% assign locale = site.data.site.locales[page.lang] %}
 <ul class="news-list" id="news-list">
     {% for item in site.data.news %}
-    <li{% if item.more %} class="more-news"{% endif %}>{{ item.html }}</li>
+    <li{% if item.more %} class="more-news"{% endif %}>{% if page.lang == 'zh-CN' %}{{ item.html_zh }}{% else %}{{ item.html }}{% endif %}</li>
     {% endfor %}
 </ul>
 <button id="more-news-btn" class="more-button" type="button" aria-expanded="false" aria-controls="news-list">{{ locale.more_news }} <i class="fas fa-chevron-down" aria-hidden="true"></i></button>
