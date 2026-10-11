@@ -37,11 +37,11 @@ locales:
     theme: "◐ 自动"
     recruitment1_title: 学生招生
     recruitment1_summary: 硕博士研究生招生
-    recruitment1_body: 本课题组每年在机器学习与深度学习领域招收<strong>1-2名博士研究生</strong>和<strong>2-3名硕士研究生</strong>。详细招生动态请关注中科院计算所<a href="https://ict.cas.cn/yjsjy/zsxx/sszs/" target="_blank" rel="noopener noreferrer">研究生招生</a> (重点关注每年3月全国统考、5月“春闱计划”、7月暑期研修班、9月推荐免试)，有意者请将个人简历发送至
+    recruitment1_body: 本课题组每年在机器学习与深度学习领域招收<strong>1—2名博士研究生</strong>和<strong>2—3名硕士研究生</strong>。详细招生动态请关注中科院计算所<a href="https://ict.cas.cn/yjsjy/zsxx/sszs/" target="_blank" rel="noopener noreferrer">研究生招生</a>（重点关注每年 3 月全国统考、5 月“春闱计划”、7 月暑期研修班、9 月推荐免试研究生），有意者请将个人简历发送至
     recruitment2_title: 实习招聘
     recruitment2_summary: 访问学生与实习岗位
-    recruitment2_body: 本课题组每年提供<strong>1-2个实习/联培/交换/客座/访问</strong>岗位，欢迎机器学习与深度学习领域的硕博研究生及优秀本科生申请。岗位支持远程或线下开展科研工作。有意者请将个人简历发送至
-    copyright_name: 黄礼泊 版权所有
+    recruitment2_body: 本课题组每年提供<strong>1—2个实习、联合培养或访问研究岗位</strong>，欢迎机器学习与深度学习领域的硕博研究生及优秀本科生申请。岗位支持远程或线下开展科研工作。有意者请将个人简历发送至
+    copyright_name: 黄礼泊。版权所有
     build_label: 最近更新：
     more_news: 更多动态
 

@@ -26,8 +26,8 @@
             <button class="wechat-hover" type="button" aria-expanded="false" aria-controls="wechat-qr">
                 {{ contact[value_key] }}
                 <span id="wechat-qr" class="qrcode">
-                    <span class="qrcode-label">WeChat · {{ contact[value_key] }}</span>
-                    <img src="{{ '/utils/wechat.png' | relative_url }}" width="300" height="300" loading="lazy" alt="{{ locale.name }} WeChat QR code">
+                    <span class="qrcode-label">{% if page.lang == 'zh-CN' %}微信{% else %}WeChat{% endif %} · {{ contact[value_key] }}</span>
+                    <img src="{{ '/utils/wechat.png' | relative_url }}" width="300" height="300" loading="lazy" alt="{{ locale.name }} {% if page.lang == 'zh-CN' %}微信二维码{% else %}WeChat QR code{% endif %}">
                 </span>
             </button>
             {% elsif contact.url %}

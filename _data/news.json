@@ -1,89 +1,88 @@
 [
-
   {
     "more": false,
     "html": "[2026.10] Recognized as <a target=\"_blank\" href=\"https://neurips.cc/reviewers/reviewer-letters?conference=2026&reviewer=121226\" rel=\"noopener noreferrer\">NeurIPS 2026 Top Area Chair</a>.",
-    "html_zh": "[2026.10] 获评 <a target=\"_blank\" href=\"https://neurips.cc/reviewers/reviewer-letters?conference=2026&reviewer=121226\" rel=\"noopener noreferrer\">NeurIPS 2026 优秀领域主席</a>."
+    "html_zh": "[2026.10] 获评 <a target=\"_blank\" href=\"https://neurips.cc/reviewers/reviewer-letters?conference=2026&reviewer=121226\" rel=\"noopener noreferrer\">NeurIPS 2026 优秀领域主席</a>。"
   },
   {
     "more": false,
     "html": "[2026.09] 1 paper accepted to NeurIPS 2026 <span class=\"text-accent\">as spotlight</span>: <a target=\"_blank\" href=\"https://arxiv.org/pdf/2609.33518\" rel=\"noopener noreferrer\">SceneScaffold: Active Scene-State Construction for Unified 3D Scene Understanding</a>. Congrats Xiangqi!",
-    "html_zh": "[2026.09] 1篇论文被接收至 NeurIPS 2026 <span class=\"text-accent\">亮点墙报</span>: <a target=\"_blank\" href=\"https://arxiv.org/pdf/2609.33518\" rel=\"noopener noreferrer\">SceneScaffold: Active Scene-State Construction for Unified 3D Scene Understanding</a>. 祝贺祥琦!"
+    "html_zh": "[2026.09] 1篇论文被接收于 NeurIPS 2026 <span class=\"text-accent\">Spotlight</span>：<a target=\"_blank\" href=\"https://arxiv.org/pdf/2609.33518\" rel=\"noopener noreferrer\">SceneScaffold: Active Scene-State Construction for Unified 3D Scene Understanding</a>。 祝贺祥琦！"
   },
   {
     "more": false,
     "html": "[2026.09] Served as the Area Chair for <a target=\"_blank\" href=\"https://openreview.net/group?id=ICLR.cc/2027/Conference/Area_Chairs\" rel=\"noopener noreferrer\">ICLR 2027</a> and <a target=\"_blank\" href=\"https://openreview.net/group?id=aistats.org/AISTATS/2027/Conference/Area_Chairs\" rel=\"noopener noreferrer\">AISTATS 2027</a>.",
-    "html_zh": "[2026.09] 担任 <a target=\"_blank\" href=\"https://openreview.net/group?id=ICLR.cc/2027/Conference/Area_Chairs\" rel=\"noopener noreferrer\">ICLR 2027</a> and <a target=\"_blank\" href=\"https://openreview.net/group?id=aistats.org/AISTATS/2027/Conference/Area_Chairs\" rel=\"noopener noreferrer\">AISTATS 2027</a> 领域主席."
+    "html_zh": "[2026.09] 担任 <a target=\"_blank\" href=\"https://openreview.net/group?id=ICLR.cc/2027/Conference/Area_Chairs\" rel=\"noopener noreferrer\">ICLR 2027</a> 和<a target=\"_blank\" href=\"https://openreview.net/group?id=aistats.org/AISTATS/2027/Conference/Area_Chairs\" rel=\"noopener noreferrer\">AISTATS 2027</a> 领域主席。"
   },
   {
     "more": false,
     "html": "[2026.08] Served as the Meta Reviewer for <a target=\"_blank\" href=\"https://cmt3.research.microsoft.com/MMAsia2026/Submission/MetaReview\" rel=\"noopener noreferrer\">MMAsia 2026</a>.",
-    "html_zh": "[2026.08] 担任 <a target=\"_blank\" href=\"https://cmt3.research.microsoft.com/MMAsia2026/Submission/MetaReview\" rel=\"noopener noreferrer\">MMAsia 2026</a> 领域主席."
+    "html_zh": "[2026.08] 担任 <a target=\"_blank\" href=\"https://cmt3.research.microsoft.com/MMAsia2026/Submission/MetaReview\" rel=\"noopener noreferrer\">MMAsia 2026</a> 领域主席。"
   },
   {
     "more": false,
     "html": "[2026.08] 1 paper accepted to The Innovation 2026: <a target=\"_blank\" href=\"https://www.cell.com/the-innovation/fulltext/S2666-6758(26)00277-8\" rel=\"noopener noreferrer\">AI for Science: Progress, Challenges, and Perspectives</a>.",
-    "html_zh": "[2026.08] 1篇论文被接收至 The Innovation 2026: <a target=\"_blank\" href=\"https://www.cell.com/the-innovation/fulltext/S2666-6758(26)00277-8\" rel=\"noopener noreferrer\">AI for Science: Progress, Challenges, and Perspectives</a>."
+    "html_zh": "[2026.08] 1篇论文被接收于 The Innovation 2026：<a target=\"_blank\" href=\"https://www.cell.com/the-innovation/fulltext/S2666-6758(26)00277-8\" rel=\"noopener noreferrer\">AI for Science: Progress, Challenges, and Perspectives</a>。"
   },
   {
     "more": false,
     "html": "[2026.08] 1 paper accepted to IEEE TPAMI 2026: <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/11646999\" rel=\"noopener noreferrer\">S<sup>2</sup>Q-VDiT<sup>+</sup>: Accurate Quantized Video Diffusion Transformer with Multi-Resolution Sampling and Structural Distillation</a>. Congrats Weilun!",
-    "html_zh": "[2026.08] 1篇论文被接收至 IEEE TPAMI 2026: <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/11646999\" rel=\"noopener noreferrer\">S<sup>2</sup>Q-VDiT<sup>+</sup>: Accurate Quantized Video Diffusion Transformer with Multi-Resolution Sampling and Structural Distillation</a>. 祝贺伟伦!"
+    "html_zh": "[2026.08] 1篇论文被接收于 IEEE TPAMI 2026：<a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/11646999\" rel=\"noopener noreferrer\">S<sup>2</sup>Q-VDiT<sup>+</sup>: Accurate Quantized Video Diffusion Transformer with Multi-Resolution Sampling and Structural Distillation</a>。 祝贺伟伦！"
   },
   {
     "more": false,
     "html": "[2026.07] 1 paper accepted to ACMMM 2026: MorphDreamer: Progressive Particle Splitting for Weighted Entropy Regularized Variational Text-to-3D Generation. Congrats Yingmei!",
-    "html_zh": "[2026.07] 1篇论文被接收至 ACMMM 2026: MorphDreamer: Progressive Particle Splitting for Weighted Entropy Regularized Variational Text-to-3D Generation. 祝贺英美!"
+    "html_zh": "[2026.07] 1篇论文被接收于 ACMMM 2026：MorphDreamer: Progressive Particle Splitting for Weighted Entropy Regularized Variational Text-to-3D Generation. 祝贺英美！"
   },
   {
     "more": false,
     "html": "[2026.06] Recognized as <a target=\"_blank\" href=\"https://media.eventhosts.cc/Conferences/CVPR2026/CVPR_main_conf_2026_15.pdf#page=10\" rel=\"noopener noreferrer\">CVPR 2026 Outstanding Reviewer</a>.",
-    "html_zh": "[2026.06] 获评 <a target=\"_blank\" href=\"https://media.eventhosts.cc/Conferences/CVPR2026/CVPR_main_conf_2026_15.pdf#page=10\" rel=\"noopener noreferrer\">CVPR 2026 杰出审稿人</a>."
+    "html_zh": "[2026.06] 获评 <a target=\"_blank\" href=\"https://media.eventhosts.cc/Conferences/CVPR2026/CVPR_main_conf_2026_15.pdf#page=10\" rel=\"noopener noreferrer\">CVPR 2026 杰出审稿人</a>。"
   },
   {
     "more": false,
     "html": "[2026.06] Served as the Area Chair for <a target=\"_blank\" href=\"https://cmt3.research.microsoft.com/IJCNN2027/Submission/MetaReview\" rel=\"noopener noreferrer\">IJCNN 2027</a>.",
-    "html_zh": "[2026.06] 担任 <a target=\"_blank\" href=\"https://cmt3.research.microsoft.com/IJCNN2027/Submission/MetaReview\" rel=\"noopener noreferrer\">IJCNN 2027</a> 领域主席."
+    "html_zh": "[2026.06] 担任 <a target=\"_blank\" href=\"https://cmt3.research.microsoft.com/IJCNN2027/Submission/MetaReview\" rel=\"noopener noreferrer\">IJCNN 2027</a> 领域主席。"
   },
   {
     "more": false,
     "html": "[2026.05] 1 paper accepted to IEEE TPAMI 2026: <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/abstract/document/11552026\" rel=\"noopener noreferrer\">MPQ-DMv2: Flexible Residual Mixed Precision Quantization for Low-Bit Diffusion Models with Temporal Distillation</a>. Congrats Weilun!",
-    "html_zh": "[2026.05] 1篇论文被接收至 IEEE TPAMI 2026: <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/abstract/document/11552026\" rel=\"noopener noreferrer\">MPQ-DMv2: Flexible Residual Mixed Precision Quantization for Low-Bit Diffusion Models with Temporal Distillation</a>. 祝贺伟伦!"
+    "html_zh": "[2026.05] 1篇论文被接收于 IEEE TPAMI 2026：<a target=\"_blank\" href=\"https://ieeexplore.ieee.org/abstract/document/11552026\" rel=\"noopener noreferrer\">MPQ-DMv2: Flexible Residual Mixed Precision Quantization for Low-Bit Diffusion Models with Temporal Distillation</a>。 祝贺伟伦！"
   },
   {
     "more": false,
     "html": "[2026.05] 1 paper accepted to KDD 2026: <a target=\"_blank\" href=\"https://dl.acm.org/doi/10.1145/3770855.3817682\" rel=\"noopener noreferrer\">PrePrompt: Predictive Prompting for Class Incremental Learning</a>.",
-    "html_zh": "[2026.05] 1篇论文被接收至 KDD 2026: <a target=\"_blank\" href=\"https://dl.acm.org/doi/10.1145/3770855.3817682\" rel=\"noopener noreferrer\">PrePrompt: Predictive Prompting for Class Incremental Learning</a>."
+    "html_zh": "[2026.05] 1篇论文被接收于 KDD 2026：<a target=\"_blank\" href=\"https://dl.acm.org/doi/10.1145/3770855.3817682\" rel=\"noopener noreferrer\">PrePrompt: Predictive Prompting for Class Incremental Learning</a>。"
   },
   {
     "more": false,
     "html": "[2026.05] 2 papers accepted to ICML 2026: <a target=\"_blank\" href=\"https://openreview.net/pdf?id=MItmwRV0l2\" rel=\"noopener noreferrer\">WorldCache: Accelerating World Models for Free via Heterogeneous Token Caching</a>, <a target=\"_blank\" href=\"https://openreview.net/pdf?id=2kKk6W6oOF\" rel=\"noopener noreferrer\">Fast-SAM3D: 3Dfy Anything in Images but Faster</a>. Congrats Weilun, Mingqiang, and Guoxin!",
-    "html_zh": "[2026.05] 2篇论文被接收至 ICML 2026: <a target=\"_blank\" href=\"https://openreview.net/pdf?id=MItmwRV0l2\" rel=\"noopener noreferrer\">WorldCache: Accelerating World Models for Free via Heterogeneous Token Caching</a>, <a target=\"_blank\" href=\"https://openreview.net/pdf?id=2kKk6W6oOF\" rel=\"noopener noreferrer\">Fast-SAM3D: 3Dfy Anything in Images but Faster</a>. 祝贺伟伦、明强、国鑫!"
+    "html_zh": "[2026.05] 2篇论文被接收于 ICML 2026：<a target=\"_blank\" href=\"https://openreview.net/pdf?id=MItmwRV0l2\" rel=\"noopener noreferrer\">WorldCache: Accelerating World Models for Free via Heterogeneous Token Caching</a>、<a target=\"_blank\" href=\"https://openreview.net/pdf?id=2kKk6W6oOF\" rel=\"noopener noreferrer\">Fast-SAM3D: 3Dfy Anything in Images but Faster</a>。 祝贺伟伦、明强、国鑫！"
   },
   {
     "more": false,
     "html": "[2026.04] Served as the Area Chair for <a target=\"_blank\" href=\"https://openreview.net/group?id=NeurIPS.cc/2026/Conference/Area_Chairs\" rel=\"noopener noreferrer\">NeurIPS 2026</a>.",
-    "html_zh": "[2026.04] 担任 <a target=\"_blank\" href=\"https://openreview.net/group?id=NeurIPS.cc/2026/Conference/Area_Chairs\" rel=\"noopener noreferrer\">NeurIPS 2026</a> 领域主席."
+    "html_zh": "[2026.04] 担任 <a target=\"_blank\" href=\"https://openreview.net/group?id=NeurIPS.cc/2026/Conference/Area_Chairs\" rel=\"noopener noreferrer\">NeurIPS 2026</a> 领域主席。"
   },
   {
     "more": false,
     "html": "[2026.04] Served as the Area Chair for <a target=\"_blank\" href=\"https://openreview.net/group?id=IEEE.org/MLSP/2026/Area_Chairs\" rel=\"noopener noreferrer\">IEEE MLSP 2026</a>.",
-    "html_zh": "[2026.04] 担任 <a target=\"_blank\" href=\"https://openreview.net/group?id=IEEE.org/MLSP/2026/Area_Chairs\" rel=\"noopener noreferrer\">IEEE MLSP 2026</a> 领域主席."
+    "html_zh": "[2026.04] 担任 <a target=\"_blank\" href=\"https://openreview.net/group?id=IEEE.org/MLSP/2026/Area_Chairs\" rel=\"noopener noreferrer\">IEEE MLSP 2026</a> 领域主席。"
   },
   {
     "more": false,
     "html": "[2026.03] 1 paper accepted to ICME 2026: <a target=\"_blank\" href=\"https://arxiv.org/pdf/2606.27410\" rel=\"noopener noreferrer\">DFM: Difference Feature Modeling with Text-Guided Gated Contrastive Loss for Remote Sensing Image Change Captioning</a>. Congrats Yelin!",
-    "html_zh": "[2026.03] 1篇论文被接收至 ICME 2026: <a target=\"_blank\" href=\"https://arxiv.org/pdf/2606.27410\" rel=\"noopener noreferrer\">DFM: Difference Feature Modeling with Text-Guided Gated Contrastive Loss for Remote Sensing Image Change Captioning</a>. 祝贺叶琳!"
+    "html_zh": "[2026.03] 1篇论文被接收于 ICME 2026：<a target=\"_blank\" href=\"https://arxiv.org/pdf/2606.27410\" rel=\"noopener noreferrer\">DFM: Difference Feature Modeling with Text-Guided Gated Contrastive Loss for Remote Sensing Image Change Captioning</a>。 祝贺叶琳！"
   },
   {
     "more": false,
     "html": "[2026.02] 4 papers accepted to CVPR 2026: (1) <a target=\"_blank\" href=\"https://openaccess.thecvf.com/content/CVPR2026/papers/Zhao_Representation-Steered_Incremental_Adapter-Tuning_for_Class-Incremental_Learning_with_Pre-Trained_Models_CVPR_2026_paper.pdf\" rel=\"noopener noreferrer\">Representation-Steered Incremental Adapter-Tuning for Class-Incremental Learning with Pre-Trained Models</a>, (2) <a target=\"_blank\" href=\"https://openaccess.thecvf.com/content/CVPR2026/papers/Tang_EfficientVPR_Toward_Efficient_Visual_Place_Recognition_via_Scene-Aware_Prompt_Tuning_CVPR_2026_paper.pdf\" rel=\"noopener noreferrer\">EfficientVPR: Toward Efficient Visual Place Recognition via Scene-Aware Prompt Tuning and Adaptive Feature Enhancement</a>, (3) <a target=\"_blank\" href=\"https://openaccess.thecvf.com/content/CVPR2026/papers/An_Parameterized_Prompt_for_Incremental_Object_Detection_CVPR_2026_paper.pdf\" rel=\"noopener noreferrer\">Parameterized Prompt for Incremental Object Detection</a>, (4) <a target=\"_blank\" href=\"https://openaccess.thecvf.com/content/CVPR2026F/papers/Ma_Distilling_Out-of-Distribution_Knowledge_from_Large_Language_Models_for_CLIP_Generalization_CVPRF_2026_paper.pdf\" rel=\"noopener noreferrer\">Distilling Out-of-Distribution Knowledge from Large Language Models for CLIP Generalization</a> [findings workshop]. Congrats Jiarui, Wenjing, Zijia, and Qiji!",
-    "html_zh": "[2026.02] 4篇论文被接收至 CVPR 2026: (1) <a target=\"_blank\" href=\"https://openaccess.thecvf.com/content/CVPR2026/papers/Zhao_Representation-Steered_Incremental_Adapter-Tuning_for_Class-Incremental_Learning_with_Pre-Trained_Models_CVPR_2026_paper.pdf\" rel=\"noopener noreferrer\">Representation-Steered Incremental Adapter-Tuning for Class-Incremental Learning with Pre-Trained Models</a>, (2) <a target=\"_blank\" href=\"https://openaccess.thecvf.com/content/CVPR2026/papers/Tang_EfficientVPR_Toward_Efficient_Visual_Place_Recognition_via_Scene-Aware_Prompt_Tuning_CVPR_2026_paper.pdf\" rel=\"noopener noreferrer\">EfficientVPR: Toward Efficient Visual Place Recognition via Scene-Aware Prompt Tuning and Adaptive Feature Enhancement</a>, (3) <a target=\"_blank\" href=\"https://openaccess.thecvf.com/content/CVPR2026/papers/An_Parameterized_Prompt_for_Incremental_Object_Detection_CVPR_2026_paper.pdf\" rel=\"noopener noreferrer\">Parameterized Prompt for Incremental Object Detection</a>, (4) <a target=\"_blank\" href=\"https://openaccess.thecvf.com/content/CVPR2026F/papers/Ma_Distilling_Out-of-Distribution_Knowledge_from_Large_Language_Models_for_CLIP_Generalization_CVPRF_2026_paper.pdf\" rel=\"noopener noreferrer\">Distilling Out-of-Distribution Knowledge from Large Language Models for CLIP Generalization</a> [Findings Workshop]. 祝贺嘉瑞、雯婧、梓嘉、骐骥!"
+    "html_zh": "[2026.02] 4篇论文被接收于 CVPR 2026：（1）<a target=\"_blank\" href=\"https://openaccess.thecvf.com/content/CVPR2026/papers/Zhao_Representation-Steered_Incremental_Adapter-Tuning_for_Class-Incremental_Learning_with_Pre-Trained_Models_CVPR_2026_paper.pdf\" rel=\"noopener noreferrer\">Representation-Steered Incremental Adapter-Tuning for Class-Incremental Learning with Pre-Trained Models</a>、（2） <a target=\"_blank\" href=\"https://openaccess.thecvf.com/content/CVPR2026/papers/Tang_EfficientVPR_Toward_Efficient_Visual_Place_Recognition_via_Scene-Aware_Prompt_Tuning_CVPR_2026_paper.pdf\" rel=\"noopener noreferrer\">EfficientVPR: Toward Efficient Visual Place Recognition via Scene-Aware Prompt Tuning and Adaptive Feature Enhancement</a>、（3）<a target=\"_blank\" href=\"https://openaccess.thecvf.com/content/CVPR2026/papers/An_Parameterized_Prompt_for_Incremental_Object_Detection_CVPR_2026_paper.pdf\" rel=\"noopener noreferrer\">Parameterized Prompt for Incremental Object Detection</a>、（4）<a target=\"_blank\" href=\"https://openaccess.thecvf.com/content/CVPR2026F/papers/Ma_Distilling_Out-of-Distribution_Knowledge_from_Large_Language_Models_for_CLIP_Generalization_CVPRF_2026_paper.pdf\" rel=\"noopener noreferrer\">Distilling Out-of-Distribution Knowledge from Large Language Models for CLIP Generalization</a>（Findings Workshop）。祝贺嘉瑞、雯婧、梓嘉、骐骥！"
   },
   {
     "more": false,
     "html": "[2026.01] 3 papers accepted to ICLR 2026: (1) <a target=\"_blank\" href=\"https://openreview.net/pdf?id=fhVfyiiAqt\" rel=\"noopener noreferrer\">Point-UQ: An Uncertainty-Quantification Paradigm for Point Cloud Few-Shot Class Incremental Learning</a>, (2) <a target=\"_blank\" href=\"https://openreview.net/pdf?id=Xzcllrc6gb\" rel=\"noopener noreferrer\">Quantized Visual Geometry Grounded Transformer</a>, (3) <a target=\"_blank\" href=\"https://openreview.net/pdf?id=4TAG3aQljJ\" rel=\"noopener noreferrer\">QuantSparse: Comprehensively Compressing Video Diffusion Transformer with Model Quantization and Attention Sparsification</a>. Congrats Xiangqi and Weilun!",
-    "html_zh": "[2026.01] 3篇论文被接收至 ICLR 2026: (1) <a target=\"_blank\" href=\"https://openreview.net/pdf?id=fhVfyiiAqt\" rel=\"noopener noreferrer\">Point-UQ: An Uncertainty-Quantification Paradigm for Point Cloud Few-Shot Class Incremental Learning</a>, (2) <a target=\"_blank\" href=\"https://openreview.net/pdf?id=Xzcllrc6gb\" rel=\"noopener noreferrer\">Quantized Visual Geometry Grounded Transformer</a>, (3) <a target=\"_blank\" href=\"https://openreview.net/pdf?id=4TAG3aQljJ\" rel=\"noopener noreferrer\">QuantSparse: Comprehensively Compressing Video Diffusion Transformer with Model Quantization and Attention Sparsification</a>. 祝贺祥琦、伟伦!"
+    "html_zh": "[2026.01] 3篇论文被接收于 ICLR 2026：（1）<a target=\"_blank\" href=\"https://openreview.net/pdf?id=fhVfyiiAqt\" rel=\"noopener noreferrer\">Point-UQ: An Uncertainty-Quantification Paradigm for Point Cloud Few-Shot Class Incremental Learning</a>、（2）<a target=\"_blank\" href=\"https://openreview.net/pdf?id=Xzcllrc6gb\" rel=\"noopener noreferrer\">Quantized Visual Geometry Grounded Transformer</a>、（3）<a target=\"_blank\" href=\"https://openreview.net/pdf?id=4TAG3aQljJ\" rel=\"noopener noreferrer\">QuantSparse: Comprehensively Compressing Video Diffusion Transformer with Model Quantization and Attention Sparsification</a>。 祝贺祥琦、伟伦！"
   },
   {
     "more": true,
@@ -93,82 +92,82 @@
   {
     "more": true,
     "html": "[2025.09] 1 paper accepted to NeurIPS 2025: <a target=\"_blank\" href=\"https://openreview.net/pdf?id=e8pm93koQU\" rel=\"noopener noreferrer\">S<sup>2</sup>Q-VDiT: Accurate Quantized Video Diffusion Transformer with Salient Data and Sparse Token Distillation</a>. Congrats Weilun!",
-    "html_zh": "[2025.09] 1篇论文被接收至 NeurIPS 2025: <a target=\"_blank\" href=\"https://openreview.net/pdf?id=e8pm93koQU\" rel=\"noopener noreferrer\">S<sup>2</sup>Q-VDiT: Accurate Quantized Video Diffusion Transformer with Salient Data and Sparse Token Distillation</a>. 祝贺伟伦!"
+    "html_zh": "[2025.09] 1篇论文被接收于 NeurIPS 2025：<a target=\"_blank\" href=\"https://openreview.net/pdf?id=e8pm93koQU\" rel=\"noopener noreferrer\">S<sup>2</sup>Q-VDiT: Accurate Quantized Video Diffusion Transformer with Salient Data and Sparse Token Distillation</a>。 祝贺伟伦！"
   },
   {
     "more": true,
     "html": "[2025.07] 1 paper accepted to IEEE Transactions on Circuits and Systems for Video Technology: <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/11112613\" rel=\"noopener noreferrer\">AF-YOLO: Asymptotic Feature Extraction and Fusion for Aerial Object Detection</a>. Congrats Xiaowei!",
-    "html_zh": "[2025.07] 1篇论文被接收至 IEEE Transactions on Circuits and Systems for Video Technology: <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/11112613\" rel=\"noopener noreferrer\">AF-YOLO: Asymptotic Feature Extraction and Fusion for Aerial Object Detection</a>. 祝贺晓伟!"
+    "html_zh": "[2025.07] 1篇论文被接收于 IEEE Transactions on Circuits and Systems for Video Technology：<a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/11112613\" rel=\"noopener noreferrer\">AF-YOLO: Asymptotic Feature Extraction and Fusion for Aerial Object Detection</a>。 祝贺晓伟！"
   },
   {
     "more": true,
-    "html": "[2025.06] 1 paper accepted to Scientific Data: <a target=\"_blank\" href=\"https://www.nature.com/articles/s41597-025-05522-7\" rel=\"noopener noreferrer\">TCMP-300: A Comprehensive Traditional Chinese Medicinal Plant Dataset for Plant Recognition</a>.",
-    "html_zh": "[2025.06] 1篇论文被接收至 Scientific Data（<span class=\"text-accent\">Nature子刊</span>）: <a target=\"_blank\" href=\"https://www.nature.com/articles/s41597-025-05522-7\" rel=\"noopener noreferrer\">TCMP-300: A Comprehensive Traditional Chinese Medicinal Plant Dataset for Plant Recognition</a>."
+    "html": "[2025.06] 1 paper accepted to Scientific Data (<span class=\"text-accent\">Nature Portfolio</span>): <a target=\"_blank\" href=\"https://www.nature.com/articles/s41597-025-05522-7\" rel=\"noopener noreferrer\">TCMP-300: A Comprehensive Traditional Chinese Medicinal Plant Dataset for Plant Recognition</a>.",
+    "html_zh": "[2025.06] 1篇论文被接收于 Scientific Data（<span class=\"text-accent\">Nature 子刊</span>）：<a target=\"_blank\" href=\"https://www.nature.com/articles/s41597-025-05522-7\" rel=\"noopener noreferrer\">TCMP-300: A Comprehensive Traditional Chinese Medicinal Plant Dataset for Plant Recognition</a>。"
   },
   {
     "more": true,
     "html": "[2025.05] 1 survey paper accepted to The Innovation <span class=\"text-accent\">as cover paper</span>: <a target=\"_blank\" href=\"https://www.cell.com/the-innovation/fulltext/S2666-6758(25)00151-1\" rel=\"noopener noreferrer\">Foundation Models and Intelligent Decision-making: Progress, Challenges, and Perspectives</a>.",
-    "html_zh": "[2025.05] 1篇综述论文被接收至 The Innovation（<span class=\"text-accent\">封面论文</span>）: <a target=\"_blank\" href=\"https://www.cell.com/the-innovation/fulltext/S2666-6758(25)00151-1\" rel=\"noopener noreferrer\">Foundation Models and Intelligent Decision-making: Progress, Challenges, and Perspectives</a>."
+    "html_zh": "[2025.05] 1篇综述论文被接收于 The Innovation（<span class=\"text-accent\">封面论文</span>）：<a target=\"_blank\" href=\"https://www.cell.com/the-innovation/fulltext/S2666-6758(25)00151-1\" rel=\"noopener noreferrer\">Foundation Models and Intelligent Decision-Making: Progress, Challenges, and Perspectives</a>。"
   },
   {
     "more": true,
     "html": "[2025.05] 2 papers accepted to ICML 2025: (1) <a target=\"_blank\" href=\"https://openreview.net/pdf?id=CuASYs6XZW\" rel=\"noopener noreferrer\">Geometric Feature Embedding for Effective 3D Few-Shot Class Incremental Learning</a>, (2) <a target=\"_blank\" href=\"https://openreview.net/pdf?id=Oeo53q93iP\" rel=\"noopener noreferrer\">Q-VDiT: Towards Accurate Quantization of Video-Generation Diffusion Transformers</a>. Congrats Xiangqi and Weilun!",
-    "html_zh": "[2025.05] 2篇论文被接收至 ICML 2025: (1) <a target=\"_blank\" href=\"https://openreview.net/pdf?id=CuASYs6XZW\" rel=\"noopener noreferrer\">Geometric Feature Embedding for Effective 3D Few-Shot Class Incremental Learning</a>, (2) <a target=\"_blank\" href=\"https://openreview.net/pdf?id=Oeo53q93iP\" rel=\"noopener noreferrer\">Q-VDiT: Towards Accurate Quantization of Video-Generation Diffusion Transformers</a>. 祝贺祥琦、伟伦!"
+    "html_zh": "[2025.05] 2篇论文被接收于 ICML 2025：（1) <a target=\"_blank\" href=\"https://openreview.net/pdf?id=CuASYs6XZW\" rel=\"noopener noreferrer\">Geometric Feature Embedding for Effective 3D Few-Shot Class Incremental Learning</a>、（2) <a target=\"_blank\" href=\"https://openreview.net/pdf?id=Oeo53q93iP\" rel=\"noopener noreferrer\">Q-VDiT: Towards Accurate Quantization of Video-Generation Diffusion Transformers</a>。 祝贺祥琦、伟伦！"
   },
   {
     "more": true,
     "html": "[2025.04] 1 paper accepted to Pattern Recognition: <a target=\"_blank\" href=\"https://www.sciencedirect.com/science/article/pii/S0031320325003723\" rel=\"noopener noreferrer\">Low-redundancy Distillation for Continual Learning</a>. Congrats Ruiqi!",
-    "html_zh": "[2025.04] 1篇论文被接收至 Pattern Recognition: <a target=\"_blank\" href=\"https://www.sciencedirect.com/science/article/pii/S0031320325003723\" rel=\"noopener noreferrer\">Low-redundancy Distillation for Continual Learning</a>. 祝贺睿琦!"
+    "html_zh": "[2025.04] 1篇论文被接收于 Pattern Recognition：<a target=\"_blank\" href=\"https://www.sciencedirect.com/science/article/pii/S0031320325003723\" rel=\"noopener noreferrer\">Low-redundancy Distillation for Continual Learning</a>。 祝贺睿琦！"
   },
   {
     "more": true,
     "html": "[2025.04] 1 paper accepted to CVPR 2025: <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/abstract/document/11092331\" rel=\"noopener noreferrer\">Multi-party Collaborative Attention Control for Image Customization</a>. Congrats Han!",
-    "html_zh": "[2025.04] 1篇论文被接收至 CVPR 2025: <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/abstract/document/11092331\" rel=\"noopener noreferrer\">Multi-party Collaborative Attention Control for Image Customization</a>. 祝贺杨晗!"
+    "html_zh": "[2025.04] 1篇论文被接收于 CVPR 2025：<a target=\"_blank\" href=\"https://ieeexplore.ieee.org/abstract/document/11092331\" rel=\"noopener noreferrer\">Multi-party Collaborative Attention Control for Image Customization</a>。 祝贺杨晗！"
   },
   {
     "more": true,
     "html": "[2025.01] 1 paper accepted to ISCAS 2025: <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/11043329\" rel=\"noopener noreferrer\">Classification-Based False Alarm Suppression for SAR Target Detection</a>. Congrats Nan!",
-    "html_zh": "[2025.01] 1篇论文被接收至 ISCAS 2025: <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/11043329\" rel=\"noopener noreferrer\">Classification-Based False Alarm Suppression for SAR Target Detection</a>. 祝贺杨楠!"
+    "html_zh": "[2025.01] 1篇论文被接收于 ISCAS 2025：<a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/11043329\" rel=\"noopener noreferrer\">Classification-Based False Alarm Suppression for SAR Target Detection</a>。 祝贺杨楠！"
   },
   {
     "more": true,
     "html": "[2024.12] 3 papers accepted to AAAI 2025 (<span class=\"text-accent\">two orals</span>): (1) <a target=\"_blank\" href=\"https://ojs.aaai.org/index.php/AAAI/article/view/33823\" rel=\"noopener noreferrer\">MPQ-DM: Mixed Precision Quantization for Extremely Low Bit Diffusion Models</a>, (2) <a target=\"_blank\" href=\"https://ojs.aaai.org/index.php/AAAI/article/view/32990\" rel=\"noopener noreferrer\">Multi-Teacher Knowledge Distillation with Reinforcement Learning for Visual Recognition</a>, (3) <a target=\"_blank\" href=\"https://ojs.aaai.org/index.php/AAAI/article/view/32163\" rel=\"noopener noreferrer\">HSRDiff: A Hierarchical Self-Regulation Diffusion Model for Stochastic Semantic Segmentation</a>. Congrats Chuanguang (&amp; Xinqiang), Weilun, and Han!",
-    "html_zh": "[2024.12] 3篇论文被接收至 AAAI 2025（<span class=\"text-accent\">两篇口头报告</span>）: (1) <a target=\"_blank\" href=\"https://ojs.aaai.org/index.php/AAAI/article/view/33823\" rel=\"noopener noreferrer\">MPQ-DM: Mixed Precision Quantization for Extremely Low Bit Diffusion Models</a>, (2) <a target=\"_blank\" href=\"https://ojs.aaai.org/index.php/AAAI/article/view/32990\" rel=\"noopener noreferrer\">Multi-Teacher Knowledge Distillation with Reinforcement Learning for Visual Recognition</a>, (3) <a target=\"_blank\" href=\"https://ojs.aaai.org/index.php/AAAI/article/view/32163\" rel=\"noopener noreferrer\">HSRDiff: A Hierarchical Self-Regulation Diffusion Model for Stochastic Semantic Segmentation</a>. 祝贺传广（新强）、伟伦、杨晗!"
+    "html_zh": "[2024.12] 3篇论文被接收于 AAAI 2025（<span class=\"text-accent\">两篇口头报告</span>）: (1) <a target=\"_blank\" href=\"https://ojs.aaai.org/index.php/AAAI/article/view/33823\" rel=\"noopener noreferrer\">MPQ-DM: Mixed Precision Quantization for Extremely Low Bit Diffusion Models</a>、（2) <a target=\"_blank\" href=\"https://ojs.aaai.org/index.php/AAAI/article/view/32990\" rel=\"noopener noreferrer\">Multi-Teacher Knowledge Distillation with Reinforcement Learning for Visual Recognition</a>、（3) <a target=\"_blank\" href=\"https://ojs.aaai.org/index.php/AAAI/article/view/32163\" rel=\"noopener noreferrer\">HSRDiff: A Hierarchical Self-Regulation Diffusion Model for Stochastic Semantic Segmentation</a>。 祝贺传广（新强）、伟伦、杨晗！"
   },
   {
     "more": true,
     "html": "[2024.12] 2 papers accepted to ICASSP 2025:(1) <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/10889938\" rel=\"noopener noreferrer\">OLN++: Improved Object Localization Network for Open-world Object Detection</a>, (2) <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/abstract/document/10888892\" rel=\"noopener noreferrer\">IOR: Inversed Objects Replay for Incremental Object Detection</a>. Congrats Haonan and Zijia!",
-    "html_zh": "[2024.12] 2篇论文被接收至 ICASSP 2025:(1) <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/10889938\" rel=\"noopener noreferrer\">OLN++: Improved Object Localization Network for Open-world Object Detection</a>, (2) <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/abstract/document/10888892\" rel=\"noopener noreferrer\">IOR: Inversed Objects Replay for Incremental Object Detection</a>. 祝贺浩楠、梓嘉!"
+    "html_zh": "[2024.12] 2篇论文被接收于 ICASSP 2025：（1） <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/10889938\" rel=\"noopener noreferrer\">OLN++: Improved Object Localization Network for Open-world Object Detection</a>、（2) <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/abstract/document/10888892\" rel=\"noopener noreferrer\">IOR: Inversed Objects Replay for Incremental Object Detection</a>。 祝贺浩楠、梓嘉！"
   },
   {
     "more": true,
     "html": "[2024.09] 1 paper accepted to NeurIPS 2024: <a target=\"_blank\" href=\"https://proceedings.neurips.cc/paper_files/paper/2024/hash/9b224ace8963c9385ad5e2b5c9039b97-Abstract-Conference.html\" rel=\"noopener noreferrer\">Continual Learning in the Frequency Domain</a>. Congrats Ruiqi!",
-    "html_zh": "[2024.09] 1篇论文被接收至 NeurIPS 2024: <a target=\"_blank\" href=\"https://proceedings.neurips.cc/paper_files/paper/2024/hash/9b224ace8963c9385ad5e2b5c9039b97-Abstract-Conference.html\" rel=\"noopener noreferrer\">Continual Learning in the Frequency Domain</a>. 祝贺睿琦!"
+    "html_zh": "[2024.09] 1篇论文被接收于 NeurIPS 2024：<a target=\"_blank\" href=\"https://proceedings.neurips.cc/paper_files/paper/2024/hash/9b224ace8963c9385ad5e2b5c9039b97-Abstract-Conference.html\" rel=\"noopener noreferrer\">Continual Learning in the Frequency Domain</a>。 祝贺睿琦！"
   },
   {
     "more": true,
     "html": "[2024.08] 1 paper accepted to Cognitive Computation: <a target=\"_blank\" href=\"https://link.springer.com/article/10.1007/s12559-024-10350-9\" rel=\"noopener noreferrer\">PDD: Pruning Neural Networks During Knowledge Distillation</a>!",
-    "html_zh": "[2024.08] 1篇论文被接收至 Cognitive Computation: <a target=\"_blank\" href=\"https://link.springer.com/article/10.1007/s12559-024-10350-9\" rel=\"noopener noreferrer\">PDD: Pruning Neural Networks During Knowledge Distillation</a>!"
+    "html_zh": "[2024.08] 1篇论文被接收于 Cognitive Computation：<a target=\"_blank\" href=\"https://link.springer.com/article/10.1007/s12559-024-10350-9\" rel=\"noopener noreferrer\">PDD: Pruning Neural Networks During Knowledge Distillation</a>！"
   },
   {
     "more": true,
     "html": "[2024.07] 1 paper accepted to ACMMM 2024 <span class=\"text-accent\">as oral</span>: <a target=\"_blank\" href=\"https://dl.acm.org/doi/10.1145/3664647.3680768\" rel=\"noopener noreferrer\">Relational Diffusion Distillation For Efficient Image Generation</a>. Congrats Weilun!",
-    "html_zh": "[2024.07] 1篇论文被接收至 ACMMM 2024（<span class=\"text-accent\">口头报告</span>）: <a target=\"_blank\" href=\"https://dl.acm.org/doi/10.1145/3664647.3680768\" rel=\"noopener noreferrer\">Relational Diffusion Distillation For Efficient Image Generation</a>. 祝贺伟伦!"
+    "html_zh": "[2024.07] 1篇论文被接收于 ACMMM 2024（<span class=\"text-accent\">口头报告</span>）：<a target=\"_blank\" href=\"https://dl.acm.org/doi/10.1145/3664647.3680768\" rel=\"noopener noreferrer\">Relational Diffusion Distillation For Efficient Image Generation</a>。 祝贺伟伦！"
   },
   {
     "more": true,
     "html": "[2024.05] 1 survey paper accepted to IEEE Transactions on Neural Networks and Learning Systems: <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/abstract/document/10771589\" rel=\"noopener noreferrer\">A Survey on Causal Reinforcement Learning</a>.",
-    "html_zh": "[2024.05] 1篇综述论文被接收至 IEEE Transactions on Neural Networks and Learning Systems: <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/abstract/document/10771589\" rel=\"noopener noreferrer\">A Survey on Causal Reinforcement Learning</a>."
+    "html_zh": "[2024.05] 1篇综述论文被接收于 IEEE Transactions on Neural Networks and Learning Systems：<a target=\"_blank\" href=\"https://ieeexplore.ieee.org/abstract/document/10771589\" rel=\"noopener noreferrer\">A Survey on Causal Reinforcement Learning</a>。"
   },
   {
     "more": true,
     "html": "[2024.02] 1 paper accepted to ICLR 2024 <span class=\"text-accent\">as oral</span>: <a target=\"_blank\" href=\"https://openreview.net/forum?id=pVTcR8ig3R\" rel=\"noopener noreferrer\">KFC: Knowledge Reconstruction and Feedback Consolidation Enable Efficient and Effective Continual Generative Learning</a>.",
-    "html_zh": "[2024.02] 1篇论文被接收至 ICLR 2024（<span class=\"text-accent\">口头报告</span>）: <a target=\"_blank\" href=\"https://openreview.net/forum?id=pVTcR8ig3R\" rel=\"noopener noreferrer\">KFC: Knowledge Reconstruction and Feedback Consolidation Enable Efficient and Effective Continual Generative Learning</a>."
+    "html_zh": "[2024.02] 1篇论文被接收于 ICLR 2024（<span class=\"text-accent\">口头报告</span>）：<a target=\"_blank\" href=\"https://openreview.net/forum?id=pVTcR8ig3R\" rel=\"noopener noreferrer\">KFC: Knowledge Reconstruction and Feedback Consolidation Enable Efficient and Effective Continual Generative Learning</a>。"
   },
   {
     "more": true,
     "html": "[2024.01] 2 papers accepted to CSCWD 2024: (1) <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/10580514\" rel=\"noopener noreferrer\">Online Relational Knowledge Distillation for Image Classification</a>, (2) <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/10580038\" rel=\"noopener noreferrer\">Class-wise Image Mixture Guided Self-Knowledge Distillation for Image Classification</a>.",
-    "html_zh": "[2024.01] 2篇论文被接收至 CSCWD 2024: (1) <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/10580514\" rel=\"noopener noreferrer\">Online Relational Knowledge Distillation for Image Classification</a>, (2) <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/10580038\" rel=\"noopener noreferrer\">Class-wise Image Mixture Guided Self-Knowledge Distillation for Image Classification</a>."
+    "html_zh": "[2024.01] 2篇论文被接收于 CSCWD 2024：（1）<a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/10580514\" rel=\"noopener noreferrer\">Online Relational Knowledge Distillation for Image Classification</a>、（2）<a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/10580038\" rel=\"noopener noreferrer\">Class-wise Image Mixture Guided Self-Knowledge Distillation for Image Classification</a>。"
   },
   {
     "more": true,
@@ -183,36 +182,36 @@
   {
     "more": true,
     "html": "[2023.12] 1 paper accepted to AAAI 2024: <a target=\"_blank\" href=\"https://ojs.aaai.org/index.php/AAAI/article/view/29153\" rel=\"noopener noreferrer\">eTag: Class-Incremental Learning via Embedding Distillation and Task-Oriented Generation</a>.",
-    "html_zh": "[2023.12] 1篇论文被接收至 AAAI 2024: <a target=\"_blank\" href=\"https://ojs.aaai.org/index.php/AAAI/article/view/29153\" rel=\"noopener noreferrer\">eTag: Class-Incremental Learning via Embedding Distillation and Task-Oriented Generation</a>."
+    "html_zh": "[2023.12] 1篇论文被接收于 AAAI 2024：<a target=\"_blank\" href=\"https://ojs.aaai.org/index.php/AAAI/article/view/29153\" rel=\"noopener noreferrer\">eTag: Class-Incremental Learning via Embedding Distillation and Task-Oriented Generation</a>。"
   },
   {
     "more": true,
     "html": "[2023.12] 1 paper accepted to IEEE Transactions on Biomedical Engineering: <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/10374166\" rel=\"noopener noreferrer\">Automatic Spike Sorting with Low-Rank and Sparse Representation</a>.",
-    "html_zh": "[2023.12] 1篇论文被接收至 IEEE Transactions on Biomedical Engineering: <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/10374166\" rel=\"noopener noreferrer\">Automatic Spike Sorting with Low-Rank and Sparse Representation</a>."
+    "html_zh": "[2023.12] 1篇论文被接收于 IEEE Transactions on Biomedical Engineering：<a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/10374166\" rel=\"noopener noreferrer\">Automatic Spike Sorting with Low-Rank and Sparse Representation</a>。"
   },
   {
     "more": true,
     "html": "[2021.09] 1 paper accepted to IEEE Transactions on Neural Networks and Learning Systems: <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/9528890\" rel=\"noopener noreferrer\">Nonlinear Causal Discovery for High-Dimensional Deterministic Data</a>.",
-    "html_zh": "[2021.09] 1篇论文被接收至 IEEE Transactions on Neural Networks and Learning Systems: <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/9528890\" rel=\"noopener noreferrer\">Nonlinear Causal Discovery for High-Dimensional Deterministic Data</a>."
+    "html_zh": "[2021.09] 1篇论文被接收于 IEEE Transactions on Neural Networks and Learning Systems：<a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/9528890\" rel=\"noopener noreferrer\">Nonlinear Causal Discovery for High-Dimensional Deterministic Data</a>。"
   },
   {
     "more": true,
     "html": "[2021.04] 1 paper accepted to IEEE Transactions on Neural Systems and Rehabilitation Engineering: <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/9408665\" rel=\"noopener noreferrer\">A Unified Optimization Model of Feature Extraction and Clustering for Spike Sorting</a>.",
-    "html_zh": "[2021.04] 1篇论文被接收至 IEEE Transactions on Neural Systems and Rehabilitation Engineering: <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/9408665\" rel=\"noopener noreferrer\">A Unified Optimization Model of Feature Extraction and Clustering for Spike Sorting</a>."
+    "html_zh": "[2021.04] 1篇论文被接收于 IEEE Transactions on Neural Systems and Rehabilitation Engineering：<a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/9408665\" rel=\"noopener noreferrer\">A Unified Optimization Model of Feature Extraction and Clustering for Spike Sorting</a>。"
   },
   {
     "more": true,
     "html": "[2020.06] 1 paper accepted to ICME 2020 <span class=\"text-accent\">as oral</span>: <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/9102837\" rel=\"noopener noreferrer\">Spike Sorting Based On Low-Rank And Sparse Representation</a>.",
-    "html_zh": "[2020.06] 1篇论文被接收至 ICME 2020（<span class=\"text-accent\">口头报告</span>）: <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/9102837\" rel=\"noopener noreferrer\">Spike Sorting Based On Low-Rank And Sparse Representation</a>."
+    "html_zh": "[2020.06] 1篇论文被接收于 ICME 2020（<span class=\"text-accent\">口头报告</span>）：<a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/9102837\" rel=\"noopener noreferrer\">Spike Sorting Based On Low-Rank And Sparse Representation</a>。"
   },
   {
     "more": true,
     "html": "[2019.04] 1 paper accepted to IEEE Transactions on NanoBioscience: <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/8681441\" rel=\"noopener noreferrer\">WMsorting: Wavelet Packets' Decomposition and Mutual Information-Based Spike Sorting Method</a>.",
-    "html_zh": "[2019.04] 1篇论文被接收至 IEEE Transactions on NanoBioscience: <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/8681441\" rel=\"noopener noreferrer\">WMsorting: Wavelet Packets' Decomposition and Mutual Information-Based Spike Sorting Method</a>."
+    "html_zh": "[2019.04] 1篇论文被接收于 IEEE Transactions on NanoBioscience：<a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/8681441\" rel=\"noopener noreferrer\">WMsorting: Wavelet Packets' Decomposition and Mutual Information-Based Spike Sorting Method</a>。"
   },
   {
     "more": true,
     "html": "[2018.10] 1 paper accepted to BIBM 2018 <span class=\"text-accent\">as oral</span>: <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/8621401\" rel=\"noopener noreferrer\">HASS: High Accuracy Spike Sorting with Wavelet Package Decomposition and Mutual Information</a>.",
-    "html_zh": "[2018.10] 1篇论文被接收至 BIBM 2018（<span class=\"text-accent\">口头报告</span>）: <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/8621401\" rel=\"noopener noreferrer\">HASS: High Accuracy Spike Sorting with Wavelet Package Decomposition and Mutual Information</a>."
+    "html_zh": "[2018.10] 1篇论文被接收于 BIBM 2018（<span class=\"text-accent\">口头报告</span>）：<a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/8621401\" rel=\"noopener noreferrer\">HASS: High Accuracy Spike Sorting with Wavelet Package Decomposition and Mutual Information</a>。"
   }
 ]
