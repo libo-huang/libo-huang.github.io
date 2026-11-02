@@ -50,8 +50,8 @@ contacts:
     icon: fa-solid fa-address-card
     label_en: Position
     label_zh-CN: 职位
-    value_en: Assistant Researcher
-    value_zh-CN: 助理研究员
+    value_en: Associate Researcher
+    value_zh-CN: 副研究员
   - key: affiliation
     icon: fa-solid fa-building-columns
     label_en: Affiliation

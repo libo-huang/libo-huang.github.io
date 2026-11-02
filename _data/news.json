@@ -1,6 +1,16 @@
 [
   {
     "more": false,
+    "html": "[2026.10] 1 paper accepted to EAAI 2026: <a target=\"_blank\" href=\"https://www.sciencedirect.com/science/article/pii/S0952197626028769\" rel=\"noopener noreferrer\"> Holistic Representation Retrieval for Lead Frame Drawings via Dual Coding of Drawing Exchange Format</a>. Congrats Guoxin!",
+    "html_zh": "[2026.10] 1篇论文被接收于 EAAI 2026：<a target=\"_blank\" href=\"https://www.sciencedirect.com/science/article/pii/S0952197626028769\" rel=\"noopener noreferrer\"> Holistic Representation Retrieval for Lead Frame Drawings via Dual Coding of Drawing Exchange Format</a>。祝贺国鑫！"
+  }, 
+  {
+    "more": false,
+    "html": "[2026.10] Served as the Area Chair for <a target=\"_blank\" href=\"https://openreview.net/group?id=ICML.cc/2027/Conference/Area_Chairs\" rel=\"noopener noreferrer\">ICML 2027</a> and <a target=\"_blank\" href=\"https://cmsworkshops.com/ICASSP2027/Reviewers/ReviewSystem.asp\" rel=\"noopener noreferrer\">ICASSP 2027</a>.",
+    "html_zh": "[2026.10] 担任 <a target=\"_blank\" href=\"https://openreview.net/group?id=ICML.cc/2027/Conference/Area_Chairs\" rel=\"noopener noreferrer\">ICML 2027</a> 和<a target=\"_blank\" href=\"https://cmsworkshops.com/ICASSP2027/Reviewers/ReviewSystem.asp\" rel=\"noopener noreferrer\">ICASSP 2027</a> 领域主席。"
+  }, 
+  {
+    "more": false,
     "html": "[2026.10] Recognized as <a target=\"_blank\" href=\"https://neurips.cc/reviewers/reviewer-letters?conference=2026&reviewer=121226\" rel=\"noopener noreferrer\">NeurIPS 2026 Top Area Chair</a>.",
     "html_zh": "[2026.10] 获评 <a target=\"_blank\" href=\"https://neurips.cc/reviewers/reviewer-letters?conference=2026&reviewer=121226\" rel=\"noopener noreferrer\">NeurIPS 2026 优秀领域主席</a>。"
   },
@@ -121,8 +131,8 @@
   },
   {
     "more": true,
-    "html": "[2025.04] 1 paper accepted to CVPR 2025: <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/abstract/document/11092331\" rel=\"noopener noreferrer\">Multi-party Collaborative Attention Control for Image Customization</a>. Congrats Han!",
-    "html_zh": "[2025.04] 1篇论文被接收于 CVPR 2025：<a target=\"_blank\" href=\"https://ieeexplore.ieee.org/abstract/document/11092331\" rel=\"noopener noreferrer\">Multi-party Collaborative Attention Control for Image Customization</a>。祝贺杨晗！"
+    "html": "[2025.04] 1 paper accepted to CVPR 2025: <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/abstract/document/11092331\" rel=\"noopener noreferrer\">Multi-Party Collaborative Attention Control for Image Customization</a>. Congrats Han!",
+    "html_zh": "[2025.04] 1篇论文被接收于 CVPR 2025：<a target=\"_blank\" href=\"https://ieeexplore.ieee.org/abstract/document/11092331\" rel=\"noopener noreferrer\">Multi-Party Collaborative Attention Control for Image Customization</a>。祝贺杨晗！"
   },
   {
     "more": true,
@@ -201,8 +211,8 @@
   },
   {
     "more": true,
-    "html": "[2020.06] 1 paper accepted to ICME 2020 <span class=\"text-accent\">as oral</span>: <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/9102837\" rel=\"noopener noreferrer\">Spike Sorting Based On Low-Rank And Sparse Representation</a>.",
-    "html_zh": "[2020.06] 1篇论文被接收于 ICME 2020（<span class=\"text-accent\">口头报告</span>）：<a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/9102837\" rel=\"noopener noreferrer\">Spike Sorting Based On Low-Rank And Sparse Representation</a>。"
+    "html": "[2020.06] 1 paper accepted to ICME 2020 <span class=\"text-accent\">as oral</span>: <a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/9102837\" rel=\"noopener noreferrer\">Spike Sorting Based on Low-Rank and Sparse Representation</a>.",
+    "html_zh": "[2020.06] 1篇论文被接收于 ICME 2020（<span class=\"text-accent\">口头报告</span>）：<a target=\"_blank\" href=\"https://ieeexplore.ieee.org/document/9102837\" rel=\"noopener noreferrer\">Spike Sorting Based on Low-Rank and Sparse Representation</a>。"
   },
   {
     "more": true,
