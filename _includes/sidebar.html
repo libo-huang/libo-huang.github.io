@@ -57,6 +57,27 @@
         </div>
     </details>
 
+    {% assign cfp = site.data.call_for_papers %}
+    {% if cfp.active %}
+    {% assign cfp_locale = cfp.locales[page.lang] %}
+    <details class="recruitment-card cfp-card">
+        <summary class="recruitment-summary">
+            <i class="fa-solid fa-thumbtack recruitment-pin" aria-hidden="true"></i>
+            <span>
+                <strong>{{ cfp_locale.title }}</strong>
+                <small>{{ cfp_locale.summary }}</small>
+                <small>{{ cfp_locale.deadline_label }} <time datetime="{{ cfp.deadline }}">{{ cfp_locale.deadline_display }}</time></small>
+            </span>
+        </summary>
+        <div class="recruitment-content">
+            <p class="cfp-topic"><a href="{{ cfp.url }}" target="_blank" rel="noopener noreferrer">{{ cfp_locale.topic }}</a></p>
+            <p class="cfp-journal">{{ cfp.journal }}</p>
+            <p>{{ cfp_locale.description }}</p>
+            <p><a href="{{ cfp.url }}" target="_blank" rel="noopener noreferrer">{{ cfp_locale.link_label }} &rarr;</a></p>
+        </div>
+    </details>
+    {% endif %}
+
     <div id="footer">
         <div id="footer-text-block">
             <div class="footer-meta">

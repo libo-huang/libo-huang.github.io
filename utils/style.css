@@ -743,6 +743,21 @@ html[data-theme="dark"] .research-image-dark {
     overflow-wrap: anywhere;
 }
 
+.cfp-card {
+    margin-top: 5px;
+    flex-shrink: 0;
+}
+
+.cfp-card .cfp-topic,
+.cfp-card .cfp-journal {
+    text-align: left;
+    hyphens: none;
+}
+
+.cfp-card .cfp-journal {
+    font-style: italic;
+}
+
 
 .avatar-container {
     text-align: center;

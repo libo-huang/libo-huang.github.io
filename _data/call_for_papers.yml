@@ -1,0 +1,23 @@
+# Verified against the official Research Topic page on 2026-11-08.
+# Set active to false when the call closes; update the deadline if extended.
+active: true
+url: https://www.frontiersin.org/research-topics/88254/integrating-world-models-and-continual-learning-for-long-term-robot-autonomy
+journal: Frontiers in Robotics and AI
+deadline: "2027-05-18"
+locales:
+  en:
+    title: Call for Papers
+    summary: World Models & Continual Learning
+    topic: Integrating world models and continual learning for long-term robot autonomy
+    description: We welcome research connecting world models and continual learning for robot perception, planning, and control, with a clear focus on adaptation, knowledge retention, or long-term autonomy.
+    deadline_label: "Deadline:"
+    deadline_display: 18 May 2027
+    link_label: Topic details & submission
+  zh-CN:
+    title: 专题征稿
+    summary: 世界模型与持续学习
+    topic: 融合世界模型与持续学习，实现机器人长期自主运行
+    description: 欢迎投稿世界模型与持续学习在机器人感知、规划和控制中的相关研究，重点关注环境适应、知识保持与长期自主运行。
+    deadline_label: 截稿日期：
+    deadline_display: 2027年5月18日
+    link_label: 专题详情与投稿
